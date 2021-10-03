@@ -1,5 +1,12 @@
-A Lush Theme for Neovim.
-===
+# walh - a neovim theme repo
 
-See: http://git.io/lush.nvim for more information on Lush and a helper script
-to setup your repo clone.
+## Install
+
+### Add plugins
+
+`rktjmp/lush.nvim` -- Required dep
+`casonadams/walh`  -- theme
+
+### Set theme
+
+colorscheme `walh-default`
