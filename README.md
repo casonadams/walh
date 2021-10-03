@@ -4,8 +4,8 @@
 
 ### Add plugins
 
-`rktjmp/lush.nvim` -- Required dep
-`casonadams/walh`  -- theme
+- `rktjmp/lush.nvim` -- Required dep
+- `casonadams/walh`  -- theme
 
 ### Set theme
 
