@@ -184,9 +184,9 @@ local theme = lush(function()
     GitSignsDelete           { fg = c.background, bg = c.red , gui = "reverse"}, -- diff mode: Deleted line |diff.txt|
     GitSignsCurrentLineBlame { fg = c.background, bg = c.blue , gui = "reverse"}, -- diff mode: Changed text within a changed line |diff.txt|
 
-    SignifyLineAdd           { GitSignsAdd }, -- diff mode: Changed text within a changed line |diff.txt|
-    SignifyLineChange        { GitSignsChange }, -- diff mode: Changed text within a changed line |diff.txt|
-    SignifyLineDelete        { GitSignsDelete }, -- diff mode: Changed text within a changed line |diff.txt|
+    SignifySignAdd           { GitSignsAdd }, -- diff mode: Changed text within a changed line |diff.txt|
+    SignifySignChange        { GitSignsChange }, -- diff mode: Changed text within a changed line |diff.txt|
+    SignifySignDelete        { GitSignsDelete }, -- diff mode: Changed text within a changed line |diff.txt|
 
     -- These groups are for the neovim tree-sitter highlights.
     -- As of writing, tree-sitter support is a WIP, group names may change.
