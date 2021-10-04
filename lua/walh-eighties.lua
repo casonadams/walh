@@ -37,7 +37,7 @@ local theme = lush(function()
     EndOfBuffer  { fg = c.background.lighten(30) }, -- filler lines (~) after the end of the buffer.  By default, this is highlighted like |hl-NonText|.
     -- TermCursor   { gui = "reverse"  }, -- cursor in a focused terminal
     -- TermCursorNC { }, -- cursor in an unfocused terminal
-    ErrorMsg     { bg = c.red }, -- error messages on the command line
+    ErrorMsg     { fg = c.red }, -- error messages on the command line
     VertSplit    { fg = c.background.lighten(30), bg = c.background }, -- the column separating vertically split windows
     Folded       { fg = c.blue, bg = c.background.lighten(5) }, -- line used for closed folds
     FoldColumn   { fg = c.blue, bg = c.background.lighten(5) }, -- 'foldcolumn'
