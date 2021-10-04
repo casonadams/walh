@@ -45,7 +45,7 @@ local theme = lush(function()
     IncSearch    { fg =c.background, bg = c.yellow }, -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
     Substitute   { fg =c.background, bg = c.yellow }, -- |:substitute| replacement text highlighting
     LineNr       { fg = c.background.lighten(30) }, -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
-    CursorLineNr { fg = c.foreground.darken(30), bg = c.background.lighten(5) }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
+    CursorLineNr { fg = c.foreground, bg = c.background.lighten(5) }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
     MatchParen   { bg = c.background.lighten(30) }, -- The character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
     ModeMsg      { }, -- 'showmode' message (e.g., "-- INSERT -- ")
     MsgArea      { }, -- Area for messages and cmdline
@@ -85,41 +85,41 @@ local theme = lush(function()
     -- default,
     -- Uncomment and edit if you want more specific syntax highlighting.
 
-    Constant       { fg = c.red }, -- (preferred) any constant
-    String         { fg = c.red }, -- a string constant: "this is a string"
-    Character      { fg = c.red }, -- a character constant: 'c', '\n'
-    Number         { fg = c.red }, -- a number constant: 234, 0xff
-    Boolean        { fg = c.red }, -- a boolean constant: TRUE, false
-    Float          { fg = c.red }, -- a floating point constant: 2.3e10
+    Constant       { fg = c.magenta }, -- (preferred) any constant
+    String         { fg = c.green }, -- a string constant: "this is a string"
+    Character      { fg = c. magenta}, -- a character constant: 'c', '\n'
+    Number         { fg = c.magenta }, -- a number constant: 234, 0xff
+    Boolean        { fg = c.magenta }, -- a boolean constant: TRUE, false
+    Float          { fg = c.magenta }, -- a floating point constant: 2.3e10
 
     Identifier     { fg = c.blue }, -- (preferred) any variable name
     Function       { fg = c.blue }, -- function name (also: methods for classes)
 
-    Statement      { fg = c.yellow }, -- (preferred) any statement
-    Conditional    { fg = c.yellow }, -- if, then, else, endif, switch, etc.
-    Repeat         { fg = c.yellow }, -- for, do, while, etc.
-    Label          { fg = c.yellow }, -- case, default, etc.
-    Operator       { fg = c.yellow }, -- "sizeof", "+", "*", etc.
-    Keyword        { fg = c.yellow }, -- any other keyword
-    Exception      { fg = c.yellow }, -- try, catch, throw
+    Statement      { fg = c.red }, -- (preferred) any statement
+    Conditional    { fg = c.red }, -- if, then, else, endif, switch, etc.
+    Repeat         { fg = c.red }, -- for, do, while, etc.
+    Label          { fg = c.red }, -- case, default, etc.
+    Operator       { fg = c.red }, -- "sizeof", "+", "*", etc.
+    Keyword        { fg = c.red }, -- any other keyword
+    Exception      { fg = c.red }, -- try, catch, throw
 
-    PreProc        { fg = c.magenta }, -- (preferred) generic Preprocessor
-    Include        { fg = c.magenta }, -- preprocessor #include
-    Define         { fg = c.magenta }, -- preprocessor #define
-    Macro          { fg = c.magenta }, -- same as Define
-    PreCondit      { fg = c.magenta }, -- preprocessor #if, #else, #endif, etc.
+    PreProc        { fg = c.cyan }, -- (preferred) generic Preprocessor
+    Include        { fg = c.cyan }, -- preprocessor #include
+    Define         { fg = c.cyan }, -- preprocessor #define
+    Macro          { fg = c.cyan }, -- same as Define
+    PreCondit      { fg = c.cyan }, -- preprocessor #if, #else, #endif, etc.
 
-    Type           { fg = c.green }, -- (preferred) int, long, char, etc.
-    StorageClass   { fg = c.green }, -- static, register, volatile, etc.
-    Structure      { fg = c.green }, -- struct, union, enum, etc.
-    Typedef        { fg = c.green }, -- A typedef
+    Type           { fg = c.yellow }, -- (preferred) int, long, char, etc.
+    StorageClass   { fg = c.orange }, -- static, register, volatile, etc.
+    Structure      { fg = c.cyan }, -- struct, union, enum, etc.
+    Typedef        { fg = c.yellow }, -- A typedef
 
-    Special        { fg = c.red.mix(c.yellow, 50) }, -- (preferred) any special symbol
-    SpecialChar    { fg = c.red.mix(c.yellow, 50) }, -- special character in a constant
-    Tag            { fg = c.red.mix(c.yellow, 50) }, -- you can use CTRL-] on this
-    Delimiter      { fg = c.red.mix(c.yellow, 50) }, -- character that needs attention
-    SpecialComment { fg = c.red.mix(c.yellow, 50) }, -- special things inside a comment
-    Debug          { fg = c.red.mix(c.yellow, 50) }, -- debugging statements
+    Special        { fg = c.orange }, -- (preferred) any special symbol
+    SpecialChar    { fg = c.orange }, -- special character in a constant
+    Tag            { fg = c.orange }, -- you can use CTRL-] on this
+    Delimiter      { fg = c.orange }, -- character that needs attention
+    SpecialComment { fg = c.orange }, -- special things inside a comment
+    Debug          { fg = c.orange }, -- debugging statements
 
     Underlined { gui = "underline" }, -- (preferred) text that stands out, HTML links
     Bold       { gui = "bold" },
