@@ -1,18 +1,36 @@
 local lush = require('lush')
 local hsl = lush.hsl
 
-local c = {
-  foreground = hsl(218, 27, 94).desaturate(25),
-  background = hsl(220, 16, 22).desaturate(25),
+-- local c = {
+--   foreground = hsl(218, 27, 94).desaturate(25),
+--   background = hsl(220, 16, 22).desaturate(25),
 
-  red = hsl(354, 42, 56).desaturate(25),
-  green = hsl(92, 28, 65).desaturate(25),
-  yellow = hsl(40, 71, 73).desaturate(25),
-  cyan = hsl(193, 43, 67).desaturate(25),
-  blue = hsl(210, 34, 63).desaturate(25),
-  magenta = hsl(311, 20, 63).desaturate(25),
-  orange = hsl(14, 51, 63).desaturate(25),
-}
+--   red = hsl(354, 42, 56).desaturate(25),
+--   green = hsl(92, 28, 65).desaturate(25),
+--   yellow = hsl(40, 71, 73).desaturate(25),
+--   cyan = hsl(193, 43, 67).desaturate(25),
+--   blue = hsl(210, 34, 63).desaturate(25),
+--   magenta = hsl(311, 20, 63).desaturate(25),
+--   orange = hsl(14, 51, 63).desaturate(25),
+-- }
+
+local c = {}
+
+c.color = hsl(210, 34, 63)
+-- c.color = hsl(60, 25, 50)
+c.base =  c.color.rotate(-210).desaturate(25)
+
+c.foreground = c.color.desaturate(75).lighten(25)
+c.background = c.color.desaturate(75).darken(75)
+
+c.red = c.base.rotate(0)
+c.yellow = c.base.rotate(60)
+c.green = c.base.rotate(110)
+c.cyan = c.base.rotate(180)
+c.blue = c.base.rotate(210)
+c.magenta = c.base.rotate(280)
+
+c.orange = c.red.mix(c.yellow, 50)
 
 local theme = lush(function()
   return {
