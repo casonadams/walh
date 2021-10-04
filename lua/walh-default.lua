@@ -45,7 +45,7 @@ local theme = lush(function()
     IncSearch    { fg =c.background, bg = c.yellow }, -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
     Substitute   { fg =c.background, bg = c.yellow }, -- |:substitute| replacement text highlighting
     LineNr       { fg = c.background.lighten(30) }, -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
-    CursorLineNr { fg = c.foreground.darken(30), bg = c.background.lighten(5) }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
+    CursorLineNr { fg = c.foreground, bg = c.background.lighten(5) }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
     MatchParen   { bg = c.background.lighten(30) }, -- The character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
     ModeMsg      { }, -- 'showmode' message (e.g., "-- INSERT -- ")
     MsgArea      { }, -- Area for messages and cmdline
@@ -114,12 +114,12 @@ local theme = lush(function()
     Structure      { fg = c.green }, -- struct, union, enum, etc.
     Typedef        { fg = c.green }, -- A typedef
 
-    Special        { fg = c.red.mix(c.yellow, 50) }, -- (preferred) any special symbol
-    SpecialChar    { fg = c.red.mix(c.yellow, 50) }, -- special character in a constant
-    Tag            { fg = c.red.mix(c.yellow, 50) }, -- you can use CTRL-] on this
-    Delimiter      { fg = c.red.mix(c.yellow, 50) }, -- character that needs attention
-    SpecialComment { fg = c.red.mix(c.yellow, 50) }, -- special things inside a comment
-    Debug          { fg = c.red.mix(c.yellow, 50) }, -- debugging statements
+    Special        { fg = c.orange }, -- (preferred) any special symbol
+    SpecialChar    { fg = c.orange }, -- special character in a constant
+    Tag            { fg = c.orange }, -- you can use CTRL-] on this
+    Delimiter      { fg = c.orange }, -- character that needs attention
+    SpecialComment { fg = c.orange }, -- special things inside a comment
+    Debug          { fg = c.orange }, -- debugging statements
 
     Underlined { gui = "underline" }, -- (preferred) text that stands out, HTML links
     Bold       { gui = "bold" },

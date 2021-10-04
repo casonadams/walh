@@ -87,7 +87,7 @@ local theme = lush(function()
 
     Constant       { fg = c.magenta }, -- (preferred) any constant
     String         { fg = c.green }, -- a string constant: "this is a string"
-    Character      { fg = c. magenta}, -- a character constant: 'c', '\n'
+    Character      { fg = c. magenta }, -- a character constant: 'c', '\n'
     Number         { fg = c.magenta }, -- a number constant: 234, 0xff
     Boolean        { fg = c.magenta }, -- a boolean constant: TRUE, false
     Float          { fg = c.magenta }, -- a floating point constant: 2.3e10
