@@ -154,10 +154,10 @@ local theme = lush(function()
     -- LspDiagnosticsUnderlineInformation   { }, -- Used to underline "Information" diagnostics
     -- LspDiagnosticsUnderlineHint          { }, -- Used to underline "Hint" diagnostics
 
-    -- LspDiagnosticsFloatingError          { fg = c.foreground }, -- Used to color "Error" diagnostic messages in diagnostics float
-    -- LspDiagnosticsFloatingWarning        { fg = c.foreground }, -- Used to color "Warning" diagnostic messages in diagnostics float
-    -- LspDiagnosticsFloatingInformation    { fg = c.foreground }, -- Used to color "Information" diagnostic messages in diagnostics float
-    -- LspDiagnosticsFloatingHint           { fg = c.foreground }, -- Used to color "Hint" diagnostic messages in diagnostics float
+    LspDiagnosticsFloatingError          { fg = c.foreground }, -- Used to color "Error" diagnostic messages in diagnostics float
+    LspDiagnosticsFloatingWarning        { fg = c.foreground }, -- Used to color "Warning" diagnostic messages in diagnostics float
+    LspDiagnosticsFloatingInformation    { fg = c.foreground }, -- Used to color "Information" diagnostic messages in diagnostics float
+    LspDiagnosticsFloatingHint           { fg = c.foreground }, -- Used to color "Hint" diagnostic messages in diagnostics float
 
     -- LspDiagnosticsSignError              { fg = c.red, bg = "NONE" }, -- Used for "Error" signs in sign column
     -- LspDiagnosticsSignWarning            { fg = c.yellow }, -- Used for "Warning" signs in sign column
