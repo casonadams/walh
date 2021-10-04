@@ -2,36 +2,16 @@ local lush = require('lush')
 local hsl = lush.hsl
 
 local c = {
-  foreground = hsl(218, 27, 94),
-  background = hsl(220, 16, 22),
+  foreground = hsl(218, 27, 94).desaturate(25),
+  background = hsl(220, 16, 22).desaturate(25),
 
-  red = hsl(354, 42, 56),
-  green = hsl(92, 28, 65),
-  yellow = hsl(40, 71, 73),
-  cyan = hsl(193, 43, 67),
-  blue = hsl(213, 32, 52),
-  magenta = hsl(311, 20, 63),
-  orange = hsl(14, 51, 63),
-}
-
-local clrs = {
-  nord0 = hsl(220, 16, 22), -- #2F3541
-  nord1 = hsl(222, 16, 28), -- #3C4353
-  nord2 = hsl(220, 17, 32), -- #444D5F
-  nord3 = hsl(220, 16, 36), -- #4D576A
-  nord3_bright = hsl(220, 17, 46), -- #616F89
-  nord4 = hsl(219, 28, 88), -- #D8DEE9
-  nord5 = hsl(218, 27, 92), -- #E5E9F0
-  nord6 = hsl(218, 27, 94), -- #ECEFF4
-  nord7 = hsl(179, 25, 65), -- #8FBCBB
-  nord8 = hsl(193, 43, 67), -- #87BFCF
-  nord9 = hsl(210, 34, 63), -- #81A1C1
-  nord10 = hsl(213, 32, 52), -- #5D81AC
-  nord11 = hsl(354, 42, 56), -- #BE6069
-  nord12 = hsl(14, 51, 63), -- #D18771
-  nord13 = hsl(40, 71, 73), -- #EBCA89
-  nord14 = hsl(92, 28, 65), -- #A4BF8D
-  nord15 = hsl(311, 20, 63), -- #B48EAD
+  red = hsl(354, 42, 56).desaturate(25),
+  green = hsl(92, 28, 65).desaturate(25),
+  yellow = hsl(40, 71, 73).desaturate(25),
+  cyan = hsl(193, 43, 67).desaturate(25),
+  blue = hsl(210, 34, 63).desaturate(25),
+  magenta = hsl(311, 20, 63).desaturate(25),
+  orange = hsl(14, 51, 63).desaturate(25),
 }
 
 local theme = lush(function()
@@ -57,7 +37,7 @@ local theme = lush(function()
     Folded       { fg = c.blue, bg = c.background.lighten(5) }, -- line used for closed folds
     FoldColumn   { fg = c.blue, bg = c.background.lighten(5) }, -- 'foldcolumn'
     SignColumn   { fg = c.blue, bg = {} }, -- column where |signs| are displayed
-    IncSearch    { fg =c.background, bg = c.yellow }, -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
+    IncSearch    { fg =c.background, bg = c.blue }, -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
     Substitute   { fg =c.background, bg = c.yellow }, -- |:substitute| replacement text highlighting
     LineNr       { fg = c.background.lighten(30) }, -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
     CursorLineNr { fg = c.foreground, bg = c.background.lighten(5) }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
@@ -90,7 +70,7 @@ local theme = lush(function()
     Title        { }, -- titles for output from ":set all", ":autocmd" etc.
     Visual       { gui = "reverse" }, -- Visual mode selection
     VisualNOS    { bg = c.background.lighten(5) }, -- Visual mode selection when vim is "Not Owning the Selection".
-    WarningMsg   { fg = c.red }, -- warning messages
+    WarningMsg   { fg = c.yellow }, -- warning messages
     Whitespace   { fg = c.background.lighten(30) }, -- "nbsp", "space", "tab" and "trail" in 'listchars'
     WildMenu     { fg = c.background, bg = c.yellow }, -- current match in 'wildmenu' completion
 
@@ -100,41 +80,41 @@ local theme = lush(function()
     -- default,
     -- Uncomment and edit if you want more specific syntax highlighting.
 
-    Constant       { fg = c.magenta }, -- (preferred) any constant
+    Constant       { fg = c.foreground }, -- (preferred) any constant
     String         { fg = c.green }, -- a string constant: "this is a string"
-    Character      { fg = c. magenta}, -- a character constant: 'c', '\n'
+    Character      { fg = c.green }, -- a character constant: 'c', '\n'
     Number         { fg = c.magenta }, -- a number constant: 234, 0xff
-    Boolean        { fg = c.magenta }, -- a boolean constant: TRUE, false
+    Boolean        { fg = c.blue }, -- a boolean constant: TRUE, false
     Float          { fg = c.magenta }, -- a floating point constant: 2.3e10
 
-    Identifier     { fg = c.blue }, -- (preferred) any variable name
-    Function       { fg = c.blue }, -- function name (also: methods for classes)
+    Identifier     { fg = c.foreground }, -- (preferred) any variable name
+    Function       { fg = c.cyan }, -- function name (also: methods for classes)
 
-    Statement      { fg = c.red }, -- (preferred) any statement
-    Conditional    { fg = c.red }, -- if, then, else, endif, switch, etc.
-    Repeat         { fg = c.red }, -- for, do, while, etc.
-    Label          { fg = c.red }, -- case, default, etc.
-    Operator       { fg = c.red }, -- "sizeof", "+", "*", etc.
-    Keyword        { fg = c.red }, -- any other keyword
-    Exception      { fg = c.red }, -- try, catch, throw
+    Statement      { fg = c.blue }, -- (preferred) any statement
+    Conditional    { fg = c.blue }, -- if, then, else, endif, switch, etc.
+    Repeat         { fg = c.blue }, -- for, do, while, etc.
+    Label          { fg = c.blue }, -- case, default, etc.
+    Operator       { fg = c.blue }, -- "sizeof", "+", "*", etc.
+    Keyword        { fg = c.blue }, -- any other keyword
+    Exception      { fg = c.blue }, -- try, catch, throw
 
-    PreProc        { fg = c.cyan }, -- (preferred) generic Preprocessor
-    Include        { fg = c.cyan }, -- preprocessor #include
-    Define         { fg = c.cyan }, -- preprocessor #define
-    Macro          { fg = c.cyan }, -- same as Define
-    PreCondit      { fg = c.cyan }, -- preprocessor #if, #else, #endif, etc.
+    PreProc        { fg = c.blue }, -- (preferred) generic Preprocessor
+    Include        { fg = c.blue }, -- preprocessor #include
+    Define         { fg = c.blue }, -- preprocessor #define
+    Macro          { fg = c.blue }, -- same as Define
+    PreCondit      { fg = c.blue }, -- preprocessor #if, #else, #endif, etc.
 
-    Type           { fg = c.yellow }, -- (preferred) int, long, char, etc.
-    StorageClass   { fg = c.orange }, -- static, register, volatile, etc.
-    Structure      { fg = c.cyan }, -- struct, union, enum, etc.
-    Typedef        { fg = c.yellow }, -- A typedef
+    Type           { fg = c.blue }, -- (preferred) int, long, char, etc.
+    StorageClass   { fg = c.blue }, -- static, register, volatile, etc.
+    Structure      { fg = c.blue }, -- struct, union, enum, etc.
+    Typedef        { fg = c.blue }, -- A typedef
 
-    Special        { fg = c.orange }, -- (preferred) any special symbol
-    SpecialChar    { fg = c.orange }, -- special character in a constant
-    Tag            { fg = c.orange }, -- you can use CTRL-] on this
-    Delimiter      { fg = c.orange }, -- character that needs attention
-    SpecialComment { fg = c.orange }, -- special things inside a comment
-    Debug          { fg = c.orange }, -- debugging statements
+    Special        { fg = c.foreground }, -- (preferred) any special symbol
+    SpecialChar    { fg = c.yellow }, -- special character in a constant
+    Tag            { fg = c.foreground }, -- you can use CTRL-] on this
+    Delimiter      { fg = c.foreground }, -- character that needs attention
+    SpecialComment { fg = c.cyan }, -- special things inside a comment
+    Debug          { fg = c.foreground }, -- debugging statements
 
     Underlined { gui = "underline" }, -- (preferred) text that stands out, HTML links
     Bold       { gui = "bold" },
