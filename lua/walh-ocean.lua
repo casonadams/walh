@@ -179,6 +179,26 @@ local theme = lush(function()
 
     -- LspCodeLens                          { }, -- Used to color the virtual text of the codelens
 
+    CocHighlightText                     { fg = c.background.lighten(30) },
+    CocErrorHighlight                    { fg = c.background.lighten(30) },
+    CocWarningHighlight                  { fg = c.background.lighten(30) },
+    CocInfoHighlight                     { fg = c.background.lighten(30) },
+    CocHintHighlight                     { fg = c.background.lighten(30) },
+    CocHintHighlight                     { fg = c.background.lighten(30) },
+    CocDeprecatedHighlight               { fg = c.background.lighten(30) },
+    CocUnusedHighlight                   { fg = c.background.lighten(30) },
+
+    CocErrorVirtualText                  { fg = c.background.lighten(30) },
+    CocWarningVirtualText                { fg = c.background.lighten(30) },
+    CocInfoVirtualText                   { fg = c.background.lighten(30) },
+    CocHintVirtualText                   { fg = c.background.lighten(30) },
+
+    CocFloating                          { fg = c.foreground },
+    CocErrorFloat                        { fg = c.foreground },
+    CocWarningFloat                      { fg = c.foreground },
+    CocInfoFloat                         { fg = c.foreground },
+    CocHintFloat                         { fg = c.foreground },
+
     GitSignsAdd              { fg = c.background, bg = c.green, gui = "reverse"}, -- diff mode: Added line |diff.txt|
     GitSignsChange           { fg = c.background, bg = c.yellow , gui = "reverse"}, -- diff mode: Changed line |diff.txt|
     GitSignsDelete           { fg = c.background, bg = c.red , gui = "reverse"}, -- diff mode: Deleted line |diff.txt|
