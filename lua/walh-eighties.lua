@@ -171,7 +171,6 @@ local theme = lush(function()
     CocWarningHighlight                  { fg = c.background.lighten(30) },
     CocInfoHighlight                     { fg = c.background.lighten(30) },
     CocHintHighlight                     { fg = c.background.lighten(30) },
-    CocHintHighlight                     { fg = c.background.lighten(30) },
     CocDeprecatedHighlight               { fg = c.background.lighten(30) },
     CocUnusedHighlight                   { fg = c.background.lighten(30) },
 
