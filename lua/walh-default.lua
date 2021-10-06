@@ -171,13 +171,13 @@ local theme = lush(function()
     GitSignsDelete           { fg = c.background, bg = c.red , gui = "reverse"}, -- diff mode: Deleted line |diff.txt|
     GitSignsCurrentLineBlame { fg = c.background, bg = c.blue , gui = "reverse"}, -- diff mode: Changed text within a changed line |diff.txt|
 
-    -- CocHighlightText                     { gui = "underline" },
+    CocHighlightText                     { gui = "bold" },
     -- CocErrorHighlight                    { gui = "underline" },
     -- CocWarningHighlight                  { gui = "underline" },
     -- CocInfoHighlight                     { gui = "underline" },
     -- CocHintHighlight                     { gui = "underline" },
     -- CocDeprecatedHighlight               { gui = "underline" },
-    -- CocUnusedHighlight                   { gui = "underline" },
+    CocUnusedHighlight                   { gui = "underline" },
 
     CocErrorVirtualText                  { fg = c.background.lighten(30) },
     CocWarningVirtualText                { fg = c.background.lighten(30) },

@@ -179,13 +179,13 @@ local theme = lush(function()
 
     -- LspCodeLens                          { }, -- Used to color the virtual text of the codelens
 
-    -- CocHighlightText                     { gui = "underline" },
+    CocHighlightText                     { gui = "bold" },
     -- CocErrorHighlight                    { gui = "underline" },
     -- CocWarningHighlight                  { gui = "underline" },
     -- CocInfoHighlight                     { gui = "underline" },
     -- CocHintHighlight                     { gui = "underline" },
     -- CocDeprecatedHighlight               { gui = "underline" },
-    -- CocUnusedHighlight                   { gui = "underline" },
+    CocUnusedHighlight                   { gui = "underline" },
 
     CocErrorVirtualText                  { fg = c.background.lighten(30) },
     CocWarningVirtualText                { fg = c.background.lighten(30) },
