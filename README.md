@@ -18,3 +18,5 @@
 ## Calls outs
 
 Would not be possible without the amazing work from [lush](https://github.com/rktjmp/lush.nvim)
+
+color scheme for vim
