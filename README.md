@@ -1,6 +1,7 @@
-# walh - a neovim theme repo
-
-- best if used with [lunarvim](https://www.lunarvim.org)
+# walh
+A neovim theme repo
+that is easy on the eyes and
+for long hours looking at a screen
 
 ## Install
 
