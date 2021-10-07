@@ -18,9 +18,16 @@ c.magenta = c.base.rotate(280)
 
 c.orange = c.red.mix(c.yellow, 50)
 
-
 local theme = lush(function()
   return {
+    RED8888888 { bg = c.red, fg = c.red },
+    YELLOW8888 { bg = c.yellow, fg = c.yellow },
+    GREEN88888 { bg = c.green, fg = c.green },
+    BLUE888888 { bg = c.blue, fg = c.blue },
+    MAGENTA888 { bg = c.magenta, fg = c.magenta },
+    CYAN888888 { bg = c.cyan, fg = c.cyan },
+    FORGROUND8 { bg = c.foreground, fg = c.foreground },
+    BACKGROUND { bg = c.background, fg = c.background },
     Comment      { fg = c.background.lighten(30), gui = "italic" }, -- any comment
     ColorColumn  { bg = c.red }, -- used for the columns set with 'colorcolumn'
     Conceal      { bg = c.background.lighten(30) }, -- placeholder characters substituted for concealed text (see 'conceallevel')
