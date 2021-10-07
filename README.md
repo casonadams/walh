@@ -10,6 +10,10 @@
 - `casonadams/walh`  -- theme
 
 ### Set theme
+- walh-default
+- walh-eighties
+- walh-ocean
+- walh-ocean-warm
 
 #### walh-default
 
