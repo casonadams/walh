@@ -175,11 +175,6 @@ local theme = lush(function()
 
     -- LspCodeLens                          { }, -- Used to color the virtual text of the codelens
 
-    LspDiagnosticsLineNrError           { fg = c.red },
-    LspDiagnosticsLineNrWarning         { fg = c.yellow },
-    LspDiagnosticsLineNrInformation     { fg = c.green },
-    LspDiagnosticsLineNrHint            { fg = c.blue },
-
     CocHighlightText                     { gui = "bold" },
     -- CocErrorHighlight                    { gui = "underline" },
     -- CocWarningHighlight                  { gui = "underline" },
