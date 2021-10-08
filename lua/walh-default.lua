@@ -173,6 +173,11 @@ local theme = lush(function()
 
     -- LspCodeLens                          { }, -- Used to color the virtual text of the codelens
 
+    LspDiagnosticsLineNrError           { fg = c.red },
+    LspDiagnosticsLineNrWarning         { fg = c.yellow },
+    LspDiagnosticsLineNrInformation     { fg = c.green },
+    LspDiagnosticsLineNrHint            { fg = c.blue },
+
     GitSignsAdd              { fg = c.background, bg = c.green, gui = "reverse"}, -- diff mode: Added line |diff.txt|
     GitSignsChange           { fg = c.background, bg = c.yellow , gui = "reverse"}, -- diff mode: Changed line |diff.txt|
     GitSignsDelete           { fg = c.background, bg = c.red , gui = "reverse"}, -- diff mode: Deleted line |diff.txt|
