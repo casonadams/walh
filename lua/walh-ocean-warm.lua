@@ -153,10 +153,10 @@ local theme = lush(function()
     LspDiagnosticsDefaultInformation    { fg = c.blue }, -- Used to color "Information" diagnostic messages in diagnostics float
     LspDiagnosticsDefaultHint           { fg = c.cyan }, -- Used to color "Hint" diagnostic messages in diagnostics float
 
-    -- LspDiagnosticsVirtualTextError       { }, -- Used for "Error" diagnostic virtual text
-    -- LspDiagnosticsVirtualTextWarning     { }, -- Used for "Warning" diagnostic virtual text
-    -- LspDiagnosticsVirtualTextInformation { }, -- Used for "Information" diagnostic virtual text
-    -- LspDiagnosticsVirtualTextHint        { }, -- Used for "Hint" diagnostic virtual text
+    LspDiagnosticsVirtualTextError       { fg = c.red.desaturate(50).darken(25) }, -- Used for "Error" diagnostic virtual text
+    LspDiagnosticsVirtualTextWarning     { fg = c.yellow.desaturate(50).darken(25)}, -- Used for "Warning" diagnostic virtual text
+    LspDiagnosticsVirtualTextInformation { fg = c.blue.desaturate(50).darken(25)}, -- Used for "Information" diagnostic virtual text
+    LspDiagnosticsVirtualTextHint        { fg = c.cyan.desaturate(50).darken(25)}, -- Used for "Hint" diagnostic virtual text
 
     -- LspDiagnosticsUnderlineError         { }, -- Used to underline "Error" diagnostics
     -- LspDiagnosticsUnderlineWarning       { }, -- Used to underline "Warning" diagnostics
