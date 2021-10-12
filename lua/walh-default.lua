@@ -146,10 +146,10 @@ local theme = lush(function()
     -- LspReferenceRead                     { }, -- used for highlighting "read" references
     -- LspReferenceWrite                    { }, -- used for highlighting "write" references
 
-    LspDiagnosticsDefaultError           { fg = c.background.lighten(30) }, -- Used as the base highlight group. Other LspDiagnostic highlights link to this by default (except Underline)
-    LspDiagnosticsDefaultWarning         { fg = c.background.lighten(30) }, -- Used as the base highlight group. Other LspDiagnostic highlights link to this by default (except Underline)
-    LspDiagnosticsDefaultInformation     { fg = c.background.lighten(30) }, -- Used as the base highlight group. Other LspDiagnostic highlights link to this by default (except Underline)
-    LspDiagnosticsDefaultHint            { fg = c.background.lighten(30) }, -- Used as the base highlight group. Other LspDiagnostic highlights link to this by default (except Underline)
+    LspDiagnosticsDefaultError          { fg = c.red }, -- Used to color "Error" diagnostic messages in diagnostics float
+    LspDiagnosticsDefaultWarning        { fg = c.yellow }, -- Used to color "Warning" diagnostic messages in diagnostics float
+    LspDiagnosticsDefaultInformation    { fg = c.blue }, -- Used to color "Information" diagnostic messages in diagnostics float
+    LspDiagnosticsDefaultHint           { fg = c.cyan }, -- Used to color "Hint" diagnostic messages in diagnostics float
 
     -- LspDiagnosticsVirtualTextError       { }, -- Used for "Error" diagnostic virtual text
     -- LspDiagnosticsVirtualTextWarning     { }, -- Used for "Warning" diagnostic virtual text
@@ -161,10 +161,10 @@ local theme = lush(function()
     -- LspDiagnosticsUnderlineInformation   { }, -- Used to underline "Information" diagnostics
     -- LspDiagnosticsUnderlineHint          { }, -- Used to underline "Hint" diagnostics
 
-    LspDiagnosticsFloatingError          { fg = c.foreground }, -- Used to color "Error" diagnostic messages in diagnostics float
-    LspDiagnosticsFloatingWarning        { fg = c.foreground }, -- Used to color "Warning" diagnostic messages in diagnostics float
-    LspDiagnosticsFloatingInformation    { fg = c.foreground }, -- Used to color "Information" diagnostic messages in diagnostics float
-    LspDiagnosticsFloatingHint           { fg = c.foreground }, -- Used to color "Hint" diagnostic messages in diagnostics float
+    -- LspDiagnosticsFloatingError          { fg = c.foreground }, -- Used to color "Error" diagnostic messages in diagnostics float
+    -- LspDiagnosticsFloatingWarning        { fg = c.foreground }, -- Used to color "Warning" diagnostic messages in diagnostics float
+    -- LspDiagnosticsFloatingInformation    { fg = c.foreground }, -- Used to color "Information" diagnostic messages in diagnostics float
+    -- LspDiagnosticsFloatingHint           { fg = c.foreground }, -- Used to color "Hint" diagnostic messages in diagnostics float
 
     -- LspDiagnosticsSignError              { fg = c.red, bg = "NONE" }, -- Used for "Error" signs in sign column
     -- LspDiagnosticsSignWarning            { fg = c.yellow }, -- Used for "Warning" signs in sign column

@@ -1,4 +1,5 @@
 # walh
+
 A neovim theme repo
 that is easy on the eyes and
 for long hours looking at a screen
@@ -15,6 +16,7 @@ yes walh does mean what you think it does
 - `casonadams/walh`  -- theme
 
 ### Set theme
+
 - walh-default
 - walh-eighties
 - walh-ocean
