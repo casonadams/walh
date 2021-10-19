@@ -1,5 +1,4 @@
 " You probably always want to set this in your vim file
-set background=dark
 let g:colors_name="walh-eighties"
 
 lua package.loaded['walh-eighties'] = nil

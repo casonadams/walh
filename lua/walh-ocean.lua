@@ -1,95 +1,132 @@
 local lush = require('lush')
 local hsl = lush.hsl
 
+local bg = vim.o.background
+if bg == nil then
+  bg = "dark"
+  vim.o.background = bg
+end
+
 -- local c = {
 --   foreground = hsl(218, 27, 94).desaturate(25),
 --   background = hsl(220, 16, 22).desaturate(25),
-
 --   red = hsl(354, 42, 56).desaturate(25),
---   green = hsl(92, 28, 65).desaturate(25),
 --   yellow = hsl(40, 71, 73).desaturate(25),
---   cyan = hsl(193, 43, 67).desaturate(25),
+--   green = hsl(92, 28, 65).desaturate(25),
 --   blue = hsl(210, 34, 63).desaturate(25),
 --   magenta = hsl(311, 20, 63).desaturate(25),
+--   cyan = hsl(193, 43, 67).desaturate(25),
 --   orange = hsl(14, 51, 63).desaturate(25),
 -- }
 
 local c = {}
 
-c.color = hsl(210, 34, 63)
--- c.color = hsl(60, 25, 50)
-c.base =  c.color.rotate(-210).desaturate(25)
+h = 210
+s = 34
+l = 63
 
-c.foreground = c.color.desaturate(75).lighten(25)
-c.background = c.color.desaturate(75).darken(75)
+c.color = hsl(h, s, l)
+c.base = c.color.rotate(-h)
 
-c.red = c.base.rotate(0)
-c.yellow = c.base.rotate(60)
-c.green = c.base.rotate(110)
-c.cyan = c.base.rotate(180)
-c.blue = c.base.rotate(210)
-c.magenta = c.base.rotate(280)
+if bg == "light" then
+  c.background = c.color.desaturate(75).lighten(75)
+  c.foreground = c.color.desaturate(75).darken(25)
+  c.green = c.base.rotate(92).desaturate(6).darken(8)
+  c.yellow = c.base.rotate(40).saturate(37).darken(10)
 
+  c.dark_gray1 = c.background.darken(5)
+  c.dark_gray2 = c.background.darken(15)
+  c.dark_gray3 = c.background.darken(30)
+  c.light_gray1 = c.foreground.lighten(5)
+  c.light_gray1 = c.foreground.lighten(15)
+  c.light_gray1 = c.foreground.lighten(30)
+else
+  c.foreground = c.color.desaturate(75).lighten(25)
+  c.background = c.color.desaturate(75).darken(75)
+  c.green = c.base.rotate(92).desaturate(6).lighten(2)
+  c.yellow = c.base.rotate(40).saturate(37).lighten(10)
+
+  c.dark_gray1 = c.background.lighten(5)
+  c.dark_gray2 = c.background.lighten(15)
+  c.dark_gray3 = c.background.lighten(30)
+  c.light_gray1 = c.foreground.darken(5)
+  c.light_gray1 = c.foreground.darken(15)
+  c.light_gray1 = c.foreground.darken(30)
+end
+
+c.red = c.base.rotate(354).saturate(8).darken(7)
+c.cyan = c.base.rotate(193).saturate(9).lighten(3)
+c.blue = c.base.rotate(210).saturate(0).lighten(0)
+c.magenta = c.base.rotate(311).desaturate(14).lighten(0)
 c.orange = c.red.mix(c.yellow, 50)
 
 local theme = lush(function()
   return {
-    Comment      { fg = c.background.lighten(30), gui = "italic" }, -- any comment
+    RED8888888 { bg = c.red, fg = c.red },
+    YELLOW8888 { bg = c.yellow, fg = c.yellow },
+    GREEN88888 { bg = c.green, fg = c.green },
+    BLUE888888 { bg = c.blue, fg = c.blue },
+    MAGENTA888 { bg = c.magenta, fg = c.magenta },
+    CYAN888888 { bg = c.cyan, fg = c.cyan },
+    ORANGE8888 { bg = c.orange, fg = c.orange },
+    FORGROUND8 { bg = c.foreground, fg = c.foreground },
+    BACKGROUND { bg = c.background, fg = c.background },
+    Comment      { fg = c.dark_gray3, gui = "italic" }, -- any comment
     ColorColumn  { bg = c.red }, -- used for the columns set with 'colorcolumn'
-    Conceal      { bg = c.background.lighten(30) }, -- placeholder characters substituted for concealed text (see 'conceallevel')
-    -- Cursor       { bg = c.foreground.darken(30) }, -- character under the cursor
+    Conceal      { bg = c.dark_gray3 }, -- placeholder characters substituted for concealed text (see 'conceallevel')
+    -- Cursor       { bg = c.light_gray3 }, -- character under the cursor
     -- lCursor      { }, -- the character under the cursor when |language-mapping| is used (see 'guicursor')
     -- CursorIM     { }, -- like Cursor, but used when in IME mode |CursorIM|
     -- CursorColumn { }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
-    CursorLine   { bg = c.background.lighten(5) }, -- Screen-line at the cursor, when 'cursorline' is set.  Low-priority if foreground (ctermfg OR guifg) is not set.
+    CursorLine   { bg = c.dark_gray1 }, -- Screen-line at the cursor, when 'cursorline' is set.  Low-priority if foreground (ctermfg OR guifg) is not set.
     Directory    { fg = c.blue }, -- directory names (and other special names in listings)
     DiffAdd      { fg = c.background, bg = c.green }, -- diff mode: Added line |diff.txt|
     DiffChange   { fg = c.background, bg = c.yellow }, -- diff mode: Changed line |diff.txt|
     DiffDelete   { fg = c.background, bg = c.red }, -- diff mode: Deleted line |diff.txt|
     DiffText     { fg = c.background, bg = c.blue }, -- diff mode: Changed text within a changed line |diff.txt|
-    EndOfBuffer  { fg = c.background.lighten(30) }, -- filler lines (~) after the end of the buffer.  By default, this is highlighted like |hl-NonText|.
+    EndOfBuffer  { fg = c.dark_gray3 }, -- filler lines (~) after the end of the buffer.  By default, this is highlighted like |hl-NonText|.
     -- TermCursor   { gui = "reverse"  }, -- cursor in a focused terminal
     -- TermCursorNC { }, -- cursor in an unfocused terminal
     ErrorMsg     { fg = c.red }, -- error messages on the command line
-    VertSplit    { fg = c.background.lighten(30), bg = c.background }, -- the column separating vertically split windows
-    Folded       { fg = c.blue, bg = c.background.lighten(5) }, -- line used for closed folds
-    FoldColumn   { fg = c.blue, bg = c.background.lighten(5) }, -- 'foldcolumn'
+    VertSplit    { fg = c.dark_gray3, bg = c.background }, -- the column separating vertically split windows
+    Folded       { fg = c.blue, bg = c.dark_gray1 }, -- line used for closed folds
+    FoldColumn   { fg = c.blue, bg = c.dark_gray1 }, -- 'foldcolumn'
     SignColumn   { fg = c.blue, bg = {} }, -- column where |signs| are displayed
     IncSearch    { fg =c.background, bg = c.blue }, -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
-    Substitute   { fg =c.background, bg = c.yellow }, -- |:substitute| replacement text highlighting
-    LineNr       { fg = c.background.lighten(30) }, -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
-    CursorLineNr { fg = c.foreground, bg = c.background.lighten(5) }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
-    MatchParen   { bg = c.background.lighten(30) }, -- The character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
+    Substitute   { fg = c.background, bg = c.yellow }, -- |:substitute| replacement text highlighting
+    LineNr       { fg = c.dark_gray3 }, -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
+    CursorLineNr { fg = c.foreground, bg = c.dark_gray1 }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
+    MatchParen   { bg = c.dark_gray3 }, -- The character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
     ModeMsg      { }, -- 'showmode' message (e.g., "-- INSERT -- ")
     MsgArea      { }, -- Area for messages and cmdline
     MsgSeparator { }, -- Separator for scrolled messages, `msgsep` flag of 'display'
     MoreMsg      { }, -- |more-prompt|
-    NonText      { fg = c.background.lighten(30) }, -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
+    NonText      { fg = c.dark_gray3 }, -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
     Normal       { fg = c.foreground, bg = c.background }, -- normal text
-    NormalFloat  { bg = c.background.lighten(5) }, -- Normal text in floating windows.
+    NormalFloat  { bg = c.dark_gray1 }, -- Normal text in floating windows.
     NormalNC     { }, -- normal text in non-current windows
-    Pmenu        { bg = c.background.lighten(5) }, -- Popup menu: normal item.
+    Pmenu        { bg = c.dark_gray1 }, -- Popup menu: normal item.
     PmenuSel     { gui = "reverse" }, -- Popup menu: selected item.
-    PmenuSbar    { bg = c.background.lighten(15) }, -- Popup menu: scrollbar.
-    PmenuThumb   { bg = c.foreground.darken(15) }, -- Popup menu: Thumb of the scrollbar.
+    PmenuSbar    { bg = c.dark_gray2 }, -- Popup menu: scrollbar.
+    PmenuThumb   { bg = c.light_gray2 }, -- Popup menu: Thumb of the scrollbar.
     Question     { }, -- |hit-enter| prompt and yes/no questions
     QuickFixLine { }, -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
     Search       { fg = c.background, bg = c.yellow }, -- Last search pattern highlighting (see 'hlsearch').  Also used for similar items that need to stand out.
-    SpecialKey   { fg = c.background.lighten(30) }, -- Unprintable characters: text displayed differently from what it really is.  But not 'listchars' whitespace. |hl-Whitespace|
+    SpecialKey   { fg = c.dark_gray3 }, -- Unprintable characters: text displayed differently from what it really is.  But not 'listchars' whitespace. |hl-Whitespace|
     -- SpellBad     { }, -- Word that is not recognized by the spellchecker. |spell| Combined with the highlighting used otherwise.
     -- SpellCap     { }, -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
     -- SpellLocal   { }, -- Word that is recognized by the spellchecker as one that is used in another region. |spell| Combined with the highlighting used otherwise.
     -- SpellRare    { }, -- Word that is recognized by the spellchecker as one that is hardly ever used.  |spell| Combined with the highlighting used otherwise.
-    StatusLine   { fg = c.foreground, bg = c.background.lighten(5) }, -- status line of current window
-    StatusLineNC { fg = c.foreground.darken(30), bg = c.background }, -- status line of current window
-    TabLine      { bg = c.background.lighten(5) }, -- tab pages line, not active tab page label
-    TabLineFill  { bg = c.background.lighten(5) }, -- tab pages line, where there are no labels
+    StatusLine   { fg = c.foreground, bg = c.dark_gray1 }, -- status line of current window
+    StatusLineNC { fg = c.light_gray3, bg = c.background }, -- status line of current window
+    TabLine      { bg = c.dark_gray1 }, -- tab pages line, not active tab page label
+    TabLineFill  { bg = c.dark_gray1 }, -- tab pages line, where there are no labels
     TabLineSel   { gui = "reverse" }, -- tab pages line, active tab page label
     Title        { }, -- titles for output from ":set all", ":autocmd" etc.
     Visual       { gui = "reverse" }, -- Visual mode selection
-    VisualNOS    { bg = c.background.lighten(5) }, -- Visual mode selection when vim is "Not Owning the Selection".
+    VisualNOS    { bg = c.dark_gray1 }, -- Visual mode selection when vim is "Not Owning the Selection".
     WarningMsg   { fg = c.yellow }, -- warning messages
-    Whitespace   { fg = c.background.lighten(30) }, -- "nbsp", "space", "tab" and "trail" in 'listchars'
+    Whitespace   { fg = c.dark_gray3 }, -- "nbsp", "space", "tab" and "trail" in 'listchars'
     WildMenu     { fg = c.background, bg = c.yellow }, -- current match in 'wildmenu' completion
 
     -- These groups are not listed as default vim groups,
@@ -187,10 +224,10 @@ local theme = lush(function()
     -- CocDeprecatedHighlight               { gui = "underline" },
     CocUnusedHighlight                   { gui = "underline" },
 
-    CocErrorVirtualText                  { fg = c.background.lighten(30) },
-    CocWarningVirtualText                { fg = c.background.lighten(30) },
-    CocInfoVirtualText                   { fg = c.background.lighten(30) },
-    CocHintVirtualText                   { fg = c.background.lighten(30) },
+    CocErrorVirtualText                  { fg = c.dark_gray3 },
+    CocWarningVirtualText                { fg = c.dark_gray3 },
+    CocInfoVirtualText                   { fg = c.dark_gray3 },
+    CocHintVirtualText                   { fg = c.dark_gray3 },
 
     CocFloating                          { fg = c.foreground },
     CocErrorFloat                        { fg = c.foreground },
