@@ -21,9 +21,9 @@ end
 
 local c = {}
 
-h = 210
-s = 34
-l = 63
+local h = 210
+local s = 34
+local l = 63
 
 c.color = hsl(h, s, l)
 c.base = c.color.rotate(-h)
