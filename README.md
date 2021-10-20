@@ -34,15 +34,18 @@ yes walh does mean what you think it does
 | `walh-lunarized` |
 
 - setting options to `nil` uses theme default settings
-```
+
+```init.vim
 lua << EOF
 vim.o.termguicolors = true
 vim.g.walh_hue = nil
 vim.g.walh_saturation = nil
 vim.g.walh_lightness = nil
 
-vim.o.colorscheme = "walh-artic"
+vim.o.background = "dark"
 EOF
+
+colorscheme walh-default
 ```
 
 ## Default look
