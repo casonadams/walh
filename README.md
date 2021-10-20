@@ -27,11 +27,12 @@ yes walh does mean what you think it does
 | `walh_saturation` | `-100 - 100` |
 | `walh_lightness`  | `-100 - 100` |
 
-| schemes         |
-|-----------------|
-| `walh_default`  |
-| `walh_eighties` |
-| `walh_artic`    |
+| schemes          |
+|------------------|
+| `walh-default`   |
+| `walh-artic`     |
+| `walh-eighties`  |
+| `walh-lunarized` |
 
 - setting options to `nil` uses theme default settings
 ```
@@ -113,6 +114,28 @@ walh-ocean: &walh-artic
 ```
 
 <img width="766" alt="walh-artic" src="https://user-images.githubusercontent.com/17597548/137858017-c68ecbe5-7fd9-4ec2-8671-a7374f570b3b.png">
+
+### walh-lunarized
+
+terminal colors (alacritty)
+
+```yml
+walh-lunarized: &walh-lunarized
+  primary:
+    background: '#1c2426'
+    foreground: '#92a9af'
+  normal:
+    black:   '#070809'
+    red:     '#c32c3b'
+    green:   '#7dc83c'
+    yellow:  '#e2a936'
+    blue:    '#337fcc'
+    magenta: '#c23da9'
+    cyan:    '#36b1d3'
+    white:   '#b0c0c4'
+```
+
+<img width="766" alt="walh-lunarized" src="https://user-images.githubusercontent.com/17597548/138032473-f32dc34f-797e-4075-8b03-24d381924d86.png">
 
 ## Calls outs
 
