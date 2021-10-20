@@ -99,7 +99,7 @@ walh-eighties: &walh-eighties
 terminal colors (alacritty)
 
 ```yml
-walh-ocean: &walh-artic
+walh-artic: &walh-artic
   primary:
     background: '#25292c'
     foreground: '#b1b8be'
