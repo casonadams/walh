@@ -4,6 +4,10 @@ A neovim theme repo
 that is easy on the eyes and
 for long hours looking at a screen
 
+Easily customize the scheme by controlling the Hue, Saturation, and Lightness levels.
+
+With options for light and dark mode
+
 yes walh does mean what you think it does
 
 **walh** = "winnebago audi lamborghini hatchback"
@@ -12,17 +16,38 @@ yes walh does mean what you think it does
 
 ### Add plugins
 
-- `rktjmp/lush.nvim` -- Required dep
+- `rktjmp/lush.nvim` -- Required
 - `casonadams/walh`  -- theme
 
-### Set theme
+### Set and configure theme
 
-- walh-default
-- walh-eighties
-- walh-ocean
-- walh-ocean-warm
+| option            | range        |
+|-------------------|--------------|
+| `walh_hue`        | `0 - 356`    |
+| `walh_saturation` | `-100 - 100` |
+| `walh_lightness`  | `-100 - 100` |
 
-#### walh-default
+| schemes         |
+|-----------------|
+| `walh_default`  |
+| `walh_eighties` |
+| `walh_artic`    |
+
+- setting options to `nil` uses theme default settings
+```
+lua << EOF
+vim.o.termguicolors = true
+vim.g.walh_hue = nil
+vim.g.walh_saturation = nil
+vim.g.walh_lightness = nil
+
+vim.o.colorscheme = "walh-artic"
+EOF
+```
+
+## Default look
+
+### walh_default
 
 terminal colors (alacritty)
 
@@ -42,9 +67,10 @@ walh-default: &walh-default
     white:   '#bfbfb1'
 ```
 
-<img width="766" alt="walh-default" src="https://user-images.githubusercontent.com/17597548/136674582-d1d7d463-d188-4833-b1eb-1baf0f49c179.png">
+<img width="766" alt="walh-default" src="https://user-images.githubusercontent.com/17597548/137857938-b06088e4-9759-4433-9984-6993bac477a7.png">
 
-#### walh-eighties
+
+### walh_eighties
 
 terminal colors (alacritty)
 
@@ -64,14 +90,14 @@ walh-eighties: &walh-eighties
     white:   '#bfbfb1'
 ```
 
-<img width="766" alt="walh-eighties" src="https://user-images.githubusercontent.com/17597548/136674600-9cfed6dc-781a-4cca-855e-b82b391ddfe0.png">
+<img width="766" alt="walh-eighties" src="https://user-images.githubusercontent.com/17597548/137857982-e6644d02-c420-4114-8c48-973ddf7e9df1.png">
 
-#### walh-ocean
+### walh_artic
 
 terminal colors (alacritty)
 
 ```yml
-walh-ocean: &walh-ocean
+walh-ocean: &walh-artic
   primary:
     background: '#25292c'
     foreground: '#b1b8be'
@@ -87,29 +113,7 @@ walh-ocean: &walh-ocean
 
 ```
 
-<img width="766" alt="walh-ocean" src="https://user-images.githubusercontent.com/17597548/136674609-e50fe4a6-9ec8-4722-8077-550b92d62552.png">
-
-#### walh-ocean-warm
-
-terminal colors (alacritty)
-
-```yml
-walh-ocean-warm: &walh-ocean-warm
-  primary:
-    background: '#2e2623'
-    foreground: '#c1b3ae'
-  normal:
-    black:   '#14100f'
-    red:     '#d05d68'
-    green:   '#a0cf77'
-    yellow:  '#e5be71'
-    blue:    '#71a1d1'
-    magenta: '#ca77bb'
-    cyan:    '#71c0d6'
-    white:   '#dbcbc5'
-```
-
-<img width="766" alt="walh-ocean-warm" src="https://user-images.githubusercontent.com/17597548/136674622-562923af-8dc6-406e-8874-29e0be9b8ca5.png">
+<img width="766" alt="walh-artic" src="https://user-images.githubusercontent.com/17597548/137858017-c68ecbe5-7fd9-4ec2-8671-a7374f570b3b.png">
 
 ## Calls outs
 

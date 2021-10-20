@@ -7,23 +7,25 @@ if bg == nil then
   vim.o.background = bg
 end
 
--- local c = {
---   foreground = hsl(218, 27, 94).desaturate(25),
---   background = hsl(220, 16, 22).desaturate(25),
---   red = hsl(354, 42, 56).desaturate(25),
---   yellow = hsl(40, 71, 73).desaturate(25),
---   green = hsl(92, 28, 65).desaturate(25),
---   blue = hsl(210, 34, 63).desaturate(25),
---   magenta = hsl(311, 20, 63).desaturate(25),
---   cyan = hsl(193, 43, 67).desaturate(25),
---   orange = hsl(14, 51, 63).desaturate(25),
--- }
+local h = vim.g.walh_hue
+if h == nil then
+  h = 210
+  vim.g.walh_hue = h
+end
+
+local s = vim.g.walh_saturation
+if s == nil then
+  s = 34
+  vim.g.walh_saturation = s
+end
+
+local l = vim.g.walh_lightness
+if l == nil then
+  l = 63
+  vim.g.walh_lightness = l
+end
 
 local c = {}
-
-local h = 210
-local s = 34
-local l = 63
 
 c.color = hsl(h, s, l)
 c.base = c.color.rotate(-h)

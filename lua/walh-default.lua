@@ -7,11 +7,25 @@ if bg == nil then
   vim.o.background = bg
 end
 
-local c = {}
+local h = vim.g.walh_hue
+if h == nil then
+  h = 60
+  vim.g.walh_hue = h
+end
 
-h = 60
-s = 25
-l = 50
+local s = vim.g.walh_saturation
+if s == nil then
+  s = 25
+  vim.g.walh_saturation = s
+end
+
+local l = vim.g.walh_lightness
+if l == nil then
+  l = 50
+  vim.g.walh_lightness = l
+end
+
+local c = {}
 
 c.color = hsl(h, s, l)
 c.base = c.color.rotate(-h)
