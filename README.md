@@ -4,9 +4,8 @@ A neovim theme repo
 that is easy on the eyes and
 for long hours looking at a screen
 
-Easily customize the scheme by controlling the Hue, Saturation, and Lightness levels.
-
-With options for light and dark mode
+- Easily customize the scheme by controlling the Hue, Saturation, and Lightness levels.
+- Options for light and dark mode
 
 yes walh does mean what you think it does
 
