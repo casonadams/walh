@@ -47,7 +47,7 @@ EOF
 
 ## Default look
 
-### walh_default
+### walh-default
 
 terminal colors (alacritty)
 
@@ -69,8 +69,7 @@ walh-default: &walh-default
 
 <img width="766" alt="walh-default" src="https://user-images.githubusercontent.com/17597548/137857938-b06088e4-9759-4433-9984-6993bac477a7.png">
 
-
-### walh_eighties
+### walh-eighties
 
 terminal colors (alacritty)
 
@@ -92,7 +91,7 @@ walh-eighties: &walh-eighties
 
 <img width="766" alt="walh-eighties" src="https://user-images.githubusercontent.com/17597548/137857982-e6644d02-c420-4114-8c48-973ddf7e9df1.png">
 
-### walh_artic
+### walh-artic
 
 terminal colors (alacritty)
 
