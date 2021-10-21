@@ -39,7 +39,7 @@ yes walh does mean what you think it does
 ```init.vim
 lua << EOF
 vim.o.termguicolors = true
-vim.g.walh_hue = nil
+vim.g.walh_base_hue = nil
 vim.g.walh_base_saturation = nil
 vim.g.walh_saturation = nil
 vim.g.walh_lightness = nil
