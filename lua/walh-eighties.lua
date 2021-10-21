@@ -4,25 +4,26 @@ local hsl = lush.hsl
 local bg = vim.o.background
 if bg == nil then
   bg = "dark"
-  vim.o.background = bg
 end
 
-local h = vim.g.walh_hue
+local h = vim.g.walh_base_hue
 if h == nil then
-  h = 60
-  vim.g.walh_hue = h
+  h = 33
 end
 
 local s = vim.g.walh_saturation
 if s == nil then
-  s = 25
-  vim.g.walh_saturation = s
+  s = 55
 end
 
 local l = vim.g.walh_lightness
 if l == nil then
-  l = 50
-  vim.g.walh_lightness = l
+  l = 58
+end
+
+local bs = vim.g.walh_base_saturation
+if bs == nil then
+  bs = -75
 end
 
 local c = {}
@@ -31,10 +32,15 @@ c.color = hsl(h, s, l)
 c.base = c.color.rotate(-h)
 
 if bg == "light" then
-  c.background = c.color.desaturate(75).lighten(75)
-  c.foreground = c.color.desaturate(75).darken(25)
-  c.green = c.base.rotate(92).desaturate(6).darken(8)
-  c.yellow = c.base.rotate(40).saturate(37).darken(10)
+  c.background = c.color.lighten(75).saturate(bs)
+  c.foreground = c.color.darken(25).saturate(bs)
+  c.red = c.base.rotate(354).saturate(-8).lighten(-6)
+  c.green = c.base.rotate(92).saturate(-22).lighten(-15)
+  c.yellow = c.base.rotate(40).saturate(21).lighten(-23)
+  c.cyan = c.base.rotate(193).saturate(-7).lighten(-17)
+  c.blue = c.base.rotate(213).saturate(-18).lighten(-2)
+  c.magenta = c.base.rotate(311).saturate(-30).lighten(-13)
+  c.orange = c.base.rotate(14).saturate(1).lighten(-13)
 
   c.dark_gray1 = c.background.darken(5)
   c.dark_gray2 = c.background.darken(15)
@@ -43,10 +49,15 @@ if bg == "light" then
   c.light_gray1 = c.foreground.lighten(15)
   c.light_gray1 = c.foreground.lighten(30)
 else
-  c.foreground = c.color.desaturate(75).lighten(25)
-  c.background = c.color.desaturate(75).darken(75)
-  c.green = c.base.rotate(92).desaturate(6).lighten(2)
-  c.yellow = c.base.rotate(40).saturate(37).lighten(10)
+  c.foreground = c.color.lighten(25).saturate(bs)
+  c.background = c.color.darken(75).saturate(bs)
+  c.red = c.base.rotate(354).saturate(-8).lighten(6)
+  c.green = c.base.rotate(92).saturate(-22).lighten(15)
+  c.yellow = c.base.rotate(40).saturate(21).lighten(23)
+  c.cyan = c.base.rotate(193).saturate(-7).lighten(17)
+  c.blue = c.base.rotate(213).saturate(-18).lighten(2)
+  c.magenta = c.base.rotate(311).saturate(-30).lighten(13)
+  c.orange = c.base.rotate(14).saturate(1).lighten(13)
 
   c.dark_gray1 = c.background.lighten(5)
   c.dark_gray2 = c.background.lighten(15)
@@ -55,12 +66,6 @@ else
   c.light_gray1 = c.foreground.darken(15)
   c.light_gray1 = c.foreground.darken(30)
 end
-
-c.red = c.base.rotate(354).saturate(8).darken(7)
-c.cyan = c.base.rotate(193).saturate(9).lighten(3)
-c.blue = c.base.rotate(210).saturate(0).lighten(0)
-c.magenta = c.base.rotate(311).desaturate(14).lighten(0)
-c.orange = c.red.mix(c.yellow, 50)
 
 local theme = lush(function()
   return {
