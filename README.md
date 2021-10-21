@@ -72,7 +72,7 @@ walh-default: &walh-default
     white:   '#d4c6b6'
 ```
 
-<img width="766" alt="walh-default" src="https://user-images.githubusercontent.com/17597548/137857938-b06088e4-9759-4433-9984-6993bac477a7.png">
+<img width="766" alt="walh-default" src="https://user-images.githubusercontent.com/17597548/138221889-6c69791b-8676-4a4b-956d-a9426dba59fd.png">
 
 ### walh-eighties
 
@@ -94,7 +94,7 @@ walh-eighties: &walh-eighties
     white:   '#d4c6b6'
 ```
 
-<img width="766" alt="walh-eighties" src="https://user-images.githubusercontent.com/17597548/137857982-e6644d02-c420-4114-8c48-973ddf7e9df1.png">
+<img width="766" alt="walh-eighties" src="https://user-images.githubusercontent.com/17597548/138221914-680d7357-a87e-4ef9-a399-876b2380e5d1.png">
 
 ### walh-artic
 
@@ -116,7 +116,7 @@ walh-artic: &walh-artic
     white:   '#adb5c7'
 ```
 
-<img width="766" alt="walh-artic" src="https://user-images.githubusercontent.com/17597548/137858017-c68ecbe5-7fd9-4ec2-8671-a7374f570b3b.png">
+<img width="766" alt="walh-artic" src="https://user-images.githubusercontent.com/17597548/138221941-3b45b17e-0793-4e4c-b894-3899f087cddb.png">
 
 ### walh-lunarized
 
@@ -138,7 +138,7 @@ walh-lunarized: &walh-lunarized
     white:   '#adbecc'
 ```
 
-<img width="766" alt="walh-lunarized" src="https://user-images.githubusercontent.com/17597548/138032473-f32dc34f-797e-4075-8b03-24d381924d86.png">
+<img width="766" alt="walh-lunarized" src="https://user-images.githubusercontent.com/17597548/138221977-f6303a44-4353-4b61-988b-94527bf11da2.png">
 
 ## Calls outs
 
