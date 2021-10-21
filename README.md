@@ -35,6 +35,8 @@ yes walh does mean what you think it does
 | `walh-lunarized` |
 
 - setting options to `nil` uses theme default settings
+- want something more gray scaled set `walh-saturation = -90`
+- want more *pop* set `walh-saturation = 90`
 
 ```init.vim
 lua << EOF
