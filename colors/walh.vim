@@ -10,7 +10,7 @@ highlight ColorColumn guifg=NONE guibg=#352F2A guisp=NONE gui=NONE
 highlight Comment guifg=#A38D78 guibg=NONE guisp=NONE gui=italic
 highlight Conceal guifg=#C1A78E guibg=NONE guisp=NONE gui=NONE
 highlight Constant guifg=#B380B0 guibg=NONE guisp=NONE gui=NONE
-highlight CursorLineNr guifg=#E49B5D guibg=#352F2A guisp=NONE gui=NONE
+highlight CursorLineNr guifg=#E3D1C2 guibg=#352F2A guisp=NONE gui=NONE
 highlight Delimiter guifg=#EBC06D guibg=NONE guisp=NONE gui=NONE
 highlight DiagnosticError guifg=#B65C60 guibg=NONE guisp=NONE gui=NONE
 highlight DiagnosticHint guifg=#99D59D guibg=NONE guisp=NONE gui=NONE
@@ -142,7 +142,7 @@ highlight ColorColumn guifg=NONE guibg=#ECE1D7 guisp=NONE gui=NONE
 highlight Comment guifg=#A88C6F guibg=NONE guisp=NONE gui=italic
 highlight Conceal guifg=#8B735B guibg=NONE guisp=NONE gui=NONE
 highlight Constant guifg=#BE79BB guibg=NONE guisp=NONE gui=NONE
-highlight CursorLineNr guifg=#CC7F2B guibg=#ECE1D7 guisp=NONE gui=NONE
+highlight CursorLineNr guifg=#6E5B47 guibg=#ECE1D7 guisp=NONE gui=NONE
 highlight Delimiter guifg=#C29830 guibg=NONE guisp=NONE gui=NONE
 highlight DiagnosticError guifg=#D7898C guibg=NONE guisp=NONE gui=NONE
 highlight DiagnosticHint guifg=#659E69 guibg=NONE guisp=NONE gui=NONE

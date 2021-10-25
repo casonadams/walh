@@ -93,7 +93,7 @@ CursorLine   { ColorColumn };
 VertSplit    { fg=a.sel };
 
 LineNr       { fg=a.sel };
-CursorLineNr { fg=c.yellow, bg=a.overbg };
+CursorLineNr { fg=a.fg, bg=a.overbg };
 
 Folded       { fg=a.com, bg=a.overbg };
 FoldColumn   { LineNr };
