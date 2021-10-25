@@ -1,20 +1,3 @@
---
--- Built with,
---
---        ,gggg,
---       d8" "8I                         ,dPYb,
---       88  ,dP                         IP'`Yb
---    8888888P"                          I8  8I
---       88                              I8  8'
---       88        gg      gg    ,g,     I8 dPgg,
---  ,aa,_88        I8      8I   ,8'8,    I8dP" "8I
--- dP" "88P        I8,    ,8I  ,8'  Yb   I8P    I8
--- Yb,_,d88b,,_   ,d8b,  ,d8b,,8'_   8) ,d8     I8,
---  "Y8P"  "Y888888P'"Y88P"`Y8P' "YY8P8P88P     `Y8
---
-
--- vim.opt.keywordprg=":help"  --Jump easily to hl-groups docs.
-
 local lush = require("lush")
 local hsluv = lush.hsluv
 
@@ -99,7 +82,7 @@ local d = palette[bg].d
 -- Font variants:
 -- This only works when loading this file directly, not when loading with `:colorscheme`
 local bf, it, underline, undercurl;
-if vim.g.melange_enable_font_variants ~= 0 then
+if vim.g.walh_enable_font_variants ~= 0 then
     bf = "bold"
     it = "italic"
     underline = "underline"
@@ -151,7 +134,7 @@ Substitute   { fg=a.bg, bg=d.yellow };
 Search       { fg=a.bg, bg=d.yellow };
 -- QuickFixLine { };
 -- IncSearch    { };
-Visual       { bg=a.sel };
+Visual       { gui='reverse' };
 -- VisualNOS    { };
 
 Conceal      { fg=a.faded };
@@ -173,10 +156,10 @@ Question     { MoreMsg };
 
 ---- :help :diff -------------------------------------------
 
-DiffAdd      { bg=d.green };
-DiffChange   { bg=d.magenta };
-DiffDelete   { bg=d.red };
-DiffText     { bg=d.blue };
+DiffAdd      { fg=a.fg, bg=d.green };
+DiffChange   { fg=a.fg, bg=d.yellow };
+DiffDelete   { fg=a.fg, bg=d.red };
+DiffText     { fg=a.fg, bg=d.blue };
 
 DiffAdded    { DiffAdd };
 DiffRemoved  { DiffDelete };
