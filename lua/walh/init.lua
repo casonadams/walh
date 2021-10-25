@@ -64,12 +64,12 @@ palette.light = {
         magenta = hsluv(310, 40, 60);
     };
     d = {
-        red     = hsluv( 20, 40, 80);
-        yellow  = hsluv( 60, 50, 80);
-        green   = hsluv(130, 30, 90);
-        cyan    = hsluv(190, 30, 90);
-        blue    = hsluv(250, 30, 90);
-        magenta = hsluv(310, 30, 90);
+        red     = hsluv( 10, 60, 80);
+        yellow  = hsluv( 60, 70, 90);
+        green   = hsluv(130, 50, 90);
+        cyan    = hsluv(190, 50, 90);
+        blue    = hsluv(250, 50, 90);
+        magenta = hsluv(310, 50, 90);
     };
 }
 
@@ -159,7 +159,7 @@ Question     { MoreMsg };
 DiffAdd      { fg=a.fg, bg=d.green };
 DiffChange   { fg=a.fg, bg=d.yellow };
 DiffDelete   { fg=a.fg, bg=d.red };
-DiffText     { fg=a.fg, bg=d.blue };
+DiffText     { fg=b.blue, bg=d.yellow };
 
 DiffAdded    { DiffAdd };
 DiffRemoved  { DiffDelete };

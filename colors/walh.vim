@@ -23,7 +23,7 @@ highlight DiagnosticWarn guifg=#EBC06D guibg=NONE guisp=NONE gui=NONE
 highlight DiffAdd guifg=#E3D1C2 guibg=#1F3521 guisp=NONE gui=NONE
 highlight DiffChange guifg=#E3D1C2 guibg=#8E733F guisp=NONE gui=NONE
 highlight DiffDelete guifg=#E3D1C2 guibg=#7D2A2F guisp=NONE gui=NONE
-highlight DiffText guifg=#E3D1C2 guibg=#243146 guisp=NONE gui=NONE
+highlight DiffText guifg=#9AACCE guibg=#8E733F guisp=NONE gui=NONE
 highlight Directory guifg=#86A3A3 guibg=NONE guisp=NONE gui=NONE
 highlight Error guifg=NONE guibg=#7D2A2F guisp=NONE gui=NONE
 highlight ErrorMsg guifg=NONE guibg=#7D2A2F guisp=NONE gui=NONE
@@ -143,7 +143,7 @@ highlight Comment guifg=#A88C6F guibg=NONE guisp=NONE gui=italic
 highlight Conceal guifg=#8B735B guibg=NONE guisp=NONE gui=NONE
 highlight Constant guifg=#BE79BB guibg=NONE guisp=NONE gui=NONE
 highlight CursorLineNr guifg=#CC7F2B guibg=#ECE1D7 guisp=NONE gui=NONE
-highlight Delimiter guifg=#E2C28C guibg=NONE guisp=NONE gui=NONE
+highlight Delimiter guifg=#F7DFBB guibg=NONE guisp=NONE gui=NONE
 highlight DiagnosticError guifg=#D7898C guibg=NONE guisp=NONE gui=NONE
 highlight DiagnosticHint guifg=#659E69 guibg=NONE guisp=NONE gui=NONE
 highlight DiagnosticInfo guifg=#485F84 guibg=NONE guisp=NONE gui=NONE
@@ -152,13 +152,13 @@ highlight DiagnosticUnderlineHint guifg=NONE guibg=NONE guisp=NONE gui=undercurl
 highlight DiagnosticUnderlineInfo guifg=NONE guibg=NONE guisp=NONE gui=undercurl
 highlight DiagnosticUnderlineWarn guifg=NONE guibg=NONE guisp=NONE gui=undercurl
 highlight DiagnosticWarn guifg=#C29830 guibg=NONE guisp=NONE gui=NONE
-highlight DiffAdd guifg=#6E5B47 guibg=#C6ECC8 guisp=NONE gui=NONE
-highlight DiffChange guifg=#6E5B47 guibg=#E2C28C guisp=NONE gui=NONE
-highlight DiffDelete guifg=#6E5B47 guibg=#E0BFBB guisp=NONE gui=NONE
-highlight DiffText guifg=#6E5B47 guibg=#DFE3EB guisp=NONE gui=NONE
+highlight DiffAdd guifg=#6E5B47 guibg=#B1F2B6 guisp=NONE gui=NONE
+highlight DiffChange guifg=#6E5B47 guibg=#F7DFBB guisp=NONE gui=NONE
+highlight DiffDelete guifg=#6E5B47 guibg=#EBBBBC guisp=NONE gui=NONE
+highlight DiffText guifg=#485F84 guibg=#F7DFBB guisp=NONE gui=NONE
 highlight Directory guifg=#729893 guibg=NONE guisp=NONE gui=NONE
-highlight Error guifg=NONE guibg=#E0BFBB guisp=NONE gui=NONE
-highlight ErrorMsg guifg=NONE guibg=#E0BFBB guisp=NONE gui=NONE
+highlight Error guifg=NONE guibg=#EBBBBC guisp=NONE gui=NONE
+highlight ErrorMsg guifg=NONE guibg=#EBBBBC guisp=NONE gui=NONE
 highlight Folded guifg=#A88C6F guibg=#ECE1D7 guisp=NONE gui=NONE
 highlight Function guifg=#C29830 guibg=NONE guisp=NONE gui=NONE
 highlight GitSignsAdd guifg=#F5F0EB guibg=#83B887 guisp=NONE gui=reverse
@@ -183,7 +183,7 @@ highlight Number guifg=#854882 guibg=NONE guisp=NONE gui=NONE
 highlight Operator guifg=#C65333 guibg=NONE guisp=NONE gui=NONE
 highlight PmenuSel guifg=NONE guibg=#E3D1C2 guisp=NONE gui=NONE
 highlight PreProc guifg=#659E69 guibg=NONE guisp=NONE gui=NONE
-highlight Search guifg=#F5F0EB guibg=#E2C28C guisp=NONE gui=NONE
+highlight Search guifg=#F5F0EB guibg=#F7DFBB guisp=NONE gui=NONE
 highlight Special guifg=#C29830 guibg=NONE guisp=NONE gui=NONE
 highlight SpellBad guifg=#D7898C guibg=NONE guisp=NONE gui=undercurl
 highlight SpellCap guifg=#ABB9D6 guibg=NONE guisp=NONE gui=undercurl
@@ -192,7 +192,7 @@ highlight SpellRare guifg=#C29830 guibg=NONE guisp=NONE gui=undercurl
 highlight Statement guifg=#CC7F2B guibg=NONE guisp=NONE gui=NONE
 highlight StatusLineNC guifg=#8B735B guibg=#ECE1D7 guisp=NONE gui=NONE
 highlight String guifg=#485F84 guibg=NONE guisp=NONE gui=italic
-highlight Substitute guifg=#F5F0EB guibg=#E2C28C guisp=NONE gui=NONE
+highlight Substitute guifg=#F5F0EB guibg=#F7DFBB guisp=NONE gui=NONE
 highlight TSConstBuiltin guifg=#BE79BB guibg=NONE guisp=NONE gui=italic
 highlight TSMath guifg=#436460 guibg=NONE guisp=NONE gui=NONE
 highlight TSNamespace guifg=#83B887 guibg=NONE guisp=NONE gui=NONE
