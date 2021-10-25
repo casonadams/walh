@@ -134,7 +134,7 @@ Substitute   { fg=a.bg, bg=d.yellow };
 Search       { fg=a.bg, bg=d.yellow };
 -- QuickFixLine { };
 -- IncSearch    { };
-Visual       { gui='reverse' };
+Visual       { bg=a.sel };
 -- VisualNOS    { };
 
 Conceal      { fg=a.faded };
