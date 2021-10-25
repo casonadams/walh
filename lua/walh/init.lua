@@ -28,14 +28,6 @@ palette.dark = {
         blue    = hsluv(250, 30, 50);
         magenta = hsluv(310, 30, 60);
     };
-    d = {
-        red     = hsluv( 10, 60, 30);
-        yellow  = hsluv( 60, 70, 50);
-        green   = hsluv(130, 50, 20);
-        cyan    = hsluv(190, 50, 20);
-        blue    = hsluv(250, 50, 20);
-        magenta = hsluv(310, 50, 20);
-    };
 }
 
 palette.light = {
@@ -63,21 +55,12 @@ palette.light = {
         blue    = hsluv(250, 40, 75);
         magenta = hsluv(310, 40, 60);
     };
-    d = {
-        red     = hsluv( 10, 60, 80);
-        yellow  = hsluv( 60, 70, 90);
-        green   = hsluv(130, 50, 90);
-        cyan    = hsluv(190, 50, 90);
-        blue    = hsluv(250, 50, 90);
-        magenta = hsluv(310, 50, 90);
-    };
 }
 
 local bg = vim.opt.background:get()
 local a = palette[bg].a
 local b = palette[bg].b
 local c = palette[bg].c
-local d = palette[bg].d
 
 -- Font variants:
 -- This only works when loading this file directly, not when loading with `:colorscheme`
@@ -130,8 +113,8 @@ TabLineFill  { StatusLine };
 TabLineSel   { StatusLine, gui=bf };
 
 MatchParen   { fg=b.yellow, bg=a.sel, gui=bf };
-Substitute   { fg=a.bg, bg=d.yellow };
-Search       { fg=a.bg, bg=d.yellow };
+Substitute   { fg=a.bg, bg=b.yellow };
+Search       { fg=a.bg, bg=b.yellow };
 -- QuickFixLine { };
 -- IncSearch    { };
 Visual       { bg=a.sel };
@@ -145,7 +128,7 @@ SpecialKey   { Whitespace };
 
 Directory    { fg=c.cyan };
 Title        { fg=c.yellow };
-ErrorMsg     { bg=d.red };
+ErrorMsg     { fg=a.fg, bg=c.red };
 ModeMsg      { fg=a.faded };
 -- MsgArea      { };
 -- MsgSeparator { };
@@ -156,10 +139,10 @@ Question     { MoreMsg };
 
 ---- :help :diff -------------------------------------------
 
-DiffAdd      { fg=a.fg, bg=d.green };
-DiffChange   { fg=a.fg, bg=d.yellow };
-DiffDelete   { fg=a.fg, bg=d.red };
-DiffText     { fg=b.blue, bg=d.yellow };
+DiffAdd      { fg=a.bg, bg=c.green };
+DiffChange   { fg=a.bg, bg=c.yellow };
+DiffDelete   { fg=a.bg, bg=c.red };
+DiffText     { fg=c.blue, bg=c.yellow };
 
 DiffAdded    { DiffAdd };
 DiffRemoved  { DiffDelete };
@@ -208,7 +191,7 @@ Type           { fg=c.cyan };
 Special        { fg=b.yellow };
 -- SpecialChar    { };
 -- Tag            { };
-Delimiter      { fg=d.yellow };
+Delimiter      { fg=b.yellow };
 -- SpecialComment { };
 -- Debug          { };
 
@@ -217,7 +200,7 @@ Bold           { gui=bf };
 Italic         { gui=it };
 
 Ignore         { fg=a.com };
-Error          { bg=d.red };
+Error          { fg=a.fg, bg=c.red };
 Todo           { Comment, fg=a.faded };
 
 
