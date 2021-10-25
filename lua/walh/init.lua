@@ -163,7 +163,7 @@ Identifier     { fg=a.fg };
 Function       { fg=b.yellow };
 
 Constant       { fg=c.magenta };
-String         { fg=b.blue, gui=it };
+String         { fg=b.blue };
 Character      { fg=b.blue };
 Number         { fg=b.magenta };
 Boolean        { fg=b.magenta };

@@ -59,7 +59,7 @@ highlight SpellLocal guifg=#E49B5D guibg=NONE guisp=NONE gui=undercurl
 highlight SpellRare guifg=#EBC06D guibg=NONE guisp=NONE gui=undercurl
 highlight Statement guifg=#E49B5D guibg=NONE guisp=NONE gui=NONE
 highlight StatusLineNC guifg=#C1A78E guibg=#352F2A guisp=NONE gui=NONE
-highlight String guifg=#9AACCE guibg=NONE guisp=NONE gui=italic
+highlight String guifg=#9AACCE guibg=NONE guisp=NONE gui=NONE
 highlight Substitute guifg=#2A2520 guibg=#EBC06D guisp=NONE gui=NONE
 highlight TSConstBuiltin guifg=#B380B0 guibg=NONE guisp=NONE gui=italic
 highlight TSMath guifg=#88B3B2 guibg=NONE guisp=NONE gui=NONE
@@ -191,7 +191,7 @@ highlight SpellLocal guifg=#CC7F2B guibg=NONE guisp=NONE gui=undercurl
 highlight SpellRare guifg=#C29830 guibg=NONE guisp=NONE gui=undercurl
 highlight Statement guifg=#CC7F2B guibg=NONE guisp=NONE gui=NONE
 highlight StatusLineNC guifg=#8B735B guibg=#ECE1D7 guisp=NONE gui=NONE
-highlight String guifg=#485F84 guibg=NONE guisp=NONE gui=italic
+highlight String guifg=#485F84 guibg=NONE guisp=NONE gui=NONE
 highlight Substitute guifg=#F5F0EB guibg=#C29830 guisp=NONE gui=NONE
 highlight TSConstBuiltin guifg=#BE79BB guibg=NONE guisp=NONE gui=italic
 highlight TSMath guifg=#436460 guibg=NONE guisp=NONE gui=NONE
