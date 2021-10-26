@@ -1,0 +1,14 @@
+colors:
+  walh-light: &walh-light
+    primary:
+      foreground: '#C9B5A5'
+      background: '#2A2520'
+    normal:
+      black:   '#332D28'
+      red:     '#9C5446'
+      green:   '#5D7F60'
+      yellow:  '#B2945F'
+      blue:    '#7287AC'
+      magenta: '#996597'
+      cyan:    '#678483'
+      white:   '#6A5F55'
