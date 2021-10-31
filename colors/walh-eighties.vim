@@ -1,7 +1,7 @@
 hi clear
 syntax reset
 set notermguicolors
-let g:colors_name = 'walh-default'
+let g:colors_name = 'walh-eighties'
 
 let s:dark_red = 1
 let s:dark_green = 2
@@ -101,42 +101,42 @@ call s:hi('SpellRare',  s:dark_gray, 'NONE', 'underline')
 " -- group-name
 call s:hi('Comment', s:dark_gray)
 call s:hi('Identifier')
-call s:hi('Function', s:dark_blue)
+call s:hi('Function', s:light_blue)
 
-call s:hi('Constant', s:dark_magenta)
-call s:hi('String', s:dark_green)
-call s:hi('Character', s:dark_magenta)
-call s:hi('Number', s:dark_magenta)
-call s:hi('Boolean', s:dark_magenta)
-call s:hi('Float', s:dark_magenta)
+call s:hi('Constant', s:light_magenta)
+call s:hi('String', s:light_green)
+call s:hi('Character', s:light_magenta)
+call s:hi('Number', s:light_magenta)
+call s:hi('Boolean', s:light_magenta)
+call s:hi('Float', s:light_magenta)
 
-call s:hi('Statement', s:dark_red)
-call s:hi('Conditional', s:dark_red)
-call s:hi('Repeat', s:dark_red)
-call s:hi('Label', s:dark_red)
+call s:hi('Statement', s:light_red)
+call s:hi('Conditional', s:light_red)
+call s:hi('Repeat', s:light_red)
+call s:hi('Label', s:light_red)
 
-call s:hi('Operator', s:dark_red)
-call s:hi('Keyword', s:dark_red)
-call s:hi('Exception', s:dark_red)
+call s:hi('Operator', s:light_red)
+call s:hi('Keyword', s:light_red)
+call s:hi('Exception', s:light_red)
 
-call s:hi('PreProc', s:dark_cyan)
-call s:hi('Include', s:dark_cyan)
-call s:hi('Define', s:dark_cyan)
-call s:hi('Macro', s:dark_cyan)
-call s:hi('PreCondit', s:dark_cyan)
+call s:hi('PreProc', s:light_cyan)
+call s:hi('Include', s:light_cyan)
+call s:hi('Define', s:light_cyan)
+call s:hi('Macro', s:light_cyan)
+call s:hi('PreCondit', s:light_cyan)
 
-call s:hi('Type', s:dark_yellow)
-call s:hi('StorageClass', s:light_red)
-call s:hi('Structure', s:dark_cyan)
-call s:hi('Typedef', s:dark_yellow)
+call s:hi('Type', s:light_yellow)
+call s:hi('StorageClass', s:dark_yellow)
+call s:hi('Structure', s:light_cyan)
+call s:hi('Typedef', s:light_yellow)
 
-call s:hi('Special', s:light_red)
-call s:hi('SpecialChar', s:light_red)
-call s:hi('Tag', s:light_red)
+call s:hi('Special', s:dark_yellow)
+call s:hi('SpecialChar', s:dark_yellow)
+call s:hi('Tag', s:dark_yellow)
 
-call s:hi('Delimiter', s:light_red)
-call s:hi('SpecialComment', s:light_red)
-call s:hi('Debug', s:light_red)
+call s:hi('Delimiter', s:dark_yellow)
+call s:hi('SpecialComment', s:dark_yellow)
+call s:hi('Debug', s:dark_yellow)
 
 " call s:hi('Underlined', 'NONE', 'NONE', 'underline')
 " call s:hi('Bold', '', '', 'bold')
