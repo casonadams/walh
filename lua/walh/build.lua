@@ -60,6 +60,10 @@ local function build(terminals)
 				string.format("/term/%s/walh_%s.%s", term, l, attrs.ext),
 				interpolate(attrs.template, {
 					bg = colors.a.bg,
+					overbg = colors.a.overbg,
+					sel = colors.a.sel,
+					com = colors.a.com,
+					faded = colors.a.faded,
 					fg = colors.a.fg,
 
 					black = colors.a.overbg,
@@ -71,6 +75,14 @@ local function build(terminals)
 					cyan = colors.c.cyan,
 					white = colors.a.com,
 
+					brblack = colors.a.sel,
+					brred = colors.b.red,
+					brgreen = colors.b.green,
+					bryellow = colors.b.yellow,
+					brblue = colors.b.blue,
+					brmagenta = colors.b.magenta,
+					brcyan = colors.b.cyan,
+					brwhite = colors.a.faded,
 					theme = l,
 				})
 			)
@@ -97,6 +109,15 @@ colors:
       magenta: '$magenta'
       cyan:    '$cyan'
       white:   '$white'
+    bright:
+      black:   '$brblack'
+      red:     '$brred'
+      green:   '$brgreen'
+      yellow:  '$bryellow'
+      blue:    '$brblue'
+      magenta: '$brmagenta'
+      cyan:    '$brcyan'
+      white:   '$brwhite'
 ]]
 
 return {

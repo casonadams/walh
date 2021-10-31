@@ -99,7 +99,7 @@ call s:hi('SpellLocal', s:dark_gray, 'NONE', 'underline')
 call s:hi('SpellRare',  s:dark_gray, 'NONE', 'underline')
 
 " -- group-name
-call s:hi('Comment', s:dark_gray)
+call s:hi('Comment', s:light_gray)
 call s:hi('Identifier')
 call s:hi('Function', s:light_yellow)
 

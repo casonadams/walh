@@ -1,7 +1,7 @@
 colors:
   walh-dark: &walh-dark
     primary:
-      foreground: '#C9B5A5'
+      foreground: '#D3C1B1'
       background: '#2A2520'
     normal:
       black:   '#332D28'
@@ -12,3 +12,12 @@ colors:
       magenta: '#AD73AA'
       cyan:    '#749493'
       white:   '#6A5F55'
+    bright:
+      black:   '#49413A'
+      red:     '#CF7160'
+      green:   '#88B78B'
+      yellow:  '#C7A76B'
+      blue:    '#8197BD'
+      magenta: '#BD82BA'
+      cyan:    '#7A9C9B'
+      white:   '#7F7267'
