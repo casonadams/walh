@@ -48,7 +48,7 @@ local function viml_build()
 		-- Compile lush table, concatenate to a single string, and remove blend property
 		vimcolors[l] = table.concat(vim.fn.sort(lush.compile(get_colorscheme(l), { exclude_keys = { "blend" } })), "\n")
 	end
-	return write_file("/colors/walh.vim", string.format(viml_template, vimcolors.dark, vimcolors.light))
+	return write_file("/colors/walh-lush.vim", string.format(viml_template, vimcolors.dark, vimcolors.light))
 end
 
 local function build(terminals)
