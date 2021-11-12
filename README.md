@@ -36,6 +36,7 @@ yes walh does mean what you think it does
 - want more *pop* set `vim.g.walh_saturation = 90`
 
 ```init.vim
+set notermguicolors
 colorscheme walh
 ```
 
@@ -159,6 +160,7 @@ colors: *gruvbox-dark
 ```
 
 - Just a small set of how this theme can be configured
+- Treesitter syntax highlight is on on all screen shots
 
 #### terminal theme: gruvbox-dark
 
