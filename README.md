@@ -157,44 +157,62 @@ schemes:
 colors: *gruvbox-dark
 
 ```
-#### vim theme: walh
 
-##### terminal theme: gruvbox-dark
+- Just a small set of how this theme can be configured
+
+#### terminal theme: gruvbox-dark
+
+##### vim theme: walh
 
 ![image](https://user-images.githubusercontent.com/17597548/141432939-ff50fdbf-0ce6-48e0-a753-4327cffa342a.png)
 
-##### terminal theme: gruvbox-light
-
-![image](https://user-images.githubusercontent.com/17597548/141433139-c1ef8332-52a2-4231-9081-fafbef314c87.png)
-
-#### vim theme: walh-eighties
-
-##### terminal theme: gruvbox-dark
+##### vim theme: walh-eighties
 
 ![image](https://user-images.githubusercontent.com/17597548/141432617-33782be4-0f25-4838-b921-601522ff3c35.png)
 
-##### terminal theme: gruvbox-light
-
-![image](https://user-images.githubusercontent.com/17597548/141433485-1660f6d5-49ff-4c8f-b2ab-afa1c26bed2c.png)
-
-#### vim theme: walh-nord
-
-##### terminal theme: gruvbox-dark
+##### vim theme: walh-nord
 
 ![image](https://user-images.githubusercontent.com/17597548/141432846-6c292034-3245-4263-be5d-b78f95056a5e.png)
 
-##### terminal theme: gruvbox-light
-
-![image](https://user-images.githubusercontent.com/17597548/141433520-b46ae263-c9a4-440c-bacf-890b3e5b68c8.png)
-
-#### vim theme: walh-default
-
-##### terminal theme: gruvbox-dark
+##### vim theme: walh-default
 
 ![image](https://user-images.githubusercontent.com/17597548/141432983-843ab273-fc4d-4a45-ab92-bf718f9738ca.png)
 
-##### terminal theme: gruvbox-light
+#### terminal theme: gruvbox-light
+
+##### vim theme: walh
+
+![image](https://user-images.githubusercontent.com/17597548/141433139-c1ef8332-52a2-4231-9081-fafbef314c87.png)
+
+##### vim theme: walh-eighties
+
+![image](https://user-images.githubusercontent.com/17597548/141433485-1660f6d5-49ff-4c8f-b2ab-afa1c26bed2c.png)
+
+##### vim theme: walh-nord
+
+![image](https://user-images.githubusercontent.com/17597548/141433520-b46ae263-c9a4-440c-bacf-890b3e5b68c8.png)
+
+##### vim theme: walh-default
 
 ![image](https://user-images.githubusercontent.com/17597548/141433565-0f3d0025-6d37-4b6f-aa6b-ac5231bc748c.png)
+
+
+#### terminal theme: nord-dark
+
+##### vim theme: walh
+
+![image](https://user-images.githubusercontent.com/17597548/141434678-3520b45c-28cf-4d1d-ab7f-eb5c66805bb0.png)
+
+##### vim theme: walh-eighties
+
+![image](https://user-images.githubusercontent.com/17597548/141434733-6b4a758b-26b5-420e-b3e9-979b73263bde.png)
+
+##### vim theme: walh-nord
+
+![image](https://user-images.githubusercontent.com/17597548/141434866-af50f207-6e25-4371-b00e-f5bed59001ee.png)
+
+##### vim theme: walh-default
+
+![image](https://user-images.githubusercontent.com/17597548/141434924-2ac38ba7-9535-4913-9250-2f42f5f99cbe.png)
 
 color scheme for vim
