@@ -196,7 +196,6 @@ colors: *gruvbox-dark
 
 ![image](https://user-images.githubusercontent.com/17597548/141433565-0f3d0025-6d37-4b6f-aa6b-ac5231bc748c.png)
 
-
 #### terminal theme: nord-dark
 
 ##### vim theme: walh
@@ -214,5 +213,23 @@ colors: *gruvbox-dark
 ##### vim theme: walh-default
 
 ![image](https://user-images.githubusercontent.com/17597548/141434924-2ac38ba7-9535-4913-9250-2f42f5f99cbe.png)
+
+#### terminal theme: code-dark
+
+##### vim theme: walh
+
+![image](https://user-images.githubusercontent.com/17597548/141436266-fe1a443f-1fad-4423-a86d-9534a44e0c98.png)
+
+##### vim theme: walh-eighties
+
+![image](https://user-images.githubusercontent.com/17597548/141436291-bc15e0f7-6ede-415f-9d56-944e23fc2097.png)
+
+##### vim theme: walh-nord
+
+![image](https://user-images.githubusercontent.com/17597548/141436314-d32a552d-8584-46e7-8ac1-0e5d6f479d33.png)
+
+##### vim theme: walh-default
+
+![image](https://user-images.githubusercontent.com/17597548/141436341-4530d8af-4a65-40dd-be90-78a9ef05565e.png)
 
 color scheme for vim
