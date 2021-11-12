@@ -160,7 +160,9 @@ colors: *gruvbox-dark
 ```
 
 - It is important to note that `color0` or `normal: black` lightness value should 10 lighter then `background`
-- - It is important to note that `color15` or `bright: white` lightness value should 10 lighter then `foreground`
+- It is important to note that `color15` or `bright: white` lightness value should 10 lighter then `foreground`
+
+
 - Just a small set of how this theme can be configured
 - Treesitter syntax highlight is on on all screen shots
 
