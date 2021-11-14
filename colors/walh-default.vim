@@ -283,3 +283,7 @@ call s:hi('LspCodeLens', s:dark_gray, '', '')
 call s:hi('LspReferenceText', '', '', 'bold')
 call s:hi('LspReferenceRead', '', '', 'bold')
 call s:hi('LspReferenceWrite', '', '', 'bold')
+
+call s:hi('TelescopeNormal', '', 'Black')
+call s:hi('TelescopePreviewNormal', '', 'Black')
+call s:hi('TelescopeSelection', '', '', 'reverse')
