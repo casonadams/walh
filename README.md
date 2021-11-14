@@ -1,7 +1,8 @@
 # walh
 
-A vim theme repo that is easy on the eyes and for long hours looking at a screen.
-All colors are used from the first 16 ANSI colors of the terminal in use. 
+A vim theme repo that is easy on the eyes and for long hours looking at a
+screen. All colors are used from the first 16 ANSI colors of the terminal in
+use.
 
 - Options for light and dark mode based on terminal settings.
 
@@ -154,14 +155,15 @@ schemes:
       magenta: "#e666dc"
       cyan: "#00bbdf"
       white: "#e0e0e0"
-      
+
 colors: *gruvbox-dark
 
 ```
 
-- It is important to note that `color0` or `normal: black` lightness value should 10 lighter then `background`
-- It is important to note that `color15` or `bright: white` lightness value should 10 lighter then `foreground`
-
+- It is important to note that `color0` or `normal: black` lightness value
+  should 10 lighter then `background`
+- It is important to note that `color15` or `bright: white` lightness value
+  should 10 lighter then `foreground`
 
 - Just a small set of how this theme can be configured
 - Treesitter syntax highlight is on on all screen shots
