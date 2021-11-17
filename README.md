@@ -18,23 +18,13 @@ yes walh does mean what you think it does
 
 ### Set and configure theme
 
-| option                  | range        | description           |
-|-------------------------|--------------|-----------------------|
-| `walh_base_hue`         | `0 - 356`    | background hue        |
-| `walh_base_saturation`  | `-100 - 100` | background saturation |
-| `walh_saturation`       | `-100 - 100` | overall saturation    |
-| `walh_lightness`        | `-100 - 100` | overall lightness     |
-
-| schemes          |
-|------------------|
-| `walh-default`   |
-| `walh-artic`     |
-| `walh-eighties`  |
-| `walh-lunarized` |
-
-- setting options to `nil` uses theme default settings
-- want something more gray scaled set `vim.g.walh_saturation = -90`
-- want more *pop* set `vim.g.walh_saturation = 90`
+| Themes         |
+| -------------- |
+| walh           |
+| walh-default   |
+| walh-eighties  |
+| walh-nord      |
+| walh-solarized |
 
 ```init.vim
 set notermguicolors

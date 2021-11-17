@@ -32,7 +32,7 @@ endfunction
 
 " -- highlight-default
 " call s:hi('Normal')
-" call s:hi('NormalFloat')
+call s:hi('NormalFloat', '', 'Black')
 
 call s:hi('ColorColumn', '', s:dark_gray)
 call s:hi('CursorColumn', '', s:dark_gray)
@@ -47,7 +47,7 @@ call s:hi('FoldColumn', s:dark_gray)
 call s:hi('SignColumn', 'NONE', 'NONE')
 
 call s:hi('Pmenu', 'NONE', 'Black')
-call s:hi('PmenuSel', 'NONE', 'NONE', 'reverse')
+call s:hi('PmenuSel', 'NONE', 'Black', 'reverse')
 " call s:hi('PmenuSbar', s:dark_blue, s:light_gray)
 " call s:hi('PmenuThumb', s:light_gray, s:dark_blue)
 
