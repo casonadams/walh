@@ -126,7 +126,7 @@ return lush(function()
 
 		---- :help highlight-default -------------------------------
 
-		Normal{ fg = a.fg, bg = a.bg };
+		Normal{ fg = a.fg };
 		NormalFloat{ bg = a.overbg };
 		-- NormalNC     { };
 
