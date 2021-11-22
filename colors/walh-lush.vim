@@ -1,7 +1,7 @@
 hi clear
 syntax reset
 set t_Co=256
-let g:colors_name = 'walh'
+let g:colors_name = 'walh-lush'
 if &background == 'dark'
 highlight Bold guifg=NONE guibg=NONE guisp=NONE gui=bold
 highlight Boolean guifg=#BD82BA guibg=NONE guisp=NONE gui=NONE
@@ -45,7 +45,7 @@ highlight LspDiagnosticsUnderlineWarning guifg=NONE guibg=NONE guisp=NONE gui=un
 highlight MatchParen guifg=#C7A76B guibg=#49413A guisp=NONE gui=bold
 highlight ModeMsg guifg=#7F7267 guibg=NONE guisp=NONE gui=NONE
 highlight MoreMsg guifg=#6A8F6D guibg=NONE guisp=NONE gui=bold
-highlight Normal guifg=#D3C1B1 guibg=#2A2520 guisp=NONE gui=NONE
+highlight Normal guifg=#D3C1B1 guibg=NONE guisp=NONE gui=NONE
 highlight NormalFloat guifg=NONE guibg=#332D28 guisp=NONE gui=NONE
 highlight Number guifg=#BD82BA guibg=NONE guisp=NONE gui=NONE
 highlight Operator guifg=#CF7160 guibg=NONE guisp=NONE gui=NONE
@@ -177,7 +177,7 @@ highlight LspDiagnosticsUnderlineWarning guifg=NONE guibg=NONE guisp=NONE gui=un
 highlight MatchParen guifg=#B2945F guibg=#49413A guisp=NONE gui=bold
 highlight ModeMsg guifg=#7F7267 guibg=NONE guisp=NONE gui=NONE
 highlight MoreMsg guifg=#5D7F60 guibg=NONE guisp=NONE gui=bold
-highlight Normal guifg=#D3C1B1 guibg=#2A2520 guisp=NONE gui=NONE
+highlight Normal guifg=#D3C1B1 guibg=NONE guisp=NONE gui=NONE
 highlight NormalFloat guifg=NONE guibg=#332D28 guisp=NONE gui=NONE
 highlight Number guifg=#AD73AA guibg=NONE guisp=NONE gui=NONE
 highlight Operator guifg=#B86555 guibg=NONE guisp=NONE gui=NONE
