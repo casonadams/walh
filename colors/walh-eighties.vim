@@ -45,11 +45,11 @@ call s:hi('Macro', 'darkcyan')
 call s:hi('PreCondit', 'darkcyan')
 
 call s:hi('Type', 'darkyellow')
-call s:hi('StorageClass', 'Brown')
+call s:hi('StorageClass', 'brown')
 call s:hi('Structure', 'darkcyan')
 call s:hi('Typedef', 'darkyellow')
 
-call s:hi('Special', 'Brown')
+call s:hi('Special', 'brown')
 call s:hi('SpecialChar', 'darkyellow')
 call s:hi('Tag', 'darkyellow')
 
