@@ -20,7 +20,7 @@ call s:hi('CursorLine', '', 'black')
 call s:hi('VertSplit', 'darkgray')
 
 call s:hi('LineNr', 'darkgray')
-call s:hi('CursorLineNr', 'darkgray', 'black')
+call s:hi('CursorLineNr', '', 'black')
 
 call s:hi('Folded', 'darkgray')
 call s:hi('FoldColumn', 'darkgray')
@@ -28,8 +28,6 @@ call s:hi('SignColumn', 'NONE', 'NONE')
 
 call s:hi('Pmenu', 'NONE', 'black')
 call s:hi('PmenuSel', 'NONE', 'black', 'reverse')
-" call s:hi('PmenuSbar', 'darkblue', 'lightgray')
-" call s:hi('PmenuThumb', 'lightgray', 'darkblue')
 
 call s:hi('StatusLine', 'darkgray', 'black')
 call s:hi('StatusLineNC', 'darkgray', 'black')
