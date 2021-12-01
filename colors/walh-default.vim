@@ -3,6 +3,19 @@ syntax reset
 set notermguicolors
 let g:colors_name = 'walh-default'
 
+let s:black = 'black'
+let s:white = 'white'
+let s:brown = 'brown'
+let s:gray = 7
+let s:darkgray = 8
+let s:red = 9
+let s:green = 10
+let s:yellow = 11
+let s:blue = 12
+let s:magenta = 13
+let s:cyan = 14
+let s:orange = 16
+
 exec "source " . expand('<sfile>:p:h') . "/helpers/highlights.vim"
 
 function! s:hi(group, fg='NONE', bg='NONE', attr='NONE')
@@ -18,103 +31,103 @@ function! s:hi(group, fg='NONE', bg='NONE', attr='NONE')
 endfunction
 
 " -- group-name
-call s:hi('Comment', 'darkgray')
-call s:hi('Identifier', 'darkcyan')
-call s:hi('Function', 'darkblue')
+call s:hi('Comment', s:darkgray)
+call s:hi('Identifier', s:cyan)
+call s:hi('Function', s:blue)
 
-call s:hi('Constant', 'darkred')
-call s:hi('String', 'darkred')
-call s:hi('Character', 'darkred')
-call s:hi('Number', 'darkred')
-call s:hi('Boolean', 'darkred')
-call s:hi('Float', 'darkred')
+call s:hi('Constant', s:red)
+call s:hi('String', s:red)
+call s:hi('Character', s:red)
+call s:hi('Number', s:red)
+call s:hi('Boolean', s:red)
+call s:hi('Float', s:red)
 
-call s:hi('Statement', 'darkyellow')
-call s:hi('Conditional', 'darkyellow')
-call s:hi('Repeat', 'darkyellow')
-call s:hi('Label', 'darkyellow')
+call s:hi('Statement', s:yellow)
+call s:hi('Conditional', s:yellow)
+call s:hi('Repeat', s:yellow)
+call s:hi('Label', s:yellow)
 
-call s:hi('Operator', 'darkyellow')
-call s:hi('Keyword', 'darkyellow')
-call s:hi('Exception', 'darkyellow')
+call s:hi('Operator', s:yellow)
+call s:hi('Keyword', s:yellow)
+call s:hi('Exception', s:yellow)
 
-call s:hi('PreProc', 'darkmagenta')
-call s:hi('Include', 'darkmagenta')
-call s:hi('Define', 'darkmagenta')
-call s:hi('Macro', 'darkmagenta')
-call s:hi('PreCondit', 'darkmagenta')
+call s:hi('PreProc', s:magenta)
+call s:hi('Include', s:magenta)
+call s:hi('Define', s:magenta)
+call s:hi('Macro', s:magenta)
+call s:hi('PreCondit', s:magenta)
 
-call s:hi('Type', 'darkgreen')
-call s:hi('StorageClass', 'darkgreen')
-call s:hi('Structure', 'darkgreen')
-call s:hi('Typedef', 'darkgreen')
+call s:hi('Type', s:green)
+call s:hi('StorageClass', s:green)
+call s:hi('Structure', s:green)
+call s:hi('Typedef', s:green)
 
-call s:hi('Special', 'darkred')
-call s:hi('SpecialChar', 'darkred')
-call s:hi('Tag', 'darkred')
+call s:hi('Special', s:red)
+call s:hi('SpecialChar', s:red)
+call s:hi('Tag', s:red)
 
-call s:hi('Delimiter', 'darkgreen')
-call s:hi('SpecialComment', 'darkmagenta')
-call s:hi('Debug', 'darkred')
+call s:hi('Delimiter', s:green)
+call s:hi('SpecialComment', s:magenta)
+call s:hi('Debug', s:red)
 
 " call s:hi('Underlined', 'NONE', 'NONE', 'underline')
 " call s:hi('Bold', '', '', 'bold')
 " call s:hi('Italic', '', '', 'italic')
 
 call s:hi('Ignore')
-" call s:hi('Error', '', 'darkred')
+" call s:hi('Error', '', s:red)
 " call s:hi('Todo', 'lightgray')
 
 " -- treesitter
-" call s:hi('TSAnnotation', 'darkblue')
-" call s:hi('TSAttribute', 'darkyellow')
-" call s:hi('TSBoolean', 'darkyellow')
-" call s:hi('TSCharacter', 'darkgreen')
-" call s:hi('TSConditional', 'darkmagenta')
+" call s:hi('TSAnnotation', s:blue)
+" call s:hi('TSAttribute', s:yellow)
+" call s:hi('TSBoolean', s:yellow)
+" call s:hi('TSCharacter', s:green)
+" call s:hi('TSConditional', s:magenta)
 " highlight! link TSConstBuiltin Constant
 " highlight! link  TSConstMacro Constant
-" call s:hi('TSConstant', 'darkyellow')
-" call s:hi('TSConstructor', 'darkblue')
-" call s:hi('TSEmphasis', 'darkcyan')
-" call s:hi('TSError', 'darkred')
-" call s:hi('TSExeption', 'darkred')
-" call s:hi('TSField', 'darkyellow')
-" call s:hi('TSFloat', 'darkyellow')
-" call s:hi('TSFunction', 'darkblue')
+" call s:hi('TSConstant', s:yellow)
+" call s:hi('TSConstructor', s:blue)
+" call s:hi('TSEmphasis', s:cyan)
+" call s:hi('TSError', s:red)
+" call s:hi('TSExeption', s:red)
+" call s:hi('TSField', s:yellow)
+" call s:hi('TSFloat', s:yellow)
+" call s:hi('TSFunction', s:blue)
 " highlight! link  TSFunctionBuiltin Function
 " highlight! link  TSFuncMacro Function
-" call s:hi('TSInclude', 'darkred')
-" call s:hi('TSKeyword', 'darkmagenta')
+" call s:hi('TSInclude', s:red)
+" call s:hi('TSKeyword', s:magenta)
 " highlight! link  TSKeywordFunction PreProc
-" call s:hi('TSKeywordOperator', 'darkcyan')
-" call s:hi('TSLabel', 'darkmagenta')
-" call s:hi('TSLiteral', 'darkgreen')
-" call s:hi('TSMethod', 'darkblue')
-" call s:hi('TSNamespace', 'darkgreen')
-" call s:hi('TSNumber', 'darkyellow')
-" call s:hi('TSOperator', 'darkcyan')
-" call s:hi('TSParameter', 'darkred')
-" call s:hi('TSParameterReference', 'darkred')
-" call s:hi('TSProperty', 'darkred')
-" call s:hi('TSPunctDelimitter', 'darkred')
+" call s:hi('TSKeywordOperator', s:cyan)
+" call s:hi('TSLabel', s:magenta)
+" call s:hi('TSLiteral', s:green)
+" call s:hi('TSMethod', s:blue)
+" call s:hi('TSNamespace', s:green)
+" call s:hi('TSNumber', s:yellow)
+" call s:hi('TSOperator', s:cyan)
+" call s:hi('TSParameter', s:red)
+" call s:hi('TSParameterReference', s:red)
+" call s:hi('TSProperty', s:red)
+" call s:hi('TSPunctDelimitter', s:red)
 " highlight! link  TSPunctBracket Delimiter
 " highlight! link  TSPunctSpecial Delimiter
-" call s:hi('TSRepeat', 'darkmagenta')
-" call s:hi('TSString', 'darkgreen')
-" call s:hi('TSStringRegex', 'darkred')
-" call s:hi('TSStringEscape', 'darkblue')
+" call s:hi('TSRepeat', s:magenta)
+" call s:hi('TSString', s:green)
+" call s:hi('TSStringRegex', s:red)
+" call s:hi('TSStringEscape', s:blue)
 " highlight! link  TSSymbol Identifier
 " highlight! link  TSVariableBuiltin Identifier
 " call s:hi('TSTag')
 " call s:hi('TSTagDelimitter')
 " call s:hi('TSText')
-" call s:hi('TSStrong', 'darkmagenta')
-" call s:hi('TSStructure', 'darkyellow')
-" call s:hi('TSTitle', 'darkyellow')
-" call s:hi('TSType', 'darkblue')
-" call s:hi('TSTypeBuiltin', 'darkred')
-" call s:hi('TSUnderline', 'darkyellow')
+" call s:hi('TSStrong', s:magenta)
+" call s:hi('TSStructure', s:yellow)
+" call s:hi('TSTitle', s:yellow)
+" call s:hi('TSType', s:blue)
+" call s:hi('TSTypeBuiltin', s:red)
+" call s:hi('TSUnderline', s:yellow)
 " highlight! link  TSUri String
-" call s:hi('TSMath', 'darkcyan')
+" call s:hi('TSMath', s:cyan)
 " highlight! link  TSEnvironment Statement
 " highlight! link  TSEnvironmentName PreProc

@@ -3,6 +3,19 @@ syntax reset
 set notermguicolors
 let g:colors_name = 'walh-eighties'
 
+let s:black = 'black'
+let s:white = 'white'
+let s:brown = 'brown'
+let s:gray = 7
+let s:darkgray = 8
+let s:red = 9
+let s:green = 10
+let s:yellow = 11
+let s:blue = 12
+let s:magenta = 13
+let s:cyan = 14
+let s:orange = 16
+
 exec "source " . expand('<sfile>:p:h') . "/helpers/highlights.vim"
 
 function! s:hi(group, fg='NONE', bg='NONE', attr='NONE')
@@ -19,101 +32,101 @@ endfunction
 
 " -- group-name
 call s:hi('Comment', 'darkgray')
-call s:hi('Identifier', 'darkblue')
-call s:hi('Function', 'darkblue')
+call s:hi('Identifier', s:blue)
+call s:hi('Function', s:green)
 
-call s:hi('Constant', 'darkmagenta')
-call s:hi('String', 'darkgreen')
-call s:hi('Character', 'darkmagenta')
-call s:hi('Number', 'darkmagenta')
-call s:hi('Boolean', 'darkmagenta')
-call s:hi('Float', 'darkmagenta')
+call s:hi('Constant', s:magenta)
+call s:hi('String', s:green)
+call s:hi('Character', s:magenta)
+call s:hi('Number', s:magenta)
+call s:hi('Boolean', s:magenta)
+call s:hi('Float', s:magenta)
 
-call s:hi('Statement', 'darkred')
-call s:hi('Conditional', 'darkred')
-call s:hi('Repeat', 'darkred')
-call s:hi('Label', 'darkred')
+call s:hi('Statement', s:red)
+call s:hi('Conditional', s:red)
+call s:hi('Repeat', s:red)
+call s:hi('Label', s:red)
 
-call s:hi('Operator', 'darkred')
-call s:hi('Keyword', 'darkred')
-call s:hi('Exception', 'darkred')
+call s:hi('Operator', '', '')
+call s:hi('Keyword', s:red)
+call s:hi('Exception', s:red)
 
-call s:hi('PreProc', 'darkcyan')
-call s:hi('Include', 'darkcyan')
-call s:hi('Define', 'darkcyan')
-call s:hi('Macro', 'darkcyan')
-call s:hi('PreCondit', 'darkcyan')
+call s:hi('PreProc', s:cyan)
+call s:hi('Include', s:cyan)
+call s:hi('Define', s:cyan)
+call s:hi('Macro', s:cyan)
+call s:hi('PreCondit', s:cyan)
 
-call s:hi('Type', 'darkyellow')
-call s:hi('StorageClass', 'brown')
-call s:hi('Structure', 'darkcyan')
-call s:hi('Typedef', 'darkyellow')
+call s:hi('Type', s:yellow)
+call s:hi('StorageClass', 16)
+call s:hi('Structure', s:cyan)
+call s:hi('Typedef', s:yellow)
 
-call s:hi('Special', 'brown')
-call s:hi('SpecialChar', 'darkyellow')
-call s:hi('Tag', 'darkyellow')
+call s:hi('Special', 16)
+call s:hi('SpecialChar', 16)
+" call s:hi('Tag', 'brown')
 
-call s:hi('Delimiter', 'darkyellow')
-call s:hi('SpecialComment', 'darkyellow')
-call s:hi('Debug', 'darkyellow')
+" call s:hi('Delimiter', s:yellow)
+" call s:hi('SpecialComment', s:yellow)
+" call s:hi('Debug', s:yellow)
 
 " call s:hi('Underlined', 'NONE', 'NONE', 'underline')
 " call s:hi('Bold', '', '', 'bold')
 " call s:hi('Italic', '', '', 'italic')
 
 call s:hi('Ignore')
-" call s:hi('Error', '', 'darkred')
+" call s:hi('Error', '', s:red)
 " call s:hi('Todo', 'lightgray')
 
 " -- treesitter
-" call s:hi('TSAnnotation', 'darkblue')
-" call s:hi('TSAttribute', 'darkyellow')
-" call s:hi('TSBoolean', 'darkyellow')
-" call s:hi('TSCharacter', 'darkgreen')
-" call s:hi('TSConditional', 'darkmagenta')
+" call s:hi('TSAnnotation', s:blue)
+" call s:hi('TSAttribute', s:yellow)
+" call s:hi('TSBoolean', s:yellow)
+" call s:hi('TSCharacter', s:green)
+" call s:hi('TSConditional', s:magenta)
 " highlight! link TSConstBuiltin Constant
 " highlight! link  TSConstMacro Constant
-" call s:hi('TSConstant', 'darkyellow')
-" call s:hi('TSConstructor', 'darkblue')
-" call s:hi('TSEmphasis', 'darkcyan')
-" call s:hi('TSError', 'darkred')
-" call s:hi('TSExeption', 'darkred')
-" call s:hi('TSField', 'darkyellow')
-" call s:hi('TSFloat', 'darkyellow')
-" call s:hi('TSFunction', 'darkblue')
+" call s:hi('TSConstant', s:yellow)
+" call s:hi('TSConstructor', s:blue)
+" call s:hi('TSEmphasis', s:cyan)
+" call s:hi('TSError', s:red)
+" call s:hi('TSExeption', s:red)
+" call s:hi('TSField', s:yellow)
+" call s:hi('TSFloat', s:yellow)
+" call s:hi('TSFunction', s:blue)
 " highlight! link  TSFunctionBuiltin Function
 " highlight! link  TSFuncMacro Function
-" call s:hi('TSInclude', 'darkred')
-" call s:hi('TSKeyword', 'darkmagenta')
+" call s:hi('TSInclude', s:red)
+" call s:hi('TSKeyword', s:magenta)
 " highlight! link  TSKeywordFunction PreProc
-" call s:hi('TSKeywordOperator', 'darkcyan')
-" call s:hi('TSLabel', 'darkmagenta')
-" call s:hi('TSLiteral', 'darkgreen')
-" call s:hi('TSMethod', 'darkblue')
-" call s:hi('TSNamespace', 'darkgreen')
-" call s:hi('TSNumber', 'darkyellow')
-" call s:hi('TSOperator', 'darkcyan')
-" call s:hi('TSParameter', 'darkred')
-" call s:hi('TSParameterReference', 'darkred')
-" call s:hi('TSProperty', 'darkred')
-" call s:hi('TSPunctDelimitter', 'darkred')
+" call s:hi('TSKeywordOperator', s:cyan)
+" call s:hi('TSLabel', s:magenta)
+" call s:hi('TSLiteral', s:green)
+" call s:hi('TSMethod', s:blue)
+" call s:hi('TSNamespace', s:green)
+" call s:hi('TSNumber', s:yellow)
+" call s:hi('TSOperator', s:cyan)
+" call s:hi('TSParameter', s:red)
+" call s:hi('TSParameterReference', s:red)
+" call s:hi('TSProperty', s:red)
+" call s:hi('TSPunctDelimitter', s:red)
 " highlight! link  TSPunctBracket Delimiter
 " highlight! link  TSPunctSpecial Delimiter
-" call s:hi('TSRepeat', 'darkmagenta')
-" call s:hi('TSString', 'darkgreen')
-" call s:hi('TSStringRegex', 'darkred')
-" call s:hi('TSStringEscape', 'darkblue')
+" call s:hi('TSRepeat', s:magenta)
+" call s:hi('TSString', s:green)
+" call s:hi('TSStringRegex', s:red)
+" call s:hi('TSStringEscape', s:blue)
 " highlight! link  TSSymbol Identifier
 " highlight! link  TSVariableBuiltin Identifier
 " call s:hi('TSTag')
 " call s:hi('TSTagDelimitter')
 " call s:hi('TSText')
-" call s:hi('TSStrong', 'darkmagenta')
-" call s:hi('TSStructure', 'darkyellow')
-" call s:hi('TSTitle', 'darkyellow')
-" call s:hi('TSType', 'darkblue')
-" call s:hi('TSTypeBuiltin', 'darkred')
-" call s:hi('TSUnderline', 'darkyellow')
+" call s:hi('TSStrong', s:magenta)
+" call s:hi('TSStructure', s:yellow)
+" call s:hi('TSTitle', s:yellow)
+" call s:hi('TSType', s:blue)
+" call s:hi('TSTypeBuiltin', s:red)
+" call s:hi('TSUnderline', s:yellow)
 " highlight! link  TSUri String
 " call s:hi('TSMath', 'lightcyan')
 " highlight! link  TSEnvironment Statement
