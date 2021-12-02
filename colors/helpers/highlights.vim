@@ -132,7 +132,7 @@ call s:hi('CocInfoHighlight', s:blue, '', 'underline')
 call s:hi('CocHintHighlight', s:magenta, '', 'underline')
 
 call s:hi('CocDeprecatedHighlight', '', '', 'underline')
-call s:hi('CocUnusedHighlight', '', '', 'underline')
+call s:hi('CocUnusedHighlight', s:yellow, '', 'underline')
 
 call s:hi('CocErrorVirtualText', s:darkgray, '', '')
 call s:hi('CocWarningVirtualText', s:darkgray, '', '')
@@ -140,10 +140,10 @@ call s:hi('CocInfoVirtualText', s:darkgray, '', '')
 call s:hi('CocHintVirtualText', s:darkgray, '', '')
 
 call s:hi('CocFloating', '')
-call s:hi('CocErrorFloat', '')
-call s:hi('CocWarningFloat', '')
-call s:hi('CocInfoFloat', '')
-call s:hi('CocHintFloat', '')
+call s:hi('CocErrorFloat', s:red)
+call s:hi('CocWarningFloat', s:yellow)
+call s:hi('CocInfoFloat', s:blue)
+call s:hi('CocHintFloat', s:magenta)
 
 call s:hi('LspDiagnosticsDefaultError', s:red)
 call s:hi('LspDiagnosticsDefaultWarning', s:yellow)
