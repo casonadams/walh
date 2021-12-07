@@ -1,4 +1,3 @@
-
 let s:black = 18
 let s:white = 'white'
 let s:brown = 'brown'
