@@ -1,5 +1,5 @@
 
-let s:black = 'black'
+let s:black = 18
 let s:white = 'white'
 let s:brown = 'brown'
 let s:gray = 7
