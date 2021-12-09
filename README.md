@@ -10,14 +10,11 @@ yes walh does mean what you think it does
 
 **walh** = "winnebago audi lamborghini hatchback"
 
-## Designed to be run with base16-shell
+## Designed to be run with walh-shell.zsh
 
-[base16-shell](https://github.com/chriskempson/base16-shell) indexes 21 colors.
+[walh-shell.zsh](https://github.com/casonadams/walh-shell.zsh) indexes 21 colors.
 `walh` uses `colour16` as `orange` and `colour18` as `black`. So it might not
 look correct unless those colors are set accordingly.
-
-[base16-shell.zsh](https://github.com/casonadams/base16-shell.zsh) is a nice
-helper if using plugins with `zsh`
 
 ## Install
 
