@@ -1,6 +1,3 @@
-let s:black = 18
-let s:white = 'white'
-let s:brown = 'brown'
 let s:gray = 7
 let s:darkgray = 8
 let s:red = 9
@@ -10,6 +7,7 @@ let s:blue = 12
 let s:magenta = 13
 let s:cyan = 14
 let s:orange = 16
+let s:black = 18
 
 function! s:hi(group, fg='NONE', bg='NONE', attr='NONE')
   if a:fg != ''
@@ -26,6 +24,14 @@ endfunction
 " -- highlight-default
 " call s:hi('Normal')
 call s:hi('NormalFloat', '', '')
+
+call s:hi('Underlined', s:blue, 'NONE', 'underline')
+call s:hi('Bold', '', '', 'bold')
+call s:hi('Italic', '', '', 'italic')
+
+call s:hi('Error', '', s:red, 'underline')
+call s:hi('Todo', s:yellow, '', 'bold')
+call s:hi('Ignore', '', '')
 
 call s:hi('ColorColumn', '', s:darkgray)
 call s:hi('CursorColumn', '', s:darkgray)
