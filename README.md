@@ -26,7 +26,6 @@ look correct unless those colors are set accordingly.
 
 | Themes         |
 | -------------- |
-| walh           |
 | walh-default   |
 | walh-eighties  |
 | walh-nord      |
@@ -34,5 +33,5 @@ look correct unless those colors are set accordingly.
 
 ```init.vim
 set notermguicolors
-colorscheme walh
+colorscheme walh-eighties
 ```
