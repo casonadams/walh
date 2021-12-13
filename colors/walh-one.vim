@@ -29,7 +29,7 @@ function! s:hi(group, fg='NONE', bg='NONE', attr='NONE')
 endfunction
 
 " -- group-name
-call s:hi('Comment', 'darkgray')
+" call s:hi('Comment', 'darkgray')
 call s:hi('Identifier', s:red)
 call s:hi('Function', s:blue)
 
