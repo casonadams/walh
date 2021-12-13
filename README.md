@@ -12,9 +12,9 @@ yes walh does mean what you think it does
 
 ## Designed to be run with walh-shell.zsh
 
-[walh-shell.zsh](https://github.com/casonadams/walh-shell.zsh) indexes 21 colors.
-`walh` uses `colour16` as `orange` and `colour18` as `black`. So it might not
-look correct unless those colors are set accordingly.
+[walh-shell.zsh](https://github.com/casonadams/walh-shell.zsh) indexes 21
+colors. `walh` uses `colour16` as `orange` and `colour18` as `black`. So it
+might not look correct unless those colors are set accordingly.
 
 ## Install
 
@@ -26,6 +26,7 @@ look correct unless those colors are set accordingly.
 
 | Themes         |
 | -------------- |
+| walh-one       |
 | walh-default   |
 | walh-eighties  |
 | walh-nord      |
