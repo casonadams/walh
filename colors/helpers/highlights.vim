@@ -131,6 +131,11 @@ call s:hi('ALEInfoLine', '', '')
 
 call s:hi('CocHighlightText', '', '', 'bold')
 
+call s:hi('CocErrorSign', s:red)
+call s:hi('CocWarningSign', s:yellow)
+call s:hi('CocInfoHighSign', s:blue)
+call s:hi('CocHintHighSign', s:magenta)
+
 call s:hi('CocErrorHighlight', s:red, '', 'underline')
 call s:hi('CocWarningHighlight', s:yellow, '', 'underline')
 call s:hi('CocInfoHighlight', s:blue, '', 'underline')
@@ -139,10 +144,10 @@ call s:hi('CocHintHighlight', s:magenta, '', 'underline')
 call s:hi('CocDeprecatedHighlight', '', '', 'underline')
 call s:hi('CocUnusedHighlight', s:yellow, '', 'underline')
 
-call s:hi('CocErrorVirtualText', s:darkgray, '', '')
-call s:hi('CocWarningVirtualText', s:darkgray, '', '')
-call s:hi('CocInfoVirtualText', s:darkgray, '', '')
-call s:hi('CocHintVirtualText', s:darkgray, '', '')
+call s:hi('CocErrorVirtualText', s:red)
+call s:hi('CocWarningVirtualText', s:yellow)
+call s:hi('CocInfoVirtualText', s:blue)
+call s:hi('CocHintVirtualText', s:magenta)
 
 call s:hi('CocFloating', '')
 call s:hi('CocErrorFloat', s:red)
