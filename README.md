@@ -28,7 +28,7 @@ might not look correct unless those colors are set accordingly.
 | -------------- |
 | walh-one       |
 | walh-default   |
-| walh-eighties  |
+| walh-gruvbox   |
 | walh-nord      |
 | walh-solarized |
 

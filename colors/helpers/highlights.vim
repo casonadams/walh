@@ -7,7 +7,6 @@ let s:blue = 12
 let s:magenta = 13
 let s:cyan = 14
 let s:white = 15
-
 let s:orange = 16
 let s:black = 18
 
@@ -25,7 +24,7 @@ endfunction
 
 " -- highlight-default
 " call s:hi('Normal')
-call s:hi('Comment', s:darkgray)
+" call s:hi('Comment', s:darkgray)
 call s:hi('NormalFloat', '', '')
 
 call s:hi('Underlined', s:blue, 'NONE', 'underline')

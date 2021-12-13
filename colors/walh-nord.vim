@@ -11,6 +11,7 @@ let s:yellow = 11
 let s:blue = 12
 let s:magenta = 13
 let s:cyan = 14
+let s:white = 15
 let s:orange = 16
 let s:black = 18
 
@@ -29,7 +30,6 @@ function! s:hi(group, fg='NONE', bg='NONE', attr='NONE')
 endfunction
 
 " -- group-name
-" call s:hi('Comment', s:darkgray)
 call s:hi('Identifier')
 call s:hi('Function', s:cyan)
 
@@ -64,6 +64,8 @@ call s:hi('Special')
 call s:hi('SpecialChar', s:yellow)
 call s:hi('Tag')
 
-call s:hi('Delimiter')
+call s:hi('Delimiter', s:white)
 call s:hi('SpecialComment', s:cyan)
 call s:hi('Debug')
+
+call s:hi('Comment', s:darkgray)

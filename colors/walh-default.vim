@@ -31,7 +31,7 @@ endfunction
 " -- group-name
 " call s:hi('Comment', s:darkgray)
 call s:hi('Identifier', s:cyan)
-call s:hi('Function', s:blue)
+call s:hi('Function', s:cyan)
 
 call s:hi('Constant', s:magenta)
 call s:hi('String', s:magenta)
@@ -49,21 +49,23 @@ call s:hi('Operator', s:yellow)
 call s:hi('Keyword', s:yellow)
 call s:hi('Exception', s:yellow)
 
-call s:hi('PreProc', s:cyan)
-call s:hi('Include', s:cyan)
-call s:hi('Define', s:cyan)
-call s:hi('Macro', s:cyan)
-call s:hi('PreCondit', s:cyan)
+call s:hi('PreProc', s:blue)
+call s:hi('Include', s:blue)
+call s:hi('Define', s:blue)
+call s:hi('Macro', s:blue)
+call s:hi('PreCondit', s:blue)
 
 call s:hi('Type', s:green)
 call s:hi('StorageClass', s:green)
 call s:hi('Structure', s:green)
 call s:hi('Typedef', s:green)
 
-call s:hi('Special', s:yellow)
-call s:hi('SpecialChar', s:red)
-call s:hi('Tag', s:red)
+call s:hi('Special', s:orange)
+call s:hi('SpecialChar', s:orange)
+call s:hi('Tag', s:orange)
 
-call s:hi('Delimiter', s:yellow)
-call s:hi('SpecialComment', s:cyan)
-call s:hi('Debug', s:red)
+call s:hi('Delimiter', s:orange)
+call s:hi('SpecialComment', s:orange)
+call s:hi('Debug', s:orange)
+
+call s:hi('Comment', s:cyan)

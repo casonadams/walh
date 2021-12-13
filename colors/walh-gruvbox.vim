@@ -29,7 +29,6 @@ function! s:hi(group, fg='NONE', bg='NONE', attr='NONE')
 endfunction
 
 " -- group-name
-" call s:hi('Comment', 'darkgray')
 call s:hi('Identifier', s:blue)
 call s:hi('Function', s:green)
 
@@ -62,3 +61,5 @@ call s:hi('Typedef', s:yellow)
 
 call s:hi('Special', s:orange)
 call s:hi('SpecialChar', s:orange)
+
+call s:hi('Comment', s:darkgray)
