@@ -32,7 +32,7 @@ call s:hi('Bold', '', '', 'bold')
 call s:hi('Italic', '', '', 'italic')
 
 call s:hi('Error', '', s:red, 'underline')
-call s:hi('Todo', s:yellow, '', 'bold')
+call s:hi('Todo', s:yellow, 'NONE', 'bold')
 call s:hi('Ignore', '', '')
 
 call s:hi('ColorColumn', '', s:darkgray)
