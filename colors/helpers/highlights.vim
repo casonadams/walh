@@ -25,7 +25,7 @@ endfunction
 " -- highlight-default
 " call s:hi('Normal')
 " call s:hi('Comment', s:darkgray)
-call s:hi('NormalFloat', '', '')
+call s:hi('NormalFloat', '', s:black)
 
 call s:hi('Underlined', s:blue, 'NONE', 'underline')
 call s:hi('Bold', '', '', 'bold')
@@ -151,7 +151,7 @@ call s:hi('CocWarningVirtualText', s:yellow)
 call s:hi('CocInfoVirtualText', s:blue)
 call s:hi('CocHintVirtualText', s:magenta)
 
-call s:hi('CocFloating', '')
+call s:hi('CocFloating', '', s:black)
 call s:hi('CocErrorFloat', s:red)
 call s:hi('CocWarningFloat', s:yellow)
 call s:hi('CocInfoFloat', s:blue)
@@ -171,6 +171,11 @@ call s:hi('LspDiagnosticsUnderlineError', s:red, '', 'underline')
 call s:hi('LspDiagnosticsUnderlineWarning', s:yellow, '', 'underline')
 call s:hi('LspDiagnosticsUnderlineInformation', s:blue, '', 'underline')
 call s:hi('LspDiagnosticsUnderlineHint', s:magenta, '', 'underline')
+
+call s:hi('LspDiagnosticsFloatingError', '', s:black)
+call s:hi('LspDiagnosticsFloatingWarning', '', s:black)
+call s:hi('LspDiagnosticsFloatingInformation', '', s:black)
+call s:hi('LspDiagnosticsFloatingHint', '', s:black)
 
 call s:hi('LspReferenceText', '', '', 'bold')
 call s:hi('LspReferenceRead', '', '', 'bold')
