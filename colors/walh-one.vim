@@ -1,7 +1,7 @@
 hi clear
 syntax reset
 set notermguicolors
-let g:colors_name = 'walh-eighties'
+let g:colors_name = 'walh-one'
 
 let s:gray = 7
 let s:darkgray = 8
