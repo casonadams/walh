@@ -10,9 +10,9 @@ yes walh does mean what you think it does
 
 **walh** = "winnebago audi lamborghini hatchback"
 
-## Designed to be run with walh-shell.zsh
+## Designed to be run with alacritty-shell
 
-[walh-shell.zsh](https://github.com/casonadams/walh-shell.zsh) indexes 21
+[alacritty-shell](https://github.com/casonadams/alacritty-shell) indexes 21
 colors. `walh` uses `colour16` as `orange` and `colour18` as `black`. So it
 might not look correct unless those colors are set accordingly.
 
