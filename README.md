@@ -24,13 +24,14 @@ might not look correct unless those colors are set accordingly.
 
 ### Set and configure theme
 
-| Themes         |
-| -------------- |
-| walh-one       |
-| walh-default   |
-| walh-gruvbox   |
-| walh-nord      |
-| walh-solarized |
+| Themes              |
+| ------------------- |
+| walh-one            |
+| walh-default        |
+| walh-default-legacy |
+| walh-gruvbox        |
+| walh-nord           |
+| walh-solarized      |
 
 ```init.vim
 set notermguicolors
