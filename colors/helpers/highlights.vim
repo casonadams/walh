@@ -23,7 +23,7 @@ function! s:hi(group, fg='NONE', bg='NONE', attr='NONE')
 endfunction
 
 " -- highlight-default
-" call s:hi('Normal')
+call s:hi('Normal')
 " call s:hi('Comment', s:darkgray)
 call s:hi('NormalFloat', '', s:black)
 
@@ -188,8 +188,6 @@ call s:hi('LspReferenceWrite', '', '', 'bold')
 call s:hi('TelescopeNormal', '', s:black)
 call s:hi('TelescopePreviewNormal', '', s:black)
 call s:hi('TelescopeSelection', '', '', 'reverse')
-
-call s:hi('WhichKeyFloat', '', s:black)
 
 call s:hi('BufferCurrent', s:green)
 call s:hi('BufferCurrentIcon', s:blue)
