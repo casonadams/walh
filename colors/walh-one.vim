@@ -11,6 +11,7 @@ let s:yellow = 11
 let s:blue = 12
 let s:magenta = 13
 let s:cyan = 14
+let s:white= 15
 let s:orange = 16
 let s:black = 18
 
