@@ -1,5 +1,5 @@
-let s:gray = 7
-let s:darkgray = 8
+let s:grey = 7
+let s:darkgrey = 8
 let s:red = 9
 let s:green = 10
 let s:yellow = 11
@@ -24,7 +24,7 @@ endfunction
 
 " -- highlight-default
 call s:hi('Normal')
-" call s:hi('Comment', s:darkgray)
+" call s:hi('Comment', s:darkgrey)
 call s:hi('NormalFloat', '', s:black)
 
 call s:hi('Underlined', s:blue, 'NONE', 'underline')
@@ -35,26 +35,26 @@ call s:hi('Error', '', s:red, 'underline')
 call s:hi('Todo', s:yellow, 'NONE', 'bold')
 call s:hi('Ignore', '', '')
 
-call s:hi('ColorColumn', '', s:darkgray)
-call s:hi('CursorColumn', '', s:darkgray)
+call s:hi('ColorColumn', '', s:darkgrey)
+call s:hi('CursorColumn', '', s:darkgrey)
 call s:hi('CursorLine', '', s:black)
-call s:hi('VertSplit', s:darkgray)
+call s:hi('VertSplit', s:darkgrey)
 
-call s:hi('LineNr', s:darkgray)
+call s:hi('LineNr', s:darkgrey)
 call s:hi('CursorLineNr', '', s:black)
 
-call s:hi('Folded', s:darkgray)
-call s:hi('FoldColumn', s:darkgray)
+call s:hi('Folded', s:darkgrey)
+call s:hi('FoldColumn', s:darkgrey)
 call s:hi('SignColumn', 'NONE', 'NONE')
 
 call s:hi('Pmenu', 'NONE', s:black)
 call s:hi('PmenuSel', 'NONE', s:black, 'reverse')
 
-call s:hi('StatusLine', s:gray, s:black)
-call s:hi('StatusLineNC', s:darkgray, s:black)
+call s:hi('StatusLine', s:grey, s:black)
+call s:hi('StatusLineNC', s:darkgrey, s:black)
 call s:hi('WildMenu', '', s:green)
 
-call s:hi('TabLine', s:gray, s:black)
+call s:hi('TabLine', s:grey, s:black)
 call s:hi('TabLineFill', s:black, s:black)
 call s:hi('TabLineSel', s:green, s:black)
 
@@ -62,17 +62,17 @@ call s:hi('MatchParen', s:white, 'NONE')
 call s:hi('Substitute', s:black, s:yellow)
 call s:hi('Search', '', s:yellow)
 " call s:hi('QuickFixLine', s:magenta)
-" call s:hi('IncSearch', s:darkgray, s:yellow)
+" call s:hi('IncSearch', s:darkgrey, s:yellow)
 call s:hi('Visual', 'NONE', 'NONE', 'reverse')
 " call s:hi('VisualNOS', 'NONE', 'NONE', 'reverse')
 
-call s:hi('Conceal', s:darkgray)
-call s:hi('Whitespace', s:darkgray)
+call s:hi('Conceal', s:darkgrey)
+call s:hi('Whitespace', s:darkgrey)
 call s:hi('EndOfBuffer', '')
-call s:hi('NonText', s:darkgray)
-call s:hi('SpecialKey', s:darkgray)
+call s:hi('NonText', s:darkgrey)
+call s:hi('SpecialKey', s:darkgrey)
 
-call s:hi('Directory', s:darkgray)
+call s:hi('Directory', s:darkgrey)
 call s:hi('Title', s:green, 'NONE')
 " call s:hi('ErrorMsg', 'White', s:red)
 " call s:hi('ModeMsg', 'White', '')
@@ -85,43 +85,35 @@ call s:hi('Title', s:green, 'NONE')
 " -- :diff
 call s:hi('DiffAdd', s:black, s:green)
 call s:hi('DiffDelete', s:black, s:red)
-call s:hi('DiffChange', s:black, s:orange)
+call s:hi('DiffChange', s:black, s:yellow)
 call s:hi('DiffText', s:black, s:blue)
 
 call s:hi('DiffAdded', s:black, s:green)
 call s:hi('DiffRemoved', s:black, s:red)
 
 " -- spell
-call s:hi('SpellBad',   s:darkgray, 'NONE', 'underline')
-call s:hi('SpellCap',   s:darkgray, 'NONE', 'underline')
-call s:hi('SpellLocal', s:darkgray, 'NONE', 'underline')
-call s:hi('SpellRare',  s:darkgray, 'NONE', 'underline')
+call s:hi('SpellBad',   s:darkgrey, 'NONE', 'underline')
+call s:hi('SpellCap',   s:darkgrey, 'NONE', 'underline')
+call s:hi('SpellLocal', s:darkgrey, 'NONE', 'underline')
+call s:hi('SpellRare',  s:darkgrey, 'NONE', 'underline')
 
 " -- diagnostic-highlight
 call s:hi('DiagnosticError', s:red)
-call s:hi('DiagnosticWarn', s:orange)
-call s:hi('DiagnosticInfo', s:yellow)
-call s:hi('DiagnosticHint', s:blue)
-
-" call s:hi('Cursor', s:white, s:red)
-" call s:hi('CursorIM', s:white, s:red)
-" call s:hi('lCursor', s:white, s:red)
-" call s:hi('Cursor', '', '', 'reverse')
-" call s:hi('CursorIM', '', '', 'reverse')
-" call s:hi('TermCursor', '', '', 'reverse')
-" call s:hi('TermCursorNC', '', '', 'reverse')
+call s:hi('DiagnosticWarn', s:yellow)
+call s:hi('DiagnosticInfo', s:blue)
+call s:hi('DiagnosticHint', s:grey)
 
 call s:hi('SignifySignAdd', s:green)
 call s:hi('SignifySignDelete', s:red)
-call s:hi('SignifySignChange', s:orange)
+call s:hi('SignifySignChange', s:yellow)
 
 call s:hi('GitGutterAdd', s:green)
 call s:hi('GitGutterDelete', s:red)
-call s:hi('GitGutterChange', s:orange)
+call s:hi('GitGutterChange', s:yellow)
 
 call s:hi('GitSignsAdd', s:green)
 call s:hi('GitSignsDelete', s:red)
-call s:hi('GitSignsChange', s:orange)
+call s:hi('GitSignsChange', s:yellow)
 
 call s:hi('ALEError', '', '', 'underline')
 call s:hi('ALEWarning', '', '', 'underline')
@@ -136,9 +128,9 @@ call s:hi('ALEInfoLine', '', '')
 call s:hi('CocHighlightText', '', '', 'bold')
 
 call s:hi('CocErrorSign', s:red)
-call s:hi('CocWarningSign', s:orange)
-call s:hi('CocInfoSign', s:yellow)
-call s:hi('CocHintSign', s:blue)
+call s:hi('CocWarningSign', s:yellow)
+call s:hi('CocInfoSign', s:blue)
+call s:hi('CocHintSign', s:grey)
 
 call s:hi('CocErrorHighlight', '', '', 'underline')
 call s:hi('CocWarningHighlight', '', '', 'underline')
@@ -149,32 +141,32 @@ call s:hi('CocDeprecatedHighlight', '', '', 'underline')
 call s:hi('CocUnusedHighlight', '', '', 'underline')
 
 call s:hi('CocErrorVirtualText', s:red, 'NONE')
-call s:hi('CocWarningVirtualText', s:orange, 'NONE')
-call s:hi('CocInfoVirtualText', s:yellow, 'NONE')
-call s:hi('CocHintVirtualText', s:blue, 'NONE')
+call s:hi('CocWarningVirtualText', s:yellow, 'NONE')
+call s:hi('CocInfoVirtualText', s:blue, 'NONE')
+call s:hi('CocHintVirtualText', s:grey, 'NONE')
 
 call s:hi('CocCodeLens', s:blue, '')
 
 call s:hi('CocFloating', '', s:black)
 call s:hi('CocErrorFloat', s:red)
-call s:hi('CocWarningFloat', s:orange)
-call s:hi('CocInfoFloat', s:yellow)
-call s:hi('CocHintFloat', s:blue)
+call s:hi('CocWarningFloat', s:yellow)
+call s:hi('CocInfoFloat', s:blue)
+call s:hi('CocHintFloat', s:grey)
 
 call s:hi('LspDiagnosticsDefaultError', s:red)
-call s:hi('LspDiagnosticsDefaultWarning', s:orange)
-call s:hi('LspDiagnosticsDefaultInformation', s:yellow)
-call s:hi('LspDiagnosticsDefaultHint', s:blue)
+call s:hi('LspDiagnosticsDefaultWarning', s:yellow)
+call s:hi('LspDiagnosticsDefaultInformation', s:blue)
+call s:hi('LspDiagnosticsDefaultHint', s:grey)
 
 call s:hi('LspDiagnosticsVirtualTextError', s:red, '', '')
-call s:hi('LspDiagnosticsVirtualTextWarning', s:orange, '', '')
-call s:hi('LspDiagnosticsVirtualTextInformation', s:yellow, '', '')
-call s:hi('LspDiagnosticsVirtualTextHint', s:blue, '', '')
+call s:hi('LspDiagnosticsVirtualTextWarning', s:yellow, '', '')
+call s:hi('LspDiagnosticsVirtualTextInformation', s:blue, '', '')
+call s:hi('LspDiagnosticsVirtualTextHint', s:grey, '', '')
 
 call s:hi('LspDiagnosticsUnderlineError', s:red, '', 'underline')
-call s:hi('LspDiagnosticsUnderlineWarning', s:orange, '', 'underline')
-call s:hi('LspDiagnosticsUnderlineInformation', s:yellow, '', 'underline')
-call s:hi('LspDiagnosticsUnderlineHint', s:blue, '', 'underline')
+call s:hi('LspDiagnosticsUnderlineWarning', s:yellow, '', 'underline')
+call s:hi('LspDiagnosticsUnderlineInformation', s:blue, '', 'underline')
+call s:hi('LspDiagnosticsUnderlineHint', s:grey, '', 'underline')
 
 call s:hi('LspDiagnosticsFloatingError', '', s:black)
 call s:hi('LspDiagnosticsFloatingWarning', '', s:black)

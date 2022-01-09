@@ -3,8 +3,8 @@ syntax reset
 set notermguicolors
 let g:colors_name = 'walh-default'
 
-let s:gray = 7
-let s:darkgray = 8
+let s:grey = 7
+let s:darkgrey = 8
 let s:red = 9
 let s:green = 10
 let s:yellow = 11
@@ -29,7 +29,6 @@ function! s:hi(group, fg='NONE', bg='NONE', attr='NONE')
 endfunction
 
 " -- group-name
-" call s:hi('Comment', s:darkgray)
 call s:hi('Identifier', s:cyan)
 call s:hi('Function', s:cyan)
 

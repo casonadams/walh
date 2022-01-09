@@ -3,8 +3,8 @@ syntax reset
 set notermguicolors
 let g:colors_name = 'walh-gruvbox'
 
-let s:gray = 7
-let s:darkgray = 8
+let s:grey = 7
+let s:darkgrey = 8
 let s:red = 9
 let s:green = 10
 let s:yellow = 11
@@ -61,5 +61,10 @@ call s:hi('Typedef', s:yellow)
 
 call s:hi('Special', s:orange)
 call s:hi('SpecialChar', s:orange)
+call s:hi('Tag', s:orange)
 
-call s:hi('Comment', s:darkgray)
+call s:hi('Delimiter', s:orange)
+call s:hi('SpecialComment', s:orange)
+call s:hi('Debug', s:orange)
+
+call s:hi('Comment', s:darkgrey)
