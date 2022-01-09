@@ -44,7 +44,7 @@ call s:hi('Conditional', s:red)
 call s:hi('Repeat', s:red)
 call s:hi('Label', s:red)
 
-call s:hi('Operator', '', '')
+call s:hi('Operator', s:cyan)
 call s:hi('Keyword', s:red)
 call s:hi('Exception', s:red)
 
@@ -63,8 +63,8 @@ call s:hi('Special', s:orange)
 call s:hi('SpecialChar', s:orange)
 call s:hi('Tag', s:orange)
 
-call s:hi('Delimiter', s:orange)
-call s:hi('SpecialComment', s:orange)
-call s:hi('Debug', s:orange)
+call s:hi('Delimiter', s:magenta)
+call s:hi('SpecialComment', s:red)
+call s:hi('Debug', s:red)
 
 call s:hi('Comment', s:darkgrey)

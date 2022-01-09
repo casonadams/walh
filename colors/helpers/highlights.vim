@@ -24,7 +24,6 @@ endfunction
 
 " -- highlight-default
 call s:hi('Normal')
-" call s:hi('Comment', s:darkgrey)
 call s:hi('NormalFloat', '', s:black)
 
 call s:hi('Underlined', s:blue, 'NONE', 'underline')

@@ -30,10 +30,11 @@ might not look correct unless those colors are set accordingly.
 | walh-default        |
 | walh-default-legacy |
 | walh-gruvbox        |
+| walh-darcula        |
 | walh-nord           |
 | walh-solarized      |
 
 ```init.vim
 set notermguicolors
-colorscheme walh-eighties
+colorscheme walh-default
 ```
