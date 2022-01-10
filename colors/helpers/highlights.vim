@@ -74,13 +74,14 @@ call s:hi('SpecialKey', s:darkgrey)
 
 call s:hi('Directory', s:darkgrey)
 call s:hi('Title', s:green, 'NONE')
-" call s:hi('ErrorMsg', 'White', s:red)
-" call s:hi('ModeMsg', 'White', '')
-" call s:hi('MsgArea', 'White', '')
-" call s:hi('MsgSeperator', 'White', '')
-" call s:hi('MoreMsg', 'White', '')
-" call s:hi('WarningMsg', s:red)
-" call s:hi('Question', s:yellow)
+
+call s:hi('ErrorMsg', s:grey, s:red)
+call s:hi('ModeMsg', s:grey)
+call s:hi('MsgArea', s:grey)
+call s:hi('MsgSeperator', s:grey)
+call s:hi('MoreMsg',s:grey)
+call s:hi('WarningMsg', s:red)
+call s:hi('Question', s:green)
 
 " -- :diff
 call s:hi('DiffAdd', s:black, s:green)

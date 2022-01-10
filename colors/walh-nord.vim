@@ -64,7 +64,7 @@ call s:hi('Special')
 call s:hi('SpecialChar', s:yellow)
 call s:hi('Tag')
 
-call s:hi('Delimiter', s:white)
+call s:hi('Delimiter', s:grey)
 call s:hi('SpecialComment', s:cyan)
 call s:hi('Debug')
 
