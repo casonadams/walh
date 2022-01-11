@@ -7,8 +7,8 @@ let s:blue = 12
 let s:magenta = 13
 let s:cyan = 14
 let s:white = 15
-let s:orange = 16
-let s:black = 18
+let s:black = 16
+let s:orange = 208
 
 function! s:hi(group, fg='NONE', bg='NONE', attr='NONE')
   if a:fg != ''
@@ -74,7 +74,7 @@ call s:hi('SpecialKey', s:darkgrey)
 call s:hi('Directory', s:darkgrey)
 call s:hi('Title', s:green, 'NONE')
 
-call s:hi('ErrorMsg', s:grey, s:red)
+call s:hi('ErrorMsg', s:red)
 call s:hi('ModeMsg', s:grey)
 call s:hi('MsgArea', s:grey)
 call s:hi('MsgSeperator', s:grey)
