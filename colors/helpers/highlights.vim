@@ -7,8 +7,8 @@ let s:blue = 12
 let s:magenta = 13
 let s:cyan = 14
 let s:white = 15
-let s:black = 16
 let s:orange = 208
+let s:black = 247
 
 function! s:hi(group, fg='NONE', bg='NONE', attr='NONE')
   if a:fg != ''
@@ -49,7 +49,7 @@ call s:hi('SignColumn', 'NONE', 'NONE')
 call s:hi('Pmenu', 'NONE', s:black)
 call s:hi('PmenuSel', 'NONE', s:black, 'reverse')
 
-call s:hi('StatusLine', s:grey, s:black)
+call s:hi('StatusLine', '', s:black, 'NONE')
 call s:hi('StatusLineNC', s:darkgrey, s:black)
 call s:hi('WildMenu', '', s:green)
 

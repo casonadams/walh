@@ -12,8 +12,8 @@ let s:blue = 12
 let s:magenta = 13
 let s:cyan = 14
 let s:white = 15
-let s:black = 16
 let s:orange = 208
+let s:black = 247
 
 exec "source " . expand('<sfile>:p:h') . "/helpers/highlights.vim"
 
