@@ -71,7 +71,7 @@ call s:hi('EndOfBuffer', '')
 call s:hi('NonText', s:darkgrey)
 call s:hi('SpecialKey', s:darkgrey)
 
-call s:hi('Directory', s:darkgrey)
+call s:hi('Directory', s:blue)
 call s:hi('Title', s:green, 'NONE')
 
 call s:hi('ErrorMsg', s:red)
