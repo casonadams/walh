@@ -37,7 +37,7 @@ call s:hi('Ignore', '', '')
 call s:hi('ColorColumn', '', s:darkgrey)
 call s:hi('CursorColumn', '', s:darkgrey)
 call s:hi('CursorLine', '', s:black)
-call s:hi('VertSplit', s:darkgrey)
+call s:hi('VertSplit', s:black)
 
 call s:hi('LineNr', s:darkgrey)
 call s:hi('CursorLineNr', '', s:black)
