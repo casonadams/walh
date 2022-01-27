@@ -57,7 +57,7 @@ call s:hi('TabLine', s:grey, s:black)
 call s:hi('TabLineFill', s:black, s:black)
 call s:hi('TabLineSel', s:green, s:black)
 
-call s:hi('MatchParen', s:white, 'NONE')
+call s:hi('MatchParen', 'NONE', 'NONE', 'bold,underline')
 call s:hi('Substitute', s:black, s:yellow)
 call s:hi('Search', '', s:yellow)
 " call s:hi('QuickFixLine', s:magenta)
