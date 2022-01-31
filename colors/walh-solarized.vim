@@ -3,69 +3,43 @@ syntax reset
 set notermguicolors
 let g:colors_name = 'walh-solarized'
 
-let s:grey = 7
-let s:darkgrey = 8
-let s:red = 9
-let s:green = 10
-let s:yellow = 11
-let s:blue = 12
-let s:magenta = 13
-let s:cyan = 14
-let s:white = 15
-let s:orange = 208
-let s:black = 247
-
-exec "source " . expand('<sfile>:p:h') . "/helpers/highlights.vim"
-
-function! s:hi(group, fg='NONE', bg='NONE', attr='NONE')
-  if a:fg != ''
-    exec 'hi ' . a:group . ' ctermfg=' . a:fg
-  endif
-  if a:bg != ''
-    exec 'hi ' . a:group . ' ctermbg=' . a:bg
-  endif
-  if a:attr != ''
-    exec 'hi ' . a:group . ' cterm=' . a:attr
-  endif
-endfunction
-
 " -- group-name
-call s:hi('Identifier', s:blue)
-call s:hi('Function', s:blue)
+call walh#hi('Identifier', walh#blue)
+call walh#hi('Function', walh#blue)
 
-call s:hi('Constant', s:cyan)
-call s:hi('String', s:cyan)
-call s:hi('Character', s:cyan)
-call s:hi('Number', s:cyan)
-call s:hi('Boolean', s:cyan)
-call s:hi('Float', s:cyan)
+call walh#hi('Constant', walh#cyan)
+call walh#hi('String', walh#cyan)
+call walh#hi('Character', walh#cyan)
+call walh#hi('Number', walh#cyan)
+call walh#hi('Boolean', walh#cyan)
+call walh#hi('Float', walh#cyan)
 
-call s:hi('Statement', s:green)
-call s:hi('Conditional', s:green)
-call s:hi('Repeat', s:green)
-call s:hi('Label', s:green)
+call walh#hi('Statement', walh#green)
+call walh#hi('Conditional', walh#green)
+call walh#hi('Repeat', walh#green)
+call walh#hi('Label', walh#green)
 
-call s:hi('Operator', s:green)
-call s:hi('Keyword', s:green)
-call s:hi('Exception', s:green)
+call walh#hi('Operator', walh#green)
+call walh#hi('Keyword', walh#green)
+call walh#hi('Exception', walh#green)
 
-call s:hi('PreProc', s:orange)
-call s:hi('Include', s:orange)
-call s:hi('Define', s:orange)
-call s:hi('Macro', s:orange)
-call s:hi('PreCondit', s:orange)
+call walh#hi('PreProc', walh#orange)
+call walh#hi('Include', walh#orange)
+call walh#hi('Define', walh#orange)
+call walh#hi('Macro', walh#orange)
+call walh#hi('PreCondit', walh#orange)
 
-call s:hi('Type', s:yellow)
-call s:hi('StorageClass', s:yellow)
-call s:hi('Structure', s:yellow)
-call s:hi('Typedef', s:yellow)
+call walh#hi('Type', walh#yellow)
+call walh#hi('StorageClass', walh#yellow)
+call walh#hi('Structure', walh#yellow)
+call walh#hi('Typedef', walh#yellow)
 
-call s:hi('Special', s:red)
-call s:hi('SpecialChar', s:red)
-call s:hi('Tag', s:red)
+call walh#hi('Special', walh#red)
+call walh#hi('SpecialChar', walh#red)
+call walh#hi('Tag', walh#red)
 
-call s:hi('Delimiter', s:red)
-call s:hi('SpecialComment', s:red)
-call s:hi('Debug', s:red)
+call walh#hi('Delimiter', walh#red)
+call walh#hi('SpecialComment', walh#red)
+call walh#hi('Debug', walh#red)
 
-call s:hi('Comment', s:green)
+call walh#hi('Comment', walh#green)
