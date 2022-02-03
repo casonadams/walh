@@ -17,7 +17,7 @@ call walh#hi('Number', walh#colors.blue)
 call walh#hi('Boolean', walh#colors.orange)
 call walh#hi('Float', walh#colors.blue)
 
-call walh#hi('Statement')
+call walh#hi('Statement', walh#colors.orange)
 call walh#hi('Conditional', walh#colors.orange)
 call walh#hi('Repeat', walh#colors.orange)
 call walh#hi('Label')
