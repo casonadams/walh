@@ -13,7 +13,7 @@ yes walh does mean what you think it does
 ## Designed to be run with alacritty-shell
 
 [alacritty-shell](https://github.com/casonadams/alacritty-shell) add additional
-indexe colors. `walh` uses `colour208` as `orange` and `colour247` as `black`.
+index colors. `walh` uses `colour208` as `orange` and `colour247` as `black`.
 So it might not look correct unless those colors are set accordingly.
 
 ## Install
