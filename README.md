@@ -10,10 +10,18 @@ yes walh does mean what you think it does
 
 **walh** = "winnebago audi lamborghini hatchback"
 
-## Designed to be run with alacritty-shell
+## Designed to be run with x-shell
 
-[alacritty-shell](https://github.com/casonadams/alacritty-shell) add additional
-indexe colors. `walh` uses `colour208` as `orange` and `colour247` as `black`.
+- [alacritty-shell](https://github.com/casonadams/alacritty-shell)
+- [walh-shell](https://github.com/casonadams/walh-shell)
+
+these are similar to `base16-shell` and add additional index colors.
+
+walh uses the following colors
+
+- `colour208` as `orange`
+- `colour247` as `black` (StatusLine, BufferLine, and CursorLine)
+
 So it might not look correct unless those colors are set accordingly.
 
 ## Install
