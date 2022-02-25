@@ -183,30 +183,4 @@ function ui#init()
   call walh#hi('TelescopeNormal', '', s:colors.black)
   call walh#hi('TelescopePreviewNormal', '', s:colors.black)
   call walh#hi('TelescopeSelection', '', '', 'reverse')
-
-  call walh#hi('BufferCurrent', s:colors.green)
-  call walh#hi('BufferCurrentIcon', s:colors.blue)
-  call walh#hi('BufferCurrentIndex', s:colors.green)
-  call walh#hi('BufferCurrentMod', s:colors.yellow)
-  call walh#hi('BufferCurrentSign', '')
-  call walh#hi('BufferCurrentTarget', s:colors.red)
-
-  call walh#hi('BufferVisible', '', s:colors.black)
-  call walh#hi('BufferVisibleIcon', s:colors.blue, s:colors.black)
-  call walh#hi('BufferVisibleIndex', '', s:colors.black)
-  call walh#hi('BufferVisibleMod', s:colors.yellow, s:colors.black)
-  call walh#hi('BufferVisibleSign', s:colors.blue, s:colors.black)
-  call walh#hi('BufferVisibleTarget', s:colors.red, s:colors.black)
-
-  call walh#hi('BufferInactive', '', s:colors.black)
-  call walh#hi('BufferInactiveIcon', s:colors.blue, s:colors.black)
-  call walh#hi('BufferInactiveIndex', '', s:colors.black)
-  call walh#hi('BufferInactiveMod', s:colors.yellow, s:colors.black)
-  call walh#hi('BufferInactiveSign', s:colors.blue, s:colors.black)
-  call walh#hi('BufferInactiveTarget', s:colors.red, s:colors.black)
-
-  call walh#hi('BufferTabpages', '', s:colors.black)
-  call walh#hi('BufferTabpageFill', '', s:colors.black)
-
-  call walh#hi('BufferOffset', '', s:colors.black)
 endfunction
