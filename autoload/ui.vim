@@ -62,7 +62,7 @@ function ui#init()
 
   call walh#hi('MatchParen', 'NONE', 'NONE', 'bold,underline')
   call walh#hi('Substitute', s:colors.black, s:colors.yellow)
-  call walh#hi('Search', 'NONE', 'NONE', 'reverse')
+  call walh#hi('Search', s:colors.black, s:colors.yellow)
   " call walh#hi('QuickFixLine', walh#magenta)
   " call walh#hi('IncSearch', walh#darkgrey, walh#yellow)
   call walh#hi('Visual', 'NONE', 'NONE', 'reverse')
