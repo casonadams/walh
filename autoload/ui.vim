@@ -60,6 +60,15 @@ function ui#init()
   call walh#hi('TabLineFill', s:colors.black, s:colors.black)
   call walh#hi('TabLineSel', s:colors.green, s:colors.black)
 
+  call walh#hi('MiniTablineCurrent', s:colors.green, s:colors.black)
+  call walh#hi('MiniTablineVisible', s:colors.grey, s:colors.black)
+  call walh#hi('MiniTablineHidden', s:colors.grey, s:colors.black)
+
+  call walh#hi('MiniTablineModifiedCurrent', s:colors.yellow, s:colors.black)
+  call walh#hi('MiniTablineModifiedVisible', s:colors.yellow, s:colors.black)
+  call walh#hi('MiniTablineModifiedHidden', s:colors.yellow, s:colors.black)
+  call walh#hi('MiniTablineFill', s:colors.grey, s:colors.black)
+
   call walh#hi('MatchParen', 'NONE', 'NONE', 'bold,underline')
   call walh#hi('Substitute', s:colors.black, s:colors.yellow)
   call walh#hi('Search', s:colors.black, s:colors.yellow)
@@ -184,3 +193,4 @@ function ui#init()
   call walh#hi('TelescopePreviewNormal', '', s:colors.black)
   call walh#hi('TelescopeSelection', '', '', 'reverse')
 endfunction
+
