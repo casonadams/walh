@@ -1,0 +1,167 @@
+grey: &grey 7
+darkgrey: &darkgrey 8
+red: &red 9
+green: &green 10
+yellow: &yellow 11
+blue: &blue 12
+magenta: &magenta 13
+cyan: &cyan 14
+white: &white 15
+orange: &orange 208
+black: &black 247
+none: &none "NONE"
+
+Function:
+  ctermbg: *none
+  ctermfg: *blue
+  cterm: *none
+
+Identifier:
+  ctermbg: *none
+  ctermfg: *red
+  cterm: *none
+
+Constant:
+  ctermbg: *none
+  ctermfg: *cyan
+  cterm: *none
+
+String:
+  ctermbg: *none
+  ctermfg: *green
+  cterm: *none
+
+Character:
+  ctermbg: *none
+  ctermfg: *green
+  cterm: *none
+
+Number:
+  ctermbg: *none
+  ctermfg: *yellow
+  cterm: *none
+
+Boolean:
+  ctermbg: *none
+  ctermfg: *yellow
+  cterm: *none
+
+Float:
+  ctermbg: *none
+  ctermfg: *yellow
+  cterm: *none
+
+Statement:
+  ctermbg: *none
+  ctermfg: *magenta
+  cterm: *none
+
+Conditional:
+  ctermbg: *none
+  ctermfg: *magenta
+  cterm: *none
+
+Repeat:
+  ctermbg: *none
+  ctermfg: *magenta
+  cterm: *none
+
+Label:
+  ctermbg: *none
+  ctermfg: *magenta
+  cterm: *none
+
+Operator:
+  ctermbg: *none
+  ctermfg: *magenta
+  cterm: *none
+
+Keyword:
+  ctermbg: *none
+  ctermfg: *red
+  cterm: *none
+
+Exception:
+  ctermbg: *none
+  ctermfg: *magenta
+  cterm: *none
+
+Include:
+  ctermbg: *none
+  ctermfg: *blue
+  cterm: *none
+
+PreProc:
+  ctermbg: *none
+  ctermfg: *yellow
+  cterm: *none
+
+Define:
+  ctermbg: *none
+  ctermfg: *magenta
+  cterm: *none
+
+Macro:
+  ctermbg: *none
+  ctermfg: *magenta
+  cterm: *none
+
+PreCondit:
+  ctermbg: *none
+  ctermfg: *yellow
+  cterm: *none
+
+Special:
+  ctermbg: *none
+  ctermfg: *blue
+  cterm: *none
+
+SpecialChar:
+  ctermbg: *none
+  ctermfg: *yellow
+  cterm: *none
+
+Tag:
+  ctermbg: *none
+  ctermfg: *none
+  cterm: *none
+
+Delimeter:
+  ctermbg: *none
+  ctermfg: *white
+  cterm: *none
+
+SpecialComment:
+  ctermbg: *none
+  ctermfg: *cyan
+  cterm: *none
+
+Debug:
+  ctermbg: *none
+  ctermfg: *none
+  cterm: *none
+
+Type:
+  ctermbg: *none
+  ctermfg: *yellow
+  cterm: *none
+
+StorageClass:
+  ctermbg: *none
+  ctermfg: *yellow
+  cterm: *none
+
+Structure:
+  ctermbg: *none
+  ctermfg: *yellow
+  cterm: *none
+
+Typedef:
+  ctermbg: *none
+  ctermfg: *yellow
+  cterm: *none
+
+Comment:
+  ctermbg: *none
+  ctermfg: *darkgrey
+  cterm: *none

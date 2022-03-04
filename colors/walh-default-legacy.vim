@@ -2,46 +2,156 @@ hi clear
 syntax reset
 set notermguicolors
 let g:colors_name = 'walh-default-legacy'
-
-call ui#init()
-
-" -- group-name
-call walh#hi('Identifier', walh#colors.cyan)
-call walh#hi('Function', walh#colors.cyan)
-
-call walh#hi('Constant', walh#colors.red)
-call walh#hi('String', walh#colors.red)
-call walh#hi('Character', walh#colors.red)
-call walh#hi('Number', walh#colors.red)
-call walh#hi('Boolean', walh#colors.red)
-call walh#hi('Float', walh#colors.red)
-
-call walh#hi('Statement', walh#colors.yellow)
-call walh#hi('Conditional', walh#colors.yellow)
-call walh#hi('Repeat', walh#colors.yellow)
-call walh#hi('Label', walh#colors.yellow)
-
-call walh#hi('Operator', walh#colors.yellow)
-call walh#hi('Keyword', walh#colors.yellow)
-call walh#hi('Exception', walh#colors.yellow)
-
-call walh#hi('PreProc', walh#colors.magenta)
-call walh#hi('Include', walh#colors.magenta)
-call walh#hi('Define', walh#colors.magenta)
-call walh#hi('Macro', walh#colors.magenta)
-call walh#hi('PreCondit', walh#colors.magenta)
-
-call walh#hi('Type', walh#colors.green)
-call walh#hi('StorageClass', walh#colors.green)
-call walh#hi('Structure', walh#colors.green)
-call walh#hi('Typedef', walh#colors.green)
-
-call walh#hi('Special', walh#colors.magenta)
-call walh#hi('SpecialChar', walh#colors.magenta)
-call walh#hi('Tag', walh#colors.magenta)
-
-call walh#hi('Delimiter', walh#colors.magenta)
-call walh#hi('SpecialComment', walh#colors.magenta)
-call walh#hi('Debug', walh#colors.magenta)
-
-call walh#hi('Comment', walh#colors.blue)
+hi Normal ctermbg=NONE ctermfg=NONE cterm=NONE
+hi NormalFloat ctermbg=247 ctermfg=NONE cterm=NONE
+hi Underline ctermbg=NONE ctermfg=NONE cterm=underline
+hi Bold ctermbg=NONE ctermfg=NONE cterm=bold
+hi Italic ctermbg=NONE ctermfg=NONE cterm=italic
+hi Error ctermbg=9 ctermfg=NONE cterm=underline
+hi Todo ctermbg=NONE ctermfg=11 cterm=bold
+hi ColorColumn ctermbg=8 ctermfg=NONE cterm=NONE
+hi CursorColumn ctermbg=8 ctermfg=NONE cterm=NONE
+hi CursorLine ctermbg=247 ctermfg=NONE cterm=NONE
+hi VertSplit ctermbg=NONE ctermfg=247 cterm=NONE
+hi LineNr ctermbg=NONE ctermfg=8 cterm=NONE
+hi CursorLineNr ctermbg=247 ctermfg=11 cterm=NONE
+hi Folded ctermbg=NONE ctermfg=8 cterm=NONE
+hi FoldColumn ctermbg=NONE ctermfg=8 cterm=NONE
+hi SignColumn ctermbg=NONE ctermfg=NONE cterm=NONE
+hi Pmenu ctermbg=247 ctermfg=NONE cterm=NONE
+hi PmenuSel ctermbg=247 ctermfg=NONE cterm=reverse
+hi StatusLine ctermbg=247 ctermfg=NONE cterm=NONE
+hi StatusLineNc ctermbg=247 ctermfg=8 cterm=NONE
+hi WildMenu ctermbg=10 ctermfg=NONE cterm=NONE
+hi TabLine ctermbg=247 ctermfg=7 cterm=NONE
+hi TabLineFill ctermbg=247 ctermfg=247 cterm=NONE
+hi TabLineSel ctermbg=247 ctermfg=10 cterm=NONE
+hi MiniTablineCurrent ctermbg=247 ctermfg=10 cterm=NONE
+hi MiniTablineVisible ctermbg=247 ctermfg=7 cterm=NONE
+hi MiniTablineHidden ctermbg=247 ctermfg=7 cterm=NONE
+hi MiniTablineModifiedCurrent ctermbg=247 ctermfg=11 cterm=NONE
+hi MiniTablineModifiedVisible ctermbg=247 ctermfg=11 cterm=NONE
+hi MiniTablineModifiedHidden ctermbg=247 ctermfg=11 cterm=NONE
+hi MiniTablineFill ctermbg=247 ctermfg=247 cterm=NONE
+hi MatchParen ctermbg=NONE ctermfg=NONE cterm=bold,underline
+hi Substitute ctermbg=11 ctermfg=247 cterm=NONE
+hi Search ctermbg=11 ctermfg=247 cterm=NONE
+hi Visual ctermbg=NONE ctermfg=NONE cterm=reverse
+hi Conceal ctermbg=NONE ctermfg=8 cterm=NONE
+hi Whitespace ctermbg=NONE ctermfg=8 cterm=NONE
+hi EndOfBuffer ctermbg=NONE ctermfg=8 cterm=NONE
+hi NonText ctermbg=NONE ctermfg=8 cterm=NONE
+hi SpecialKey ctermbg=NONE ctermfg=8 cterm=NONE
+hi Directory ctermbg=NONE ctermfg=12 cterm=NONE
+hi Title ctermbg=NONE ctermfg=10 cterm=NONE
+hi ErrorMsg ctermbg=NONE ctermfg=9 cterm=NONE
+hi ModeMsg ctermbg=NONE ctermfg=NONE cterm=NONE
+hi MsgArea ctermbg=NONE ctermfg=NONE cterm=NONE
+hi MsgSeperator ctermbg=NONE ctermfg=NONE cterm=NONE
+hi MoreMsg ctermbg=NONE ctermfg=NONE cterm=NONE
+hi WarningMsg ctermbg=NONE ctermfg=9 cterm=NONE
+hi Question ctermbg=NONE ctermfg=10 cterm=NONE
+hi DiffAdd ctermbg=10 ctermfg=247 cterm=NONE
+hi DiffDelete ctermbg=9 ctermfg=247 cterm=NONE
+hi DiffChange ctermbg=11 ctermfg=247 cterm=NONE
+hi DiffText ctermbg=12 ctermfg=247 cterm=NONE
+hi DiffAdded ctermbg=10 ctermfg=247 cterm=NONE
+hi DiffRemoved ctermbg=9 ctermfg=247 cterm=NONE
+hi SignifySignAdd ctermbg=NONE ctermfg=10 cterm=NONE
+hi SignifySignDelete ctermbg=NONE ctermfg=9 cterm=NONE
+hi SignifySignChange ctermbg=NONE ctermfg=11 cterm=NONE
+hi GitGutterAdd ctermbg=NONE ctermfg=10 cterm=NONE
+hi GitGutterDelete ctermbg=NONE ctermfg=9 cterm=NONE
+hi GitGutterChange ctermbg=NONE ctermfg=11 cterm=NONE
+hi GitSignsAdd ctermbg=NONE ctermfg=10 cterm=NONE
+hi GitSignsDelete ctermbg=NONE ctermfg=9 cterm=NONE
+hi GitSignsChange ctermbg=NONE ctermfg=11 cterm=NONE
+hi SpellBad ctermbg=NONE ctermfg=8 cterm=underline
+hi SpellCap ctermbg=NONE ctermfg=8 cterm=underline
+hi SpellLocal ctermbg=NONE ctermfg=8 cterm=underline
+hi DiagnosticError ctermbg=NONE ctermfg=9 cterm=NONE
+hi DiagnosticWarn ctermbg=NONE ctermfg=11 cterm=NONE
+hi DiagnosticInfo ctermbg=NONE ctermfg=12 cterm=NONE
+hi DiagnosticHint ctermbg=NONE ctermfg=7 cterm=NONE
+hi ALEError ctermbg=NONE ctermfg=9 cterm=underline
+hi ALEWarning ctermbg=NONE ctermfg=11 cterm=underline
+hi ALEInfo ctermbg=NONE ctermfg=12 cterm=underline
+hi ALEStyleError ctermbg=NONE ctermfg=9 cterm=underline
+hi ALEStyleWarning ctermbg=NONE ctermfg=11 cterm=underline
+hi ALEErrorLine ctermbg=NONE ctermfg=NONE cterm=NONE
+hi ALEWarningLine ctermbg=NONE ctermfg=NONE cterm=NONE
+hi ALEInfoLine ctermbg=NONE ctermfg=NONE cterm=NONE
+hi CocHighlightText ctermbg=NONE ctermfg=NONE cterm=bold
+hi CocErrorSign ctermbg=NONE ctermfg=9 cterm=NONE
+hi CocWarningSign ctermbg=NONE ctermfg=11 cterm=NONE
+hi CocInfoSign ctermbg=NONE ctermfg=12 cterm=NONE
+hi CocHintSign ctermbg=NONE ctermfg=7 cterm=NONE
+hi CocErrorHighlight ctermbg=NONE ctermfg=NONE cterm=underline
+hi CocWarningHighlight ctermbg=NONE ctermfg=NONE cterm=underline
+hi CocInfoHighlight ctermbg=NONE ctermfg=NONE cterm=underline
+hi CocHintHighlight ctermbg=NONE ctermfg=NONE cterm=underline
+hi CocDeprecatedHighlight ctermbg=NONE ctermfg=NONE cterm=underline
+hi CocUnusedHighlight ctermbg=NONE ctermfg=NONE cterm=underline
+hi CocErrorVirtualText ctermbg=NONE ctermfg=9 cterm=NONE
+hi CocWarningVirtualText ctermbg=NONE ctermfg=11 cterm=NONE
+hi CocInfoVirtualText ctermbg=NONE ctermfg=12 cterm=NONE
+hi CocHintVirtualText ctermbg=NONE ctermfg=7 cterm=NONE
+hi CocCodeLens ctermbg=NONE ctermfg=12 cterm=NONE
+hi CocFloating ctermbg=247 ctermfg=NONE cterm=NONE
+hi CocErrorFloat ctermbg=NONE ctermfg=9 cterm=NONE
+hi CocWarningFloat ctermbg=NONE ctermfg=11 cterm=NONE
+hi CocInfoFloat ctermbg=NONE ctermfg=12 cterm=NONE
+hi CocHintFloat ctermbg=NONE ctermfg=7 cterm=NONE
+hi LspDiagnosticsDefaultError ctermbg=NONE ctermfg=9 cterm=NONE
+hi LspDiagnosticsDefaultWarning ctermbg=NONE ctermfg=11 cterm=NONE
+hi LspDiagnosticsDefaultInformation ctermbg=NONE ctermfg=12 cterm=NONE
+hi LspDiagnosticsDefaultHint ctermbg=NONE ctermfg=7 cterm=NONE
+hi LspDiagnosticsVirtualTextError ctermbg=NONE ctermfg=9 cterm=NONE
+hi LspDiagnosticsVirtualTextWarning ctermbg=NONE ctermfg=11 cterm=NONE
+hi LspDiagnosticsVirtualTextInformation ctermbg=NONE ctermfg=12 cterm=NONE
+hi LspDiagnosticsVirtualTextHint ctermbg=NONE ctermfg=7 cterm=NONE
+hi LspDiagnosticsUnderlineError ctermbg=NONE ctermfg=9 cterm=underline
+hi LspDiagnosticsUnderlineWarning ctermbg=NONE ctermfg=11 cterm=underline
+hi LspDiagnosticsUnderlineInformation ctermbg=NONE ctermfg=12 cterm=underline
+hi LspDiagnosticsUnderlineHint ctermbg=NONE ctermfg=7 cterm=underline
+hi LspDiagnosticsFloatingError ctermbg=247 ctermfg=NONE cterm=NONE
+hi LspDiagnosticsFloatingWarning ctermbg=247 ctermfg=NONE cterm=NONE
+hi LspDiagnosticsFloatingInformation ctermbg=247 ctermfg=NONE cterm=NONE
+hi LspDiagnosticsFloatingHint ctermbg=247 ctermfg=NONE cterm=NONE
+hi LspReferenceText ctermbg=NONE ctermfg=NONE cterm=bold
+hi LspReferenceRead ctermbg=NONE ctermfg=NONE cterm=bold
+hi LspReferenceWrite ctermbg=NONE ctermfg=NONE cterm=bold
+hi TelescopeNormal ctermbg=247 ctermfg=NONE cterm=NONE
+hi TelescopePreviewNormal ctermbg=247 ctermfg=NONE cterm=NONE
+hi TelescopeSelection ctermbg=NONE ctermfg=NONE cterm=reverse
+hi Function ctermbg=NONE ctermfg=14 cterm=NONE
+hi Identifier ctermbg=NONE ctermfg=14 cterm=NONE
+hi Constant ctermbg=NONE ctermfg=9 cterm=NONE
+hi String ctermbg=NONE ctermfg=9 cterm=NONE
+hi Character ctermbg=NONE ctermfg=9 cterm=NONE
+hi Number ctermbg=NONE ctermfg=9 cterm=NONE
+hi Boolean ctermbg=NONE ctermfg=9 cterm=NONE
+hi Float ctermbg=NONE ctermfg=9 cterm=NONE
+hi Statement ctermbg=NONE ctermfg=11 cterm=NONE
+hi Conditional ctermbg=NONE ctermfg=11 cterm=NONE
+hi Repeat ctermbg=NONE ctermfg=11 cterm=NONE
+hi Label ctermbg=NONE ctermfg=11 cterm=NONE
+hi Operator ctermbg=NONE ctermfg=11 cterm=NONE
+hi Keyword ctermbg=NONE ctermfg=11 cterm=NONE
+hi Exception ctermbg=NONE ctermfg=11 cterm=NONE
+hi Include ctermbg=NONE ctermfg=13 cterm=NONE
+hi PreProc ctermbg=NONE ctermfg=13 cterm=NONE
+hi Define ctermbg=NONE ctermfg=13 cterm=NONE
+hi Macro ctermbg=NONE ctermfg=13 cterm=NONE
+hi PreCondit ctermbg=NONE ctermfg=13 cterm=NONE
+hi Special ctermbg=NONE ctermfg=13 cterm=NONE
+hi SpecialChar ctermbg=NONE ctermfg=13 cterm=NONE
+hi Tag ctermbg=NONE ctermfg=13 cterm=NONE
+hi Delimeter ctermbg=NONE ctermfg=13 cterm=NONE
+hi SpecialComment ctermbg=NONE ctermfg=13 cterm=NONE
+hi Debug ctermbg=NONE ctermfg=13 cterm=NONE
+hi Type ctermbg=NONE ctermfg=10 cterm=NONE
+hi StorageClass ctermbg=NONE ctermfg=10 cterm=NONE
+hi Structure ctermbg=NONE ctermfg=10 cterm=NONE
+hi Typedef ctermbg=NONE ctermfg=10 cterm=NONE
+hi Comment ctermbg=NONE ctermfg=12 cterm=NONE

@@ -1,0 +1,98 @@
+grey: &grey 7
+darkgrey: &darkgrey 8
+red: &red 9
+green: &green 10
+yellow: &yellow 11
+blue: &blue 12
+magenta: &magenta 13
+cyan: &cyan 14
+white: &white 15
+orange: &orange 208
+black: &black 247
+none: &none "NONE"
+
+Function: &Function
+  ctermbg: *none
+  ctermfg: *green
+  cterm: *none
+String:
+  <<: *Function
+
+Identifier:
+  ctermbg: *none
+  ctermfg: *blue
+  cterm: *none
+
+Constant: &Constant
+  ctermbg: *none
+  ctermfg: *magenta
+  cterm: *none
+Character:
+  <<: *Constant
+Number:
+  <<: *Constant
+Boolean:
+  <<: *Constant
+Float:
+  <<: *Constant
+Delimeter:
+  <<: *Constant
+
+Statement: &Statement
+  ctermbg: *none
+  ctermfg: *red
+  cterm: *none
+Conditional:
+  <<: *Statement
+Repeat:
+  <<: *Statement
+Label:
+  <<: *Statement
+Keyword:
+  <<: *Statement
+SpecialComment:
+  <<: *Statement
+Debug:
+  <<: *Statement
+
+Operator: &Operator
+  ctermbg: *none
+  ctermfg: *cyan
+  cterm: *none
+Exception:
+  <<: *Operator
+Include:
+  <<: *Operator
+PreProc:
+  <<: *Operator
+Define:
+  <<: *Operator
+Macro:
+  <<: *Operator
+PreCondit:
+  <<: *Operator
+Structure:
+  <<: *Operator
+
+Type: &Type
+  ctermbg: *none
+  ctermfg: *yellow
+  cterm: *none
+Typedef:
+  <<: *Type
+
+StorageClass: &StorageClass
+  ctermbg: *none
+  ctermfg: *orange
+  cterm: *none
+Special:
+  <<: *StorageClass
+SpecialChar:
+  <<: *StorageClass
+Tag:
+  <<: *StorageClass
+
+Comment:
+  ctermbg: *none
+  ctermfg: *darkgrey
+  cterm: *none
