@@ -15,20 +15,24 @@ Normal: &Normal
   ctermbg: *none
   ctermfg: *none
   cterm: *none
+  guifg: *none
+  guibg: *none
+  gui: *none
 NormalFloat: &NormalFloat
   <<: *Normal
   ctermbg: *black
 Underline: &Underline
-  ctermbg: *none
-  ctermfg: *none
+  <<: *Normal
+  cterm: "underline"
+Underlined: &Underlined
+  <<: *Normal
+  ctermfg: *cyan
   cterm: "underline"
 Bold: &Bold
-  ctermbg: *none
-  ctermfg: *none
+  <<: *Normal
   cterm: "bold"
 Italic: &Italic
-  ctermbg: *none
-  ctermfg: *none
+  <<: *Normal
   cterm: "italic"
 Error:
   <<: *Normal

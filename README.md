@@ -24,6 +24,13 @@ walh uses the following colors
 
 So it might not look correct unless those colors are set accordingly.
 
+### additional plugins to make it smooth
+
+**NOTE** use one or the other
+
+- `sheerun/vim-polyglot`
+- `nvim-treesitter/nvim-treesitter`
+
 ## Install
 
 ### Add plugin
