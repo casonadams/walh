@@ -26,7 +26,7 @@ Underline: &Underline
   cterm: "underline"
 Underlined: &Underlined
   <<: *Normal
-  ctermfg: *cyan
+  ctermfg: *blue
   cterm: "underline"
 Bold: &Bold
   <<: *Normal
