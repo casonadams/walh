@@ -36,7 +36,6 @@ Italic: &Italic
   cterm: "italic"
 Error:
   <<: *Normal
-  ctermbg: *red
   <<: *Underline
 Todo:
   <<: *Normal

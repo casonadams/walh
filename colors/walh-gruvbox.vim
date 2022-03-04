@@ -8,7 +8,7 @@ hi Underline ctermbg=NONE ctermfg=NONE cterm=underline guifg=NONE guibg=NONE gui
 hi Underlined ctermbg=NONE ctermfg=12 cterm=underline guifg=NONE guibg=NONE gui=NONE
 hi Bold ctermbg=NONE ctermfg=NONE cterm=bold guifg=NONE guibg=NONE gui=NONE
 hi Italic ctermbg=NONE ctermfg=NONE cterm=italic guifg=NONE guibg=NONE gui=NONE
-hi Error ctermbg=9 ctermfg=NONE cterm=underline guifg=NONE guibg=NONE gui=NONE
+hi Error ctermbg=NONE ctermfg=NONE cterm=underline guifg=NONE guibg=NONE gui=NONE
 hi Todo ctermbg=NONE ctermfg=11 cterm=bold guifg=NONE guibg=NONE gui=NONE
 hi ColorColumn ctermbg=8 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi CursorColumn ctermbg=8 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
