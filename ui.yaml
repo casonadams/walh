@@ -61,63 +61,63 @@ DiffChange:                           { <<: *Normal, ctermbg: *yellow, ctermfg: 
 DiffText:                             { <<: *Normal, ctermbg: *blue, ctermfg: *black }
 DiffAdded:                            { <<: *DiffAdd }
 DiffRemoved:                          { <<: *DiffDelete }
-SignifySignAdd: &SignifySignAdd       { <<: *Normal, ctermfg: *green }
-SignifySignDelete: &SignifySignDelete { <<: *Normal, ctermfg: *red }
-SignifySignChange: &SignifySignChange { <<: *Normal, ctermfg: *yellow }
-GitGutterAdd:                         { <<: *SignifySignAdd }
-GitGutterDelete:                      { <<: *SignifySignDelete }
-GitGutterChange:                      { <<: *SignifySignChange }
-GitSignsAdd:                          { <<: *SignifySignAdd }
-GitSignsDelete:                       { <<: *SignifySignDelete }
-GitSignsChange:                       { <<: *SignifySignChange }
+SignifySignAdd: &Add                  { <<: *Normal, ctermfg: *green }
+SignifySignDelete: &Delete            { <<: *Normal, ctermfg: *red }
+SignifySignChange: &Change            { <<: *Normal, ctermfg: *yellow }
+GitGutterAdd:                         { <<: *Add }
+GitGutterDelete:                      { <<: *Delete }
+GitGutterChange:                      { <<: *Change }
+GitSignsAdd:                          { <<: *Add }
+GitSignsDelete:                       { <<: *Delete }
+GitSignsChange:                       { <<: *Change }
 SpellBad: &SpellBad                   { <<: *Normal, ctermfg: *darkgrey, cterm: 'underline' }
 SpellCap:                             { <<: *SpellBad }
 SpellLocal:                           { <<: *SpellBad }
-DiagnosticError: &DiagnosticError     { <<: *Normal, ctermfg: *red }
-DiagnosticWarn: &DiagnosticWarn       { <<: *Normal, ctermfg: *yellow }
-DiagnosticInfo: &DiagnosticInfo       { <<: *Normal, ctermfg: *blue }
-DiagnosticHint: &DiagnosticHint       { <<: *Normal, ctermfg: *grey }
-ALEError:                             { <<: *DiagnosticError, cterm: 'underline' }
-ALEWarning:                           { <<: *DiagnosticWarn, cterm: 'underline' }
-ALEInfo:                              { <<: *DiagnosticInfo, cterm: 'underline' }
-ALEStyleError:                        { <<: *DiagnosticError, cterm: 'underline' }
-ALEStyleWarning:                      { <<: *DiagnosticWarn, cterm: 'underline' }
+DiagnosticError: &Error               { <<: *Normal, ctermfg: *red }
+DiagnosticWarn: &Warn                 { <<: *Normal, ctermfg: *yellow }
+DiagnosticInfo: &Info                 { <<: *Normal, ctermfg: *blue }
+DiagnosticHint: &Hint                 { <<: *Normal, ctermfg: *grey }
+ALEError:                             { <<: *Error, cterm: 'underline' }
+ALEWarning:                           { <<: *Warn, cterm: 'underline' }
+ALEInfo:                              { <<: *Info, cterm: 'underline' }
+ALEStyleError:                        { <<: *Error, cterm: 'underline' }
+ALEStyleWarning:                      { <<: *Warn, cterm: 'underline' }
 ALEErrorLine:                         { <<: *Normal }
 ALEWarningLine:                       { <<: *Normal }
 ALEInfoLine:                          { <<: *Normal }
 CocHighlightText:                     { <<: *Normal, cterm: 'bold' }
-CocErrorSign:                         { <<: *DiagnosticError }
-CocWarningSign:                       { <<: *DiagnosticWarn }
-CocInfoSign:                          { <<: *DiagnosticInfo }
-CocHintSign:                          { <<: *DiagnosticHint }
+CocErrorSign:                         { <<: *Error }
+CocWarningSign:                       { <<: *Warn }
+CocInfoSign:                          { <<: *Info }
+CocHintSign:                          { <<: *Hint }
 CocErrorHighlight:                    { <<: *Normal, cterm: 'underline' }
 CocWarningHighlight:                  { <<: *Normal, cterm: 'underline' }
 CocInfoHighlight:                     { <<: *Normal, cterm: 'underline' }
 CocHintHighlight:                     { <<: *Normal, cterm: 'underline' }
 CocDeprecatedHighlight:               { <<: *Normal, cterm: 'underline' }
 CocUnusedHighlight:                   { <<: *Normal, cterm: 'underline' }
-CocErrorVirtualText:                  { <<: *DiagnosticError }
-CocWarningVirtualText:                { <<: *DiagnosticWarn }
-CocInfoVirtualText:                   { <<: *DiagnosticInfo }
-CocHintVirtualText:                   { <<: *DiagnosticHint }
-CocCodeLens:                          { <<: *DiagnosticInfo }
+CocErrorVirtualText:                  { <<: *Error }
+CocWarningVirtualText:                { <<: *Warn }
+CocInfoVirtualText:                   { <<: *Info }
+CocHintVirtualText:                   { <<: *Hint }
+CocCodeLens:                          { <<: *Info }
 CocFloating:                          { <<: *Normal, ctermbg: *black }
-CocErrorFloat:                        { <<: *DiagnosticError }
-CocWarningFloat:                      { <<: *DiagnosticWarn }
-CocInfoFloat:                         { <<: *DiagnosticInfo }
-CocHintFloat:                         { <<: *DiagnosticHint }
-LspDiagnosticsDefaultError:           { <<: *DiagnosticError }
-LspDiagnosticsDefaultWarning:         { <<: *DiagnosticWarn }
-LspDiagnosticsDefaultInformation:     { <<: *DiagnosticInfo }
-LspDiagnosticsDefaultHint:            { <<: *DiagnosticHint }
-LspDiagnosticsVirtualTextError:       { <<: *DiagnosticError }
-LspDiagnosticsVirtualTextWarning:     { <<: *DiagnosticWarn }
-LspDiagnosticsVirtualTextInformation: { <<: *DiagnosticInfo }
-LspDiagnosticsVirtualTextHint:        { <<: *DiagnosticHint }
-LspDiagnosticsUnderlineError:         { <<: *DiagnosticError, cterm: 'underline' }
-LspDiagnosticsUnderlineWarning:       { <<: *DiagnosticWarn, cterm: 'underline' }
-LspDiagnosticsUnderlineInformation:   { <<: *DiagnosticInfo, cterm: 'underline' }
-LspDiagnosticsUnderlineHint:          { <<: *DiagnosticHint, cterm: 'underline' }
+CocErrorFloat:                        { <<: *Error }
+CocWarningFloat:                      { <<: *Warn }
+CocInfoFloat:                         { <<: *Info }
+CocHintFloat:                         { <<: *Hint }
+LspDiagnosticsDefaultError:           { <<: *Error }
+LspDiagnosticsDefaultWarning:         { <<: *Warn }
+LspDiagnosticsDefaultInformation:     { <<: *Info }
+LspDiagnosticsDefaultHint:            { <<: *Hint }
+LspDiagnosticsVirtualTextError:       { <<: *Error }
+LspDiagnosticsVirtualTextWarning:     { <<: *Warn }
+LspDiagnosticsVirtualTextInformation: { <<: *Info }
+LspDiagnosticsVirtualTextHint:        { <<: *Hint }
+LspDiagnosticsUnderlineError:         { <<: *Error, cterm: 'underline' }
+LspDiagnosticsUnderlineWarning:       { <<: *Warn, cterm: 'underline' }
+LspDiagnosticsUnderlineInformation:   { <<: *Info, cterm: 'underline' }
+LspDiagnosticsUnderlineHint:          { <<: *Hint, cterm: 'underline' }
 LspDiagnosticsFloatingError:          { <<: *Normal, ctermbg: *black }
 LspDiagnosticsFloatingWarning:        { <<: *NormalFloat }
 LspDiagnosticsFloatingInformation:    { <<: *NormalFloat }

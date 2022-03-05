@@ -25,11 +25,11 @@ hi TabLine ctermbg=247 ctermfg=7 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi TabLineFill ctermbg=247 ctermfg=247 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi TabLineSel ctermbg=247 ctermfg=10 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi MatchParen ctermbg=NONE ctermfg=NONE cterm=bold,underline guifg=NONE guibg=NONE gui=NONE
-hi Search ctermbg=11 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi IncSearch ctermfg=11 cterm=reverse guifg=NONE guibg=NONE gui=NONE
-hi WildMenu ctermbg=11 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi Repeat ctermbg=11 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi Substitute ctermfg=11 cterm=reverse guifg=NONE guibg=NONE gui=NONE
+hi Search ctermbg=11 ctermfg=0 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi IncSearch ctermbg=0 ctermfg=11 cterm=reverse guifg=NONE guibg=NONE gui=NONE
+hi WildMenu ctermbg=11 ctermfg=0 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi Repeat ctermbg=11 ctermfg=0 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi Substitute ctermbg=0 ctermfg=11 cterm=reverse guifg=NONE guibg=NONE gui=NONE
 hi Visual ctermbg=NONE ctermfg=NONE cterm=reverse guifg=NONE guibg=NONE gui=NONE
 hi Conceal ctermbg=NONE ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Whitespace ctermbg=NONE ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
