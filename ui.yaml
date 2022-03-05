@@ -1,3 +1,4 @@
+background: &background 0
 grey: &grey 7
 darkgrey: &darkgrey 8
 red: &red 9
@@ -18,29 +19,23 @@ Normal: &Normal
   guifg: *none
   guibg: *none
   gui: *none
+TermCursor:
+  cterm: 'reverse'
 NormalFloat: &NormalFloat
   <<: *Normal
   ctermbg: *black
-Underline: &Underline
+Underlined:
   <<: *Normal
+  ctermfg: *magenta
   cterm: "underline"
-Underlined: &Underlined
-  <<: *Normal
-  ctermfg: *blue
-  cterm: "underline"
-Bold: &Bold
-  <<: *Normal
-  cterm: "bold"
-Italic: &Italic
-  <<: *Normal
-  cterm: "italic"
 Error:
   <<: *Normal
-  <<: *Underline
+  ctermbg: *red
+  ctermfg: *white
 Todo:
   <<: *Normal
   ctermfg: *yellow
-  <<: *Bold
+  cterm: "bold"
 ColorColumn: &ColorColumn
   <<: *Normal
   ctermbg: *darkgrey
@@ -81,9 +76,6 @@ StatusLineNc:
   <<: *Normal
   ctermbg: *black
   ctermfg: *darkgrey
-WildMenu:
-  <<: *Normal
-  ctermbg: *green
 TabLine: &TabLine
   <<: *Normal
   ctermbg: *black
@@ -117,14 +109,21 @@ MiniTablineFill:
 MatchParen:
   <<: *Normal
   cterm: "bold,underline"
+Search: &Search
+  <<: *Normal
+  ctermbg: *yellow
+  ctermfg: *background
+IncSearch: &IncSearch
+  <<: *Normal
+  ctermbg: *background
+  ctermfg: *yellow
+  cterm: 'reverse'
+WildMenu:
+  <<: *Search
+Repeat:
+  <<: *Search
 Substitute:
-  <<: *Normal
-  ctermbg: *yellow
-  ctermfg: *black
-Search:
-  <<: *Normal
-  ctermbg: *yellow
-  ctermfg: *black
+  <<: *IncSearch
 Visual:
   <<: *Normal
   cterm: "reverse"
@@ -244,7 +243,8 @@ ALEWarningLine:
 ALEInfoLine:
   <<: *Normal
 CocHighlightText:
-  <<: *Bold
+  <<: *Normal
+  cterm: 'bold'
 CocErrorSign:
   <<: *DiagnosticError
 CocWarningSign:
@@ -254,17 +254,23 @@ CocInfoSign:
 CocHintSign:
   <<: *DiagnosticHint
 CocErrorHighlight:
-  <<: *Underline
+  <<: *Normal
+  cterm: 'underline'
 CocWarningHighlight:
-  <<: *Underline
+  <<: *Normal
+  cterm: 'underline'
 CocInfoHighlight:
-  <<: *Underline
+  <<: *Normal
+  cterm: 'underline'
 CocHintHighlight:
-  <<: *Underline
+  <<: *Normal
+  cterm: 'underline'
 CocDeprecatedHighlight:
-  <<: *Underline
+  <<: *Normal
+  cterm: 'underline'
 CocUnusedHighlight:
-  <<: *Underline
+  <<: *Normal
+  cterm: 'underline'
 CocErrorVirtualText:
   <<: *DiagnosticError
 CocWarningVirtualText:
@@ -324,11 +330,14 @@ LspDiagnosticsFloatingInformation:
 LspDiagnosticsFloatingHint:
   <<: *NormalFloat
 LspReferenceText:
-  <<: *Bold
+  <<: *Normal
+  cterm: 'bold'
 LspReferenceRead:
-  <<: *Bold
+  <<: *Normal
+  cterm: 'bold'
 LspReferenceWrite:
-  <<: *Bold
+  <<: *Normal
+  cterm: 'bold'
 TelescopeNormal:
   <<: *NormalFloat
 TelescopePreviewNormal:

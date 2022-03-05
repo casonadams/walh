@@ -11,157 +11,134 @@ orange: &orange 208
 black: &black 247
 none: &none "NONE"
 
-Function:
+Normal: &Normal
   ctermbg: *none
-  ctermfg: *blue
+  ctermfg: *none
   cterm: *none
+  guifg: *none
+  guibg: *none
+  gui: *none
+
+Function:
+  <<: *Normal
+  ctermfg: *blue
 
 Identifier:
-  ctermbg: *none
+  <<: *Normal
   ctermfg: *blue
-  cterm: *none
 
 Constant:
-  ctermbg: *none
+  <<: *Normal
   ctermfg: *cyan
-  cterm: *none
 
 String:
-  ctermbg: *none
+  <<: *Normal
   ctermfg: *cyan
-  cterm: *none
 
 Character:
-  ctermbg: *none
+  <<: *Normal
   ctermfg: *cyan
-  cterm: *none
 
 Number:
-  ctermbg: *none
+  <<: *Normal
   ctermfg: *cyan
-  cterm: *none
 
 Boolean:
-  ctermbg: *none
+  <<: *Normal
   ctermfg: *cyan
-  cterm: *none
 
 Float:
-  ctermbg: *none
+  <<: *Normal
   ctermfg: *cyan
-  cterm: *none
 
 Statement:
-  ctermbg: *none
+  <<: *Normal
   ctermfg: *green
-  cterm: *none
 
 Conditional:
-  ctermbg: *none
+  <<: *Normal
   ctermfg: *green
-  cterm: *none
 
 Repeat:
-  ctermbg: *none
+  <<: *Normal
   ctermfg: *green
-  cterm: *none
 
 Label:
-  ctermbg: *none
+  <<: *Normal
   ctermfg: *green
-  cterm: *none
 
 Operator:
-  ctermbg: *none
+  <<: *Normal
   ctermfg: *green
-  cterm: *none
 
 Keyword:
-  ctermbg: *none
+  <<: *Normal
   ctermfg: *green
-  cterm: *none
 
 Exception:
-  ctermbg: *none
+  <<: *Normal
   ctermfg: *green
-  cterm: *none
 
 Include:
-  ctermbg: *none
+  <<: *Normal
   ctermfg: *orange
-  cterm: *none
 
 PreProc:
-  ctermbg: *none
+  <<: *Normal
   ctermfg: *orange
-  cterm: *none
 
 Define:
-  ctermbg: *none
+  <<: *Normal
   ctermfg: *orange
-  cterm: *none
 
 Macro:
-  ctermbg: *none
+  <<: *Normal
   ctermfg: *orange
-  cterm: *none
 
 PreCondit:
-  ctermbg: *none
+  <<: *Normal
   ctermfg: *orange
-  cterm: *none
 
 Special:
-  ctermbg: *none
+  <<: *Normal
   ctermfg: *red
-  cterm: *none
 
 SpecialChar:
-  ctermbg: *none
+  <<: *Normal
   ctermfg: *red
-  cterm: *none
 
 Tag:
-  ctermbg: *none
+  <<: *Normal
   ctermfg: *red
-  cterm: *none
 
 Delimeter:
-  ctermbg: *none
+  <<: *Normal
   ctermfg: *red
-  cterm: *none
 
 SpecialComment:
-  ctermbg: *none
+  <<: *Normal
   ctermfg: *red
-  cterm: *none
 
 Debug:
-  ctermbg: *none
+  <<: *Normal
   ctermfg: *red
-  cterm: *none
 
 Type:
-  ctermbg: *none
+  <<: *Normal
   ctermfg: *yellow
-  cterm: *none
 
 StorageClass:
-  ctermbg: *none
+  <<: *Normal
   ctermfg: *yellow
-  cterm: *none
 
 Structure:
-  ctermbg: *none
+  <<: *Normal
   ctermfg: *yellow
-  cterm: *none
 
 Typedef:
-  ctermbg: *none
+  <<: *Normal
   ctermfg: *yellow
-  cterm: *none
 
 Comment:
-  ctermbg: *none
+  <<: *Normal
   ctermfg: *green
-  cterm: *none

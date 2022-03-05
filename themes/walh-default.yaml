@@ -11,17 +11,23 @@ orange: &orange 208
 black: &black 247
 none: &none "NONE"
 
-Function: &Function
+Normal: &Normal
   ctermbg: *none
-  ctermfg: *cyan
+  ctermfg: *none
   cterm: *none
+  guifg: *none
+  guibg: *none
+  gui: *none
+
+Function: &Function
+  <<: *Normal
+  ctermfg: *cyan
 Identifier:
   <<: *Function
 
 Constant: &Constant
-  ctermbg: *none
+  <<: *Normal
   ctermfg: *magenta
-  cterm: *none
 String:
   <<: *Constant
 Character:
@@ -34,9 +40,8 @@ Float:
   <<: *Constant
 
 Statement: &Statement
-  ctermbg: *none
+  <<: *Normal
   ctermfg: *yellow
-  cterm: *none
 Conditional:
   <<: *Statement
 Repeat:
@@ -51,9 +56,8 @@ Exception:
   <<: *Statement
 
 Include: &Include
-  ctermbg: *none
+  <<: *Normal
   ctermfg: *blue
-  cterm: *none
 PreProc:
   <<: *Include
 Define:
@@ -64,9 +68,8 @@ PreCondit:
   <<: *Include
 
 Special: &Special
-  ctermbg: *none
+  <<: *Normal
   ctermfg: *orange
-  cterm: *none
 SpecialChar:
   <<: *Special
 Tag:
@@ -79,9 +82,8 @@ Debug:
   <<: *Special
 
 Type: &Type
-  ctermbg: *none
+  <<: *Normal
   ctermfg: *green
-  cterm: *none
 StorageClass:
   <<: *Type
 Structure:
@@ -90,6 +92,5 @@ Typedef:
   <<: *Type
 
 Comment:
-  ctermbg: *none
+  <<: *Normal
   ctermfg: *cyan
-  cterm: *none
