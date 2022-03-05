@@ -11,86 +11,42 @@ orange: &orange 208
 black: &black 247
 none: &none "NONE"
 
-Normal: &Normal
-  ctermbg: *none
-  ctermfg: *none
-  cterm: *none
-  guifg: *none
-  guibg: *none
-  gui: *none
+None: &None     { ctermbg: *none, ctermfg: *none, cterm: *none, guifg: *none, guibg: *none, gui: *none }
 
-Function: &Function
-  <<: *Normal
-  ctermfg: *cyan
-Identifier:
-  <<: *Function
+Function:       { <<: *None, ctermfg: *cyan }
+Identifier:     { <<: *None, ctermfg: *cyan }
 
-Constant: &Constant
-  <<: *Normal
-  ctermfg: *magenta
-String:
-  <<: *Constant
-Character:
-  <<: *Constant
-Number:
-  <<: *Constant
-Boolean:
-  <<: *Constant
-Float:
-  <<: *Constant
+Constant:       { <<: *None, ctermfg: *magenta }
+String:         { <<: *None, ctermfg: *magenta }
+Character:      { <<: *None, ctermfg: *magenta }
+Number:         { <<: *None, ctermfg: *magenta }
+Boolean:        { <<: *None, ctermfg: *magenta }
+Float:          { <<: *None, ctermfg: *magenta }
 
-Statement: &Statement
-  <<: *Normal
-  ctermfg: *yellow
-Conditional:
-  <<: *Statement
-Repeat:
-  <<: *Statement
-Label:
-  <<: *Statement
-Operator:
-  <<: *Statement
-Keyword:
-  <<: *Statement
-Exception:
-  <<: *Statement
+Statement:      { <<: *None, ctermfg: *yellow }
+Conditional:    { <<: *None, ctermfg: *yellow }
+Repeat:         { <<: *None, ctermfg: *yellow }
+Label:          { <<: *None, ctermfg: *yellow }
+Operator:       { <<: *None, ctermfg: *yellow }
+Keyword:        { <<: *None, ctermfg: *yellow }
+Exception:      { <<: *None, ctermfg: *yellow }
 
-Include: &Include
-  <<: *Normal
-  ctermfg: *blue
-PreProc:
-  <<: *Include
-Define:
-  <<: *Include
-Macro:
-  <<: *Include
-PreCondit:
-  <<: *Include
+Include:        { <<: *None, ctermfg: *blue }
+PreProc:        { <<: *None, ctermfg: *blue }
+Define:         { <<: *None, ctermfg: *blue }
+Macro:          { <<: *None, ctermfg: *blue }
+PreCondit:      { <<: *None, ctermfg: *blue }
 
-Special: &Special
-  <<: *Normal
-  ctermfg: *orange
-SpecialChar:
-  <<: *Special
-Tag:
-  <<: *Special
-Delimeter:
-  <<: *Special
-SpecialComment:
-  <<: *Special
-Debug:
-  <<: *Special
+Special:        { <<: *None, ctermfg: *orange }
+SpecialChar:    { <<: *None, ctermfg: *orange }
+Tag:            { <<: *None, ctermfg: *orange }
+Delimeter:      { <<: *None, ctermfg: *orange }
+SpecialComment: { <<: *None, ctermfg: *orange }
+Debug:          { <<: *None, ctermfg: *orange }
 
-Type: &Type
-  <<: *Normal
-  ctermfg: *green
-StorageClass:
-  <<: *Type
-Structure:
-  <<: *Type
-Typedef:
-  <<: *Type
+Type:           { <<: *None, ctermfg: *green }
+StorageClass:   { <<: *None, ctermfg: *green }
+Structure:      { <<: *None, ctermfg: *green }
+Typedef:        { <<: *None, ctermfg: *green }
 
-Comment:
-  <<: *Normal
-  ctermfg: *cyan
+Comment:        { <<: *None, ctermfg: *cyan }

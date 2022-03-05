@@ -10,338 +10,121 @@ cyan: &cyan 14
 white: &white 15
 orange: &orange 208
 black: &black 247
-none: &none "NONE"
+none: &none 'NONE'
 
-Normal: &Normal
-  ctermbg: *none
-  ctermfg: *none
-  cterm: *none
-  guifg: *none
-  guibg: *none
-  gui: *none
-TermCursor:
-  cterm: 'reverse'
-NormalFloat: &NormalFloat
-  <<: *Normal
-  ctermbg: *black
-Underlined:
-  <<: *Normal
-  ctermfg: *magenta
-  cterm: "underline"
-Error:
-  <<: *Normal
-  ctermbg: *red
-  ctermfg: *white
-Todo:
-  <<: *Normal
-  ctermfg: *yellow
-  cterm: "bold"
-ColorColumn: &ColorColumn
-  <<: *Normal
-  ctermbg: *darkgrey
-CursorColumn:
-  <<: *ColorColumn
-CursorLine:
-  <<: *Normal
-  ctermbg: *black
-VertSplit:
-  <<: *Normal
-  ctermfg: *black
-LineNr:
-  <<: *Normal
-  ctermfg: *darkgrey
-CursorLineNr:
-  <<: *Normal
-  ctermbg: *black
-  ctermfg: *yellow
-Folded:
-  <<: *Normal
-  ctermfg: *darkgrey
-FoldColumn:
-  <<: *Normal
-  ctermfg: *darkgrey
-SignColumn:
-  <<: *Normal
-Pmenu:
-  <<: *Normal
-  ctermbg: *black
-PmenuSel:
-  <<: *Normal
-  ctermbg: *black
-  cterm: "reverse"
-StatusLine:
-  <<: *Normal
-  ctermbg: *black
-StatusLineNc:
-  <<: *Normal
-  ctermbg: *black
-  ctermfg: *darkgrey
-TabLine: &TabLine
-  <<: *Normal
-  ctermbg: *black
-  ctermfg: *grey
-TabLineFill: &TabLineFill
-  <<: *Normal
-  ctermbg: *black
-  ctermfg: *black
-TabLineSel: &TabFillSel
-  <<: *Normal
-  ctermbg: *black
-  ctermfg: *green
-MiniTablineCurrent:
-  <<: *TabFillSel
-MiniTablineVisible:
-  <<: *TabLine
-MiniTablineHidden:
-  <<: *TabLine
-MiniTablineModifiedCurrent: &MiniTablineModifiedCurrent
-  <<: *Normal
-  ctermbg: *black
-  ctermfg: *yellow
-MiniTablineModifiedVisible:
-  <<: *MiniTablineModifiedCurrent
-  ctermbg: *black
-  ctermfg: *yellow
-MiniTablineModifiedHidden:
-  <<: *MiniTablineModifiedCurrent
-MiniTablineFill:
-  <<: *TabLineFill
-MatchParen:
-  <<: *Normal
-  cterm: "bold,underline"
-Search: &Search
-  <<: *Normal
-  ctermbg: *yellow
-  ctermfg: *background
-IncSearch: &IncSearch
-  <<: *Normal
-  ctermbg: *background
-  ctermfg: *yellow
-  cterm: 'reverse'
-WildMenu:
-  <<: *Search
-Repeat:
-  <<: *Search
-Substitute:
-  <<: *IncSearch
-Visual:
-  <<: *Normal
-  cterm: "reverse"
-Conceal: &Conceal
-  <<: *Normal
-  ctermfg: *darkgrey
-Whitespace:
-  <<: *Conceal
-EndOfBuffer:
-  <<: *Conceal
-NonText:
-  <<: *Conceal
-SpecialKey:
-  <<: *Normal
-  ctermfg: *darkgrey
-Directory:
-  <<: *Normal
-  ctermfg: *blue
-Title: &Title
-  <<: *Normal
-  ctermfg: *green
-ErrorMsg: &ErrorMsg
-  <<: *Normal
-  ctermfg: *red
-ModeMsg:
-  <<: *Normal
-MsgArea:
-  <<: *Normal
-MsgSeperator:
-  <<: *Normal
-MoreMsg:
-  <<: *Normal
-WarningMsg:
-  <<: *ErrorMsg
-Question:
-  <<: *Title
-DiffAdd: &DiffAdd
-  <<: *Normal
-  ctermbg: *green
-  ctermfg: *black
-DiffDelete: &DiffDelete
-  <<: *Normal
-  ctermbg: *red
-  ctermfg: *black
-DiffChange:
-  <<: *Normal
-  ctermbg: *yellow
-  ctermfg: *black
-DiffText:
-  <<: *Normal
-  ctermbg: *blue
-  ctermfg: *black
-DiffAdded:
-  <<: *DiffAdd
-DiffRemoved:
-  <<: *DiffDelete
-SignifySignAdd: &SignifySignAdd
-  <<: *Normal
-  ctermfg: *green
-SignifySignDelete: &SignifySignDelete
-  <<: *Normal
-  ctermfg: *red
-SignifySignChange: &SignifySignChange
-  <<: *Normal
-  ctermfg: *yellow
-GitGutterAdd:
-  <<: *SignifySignAdd
-GitGutterDelete:
-  <<: *SignifySignDelete
-GitGutterChange:
-  <<: *SignifySignChange
-GitSignsAdd:
-  <<: *SignifySignAdd
-GitSignsDelete:
-  <<: *SignifySignDelete
-GitSignsChange:
-  <<: *SignifySignChange
-SpellBad: &SpellBad
-  <<: *Normal
-  ctermfg: *darkgrey
-  cterm: "underline"
-SpellCap:
-  <<: *SpellBad
-SpellLocal:
-  <<: *SpellBad
-DiagnosticError: &DiagnosticError
-  <<: *Normal
-  ctermfg: *red
-DiagnosticWarn: &DiagnosticWarn
-  <<: *Normal
-  ctermfg: *yellow
-DiagnosticInfo: &DiagnosticInfo
-  <<: *Normal
-  ctermfg: *blue
-DiagnosticHint: &DiagnosticHint
-  <<: *Normal
-  ctermfg: *grey
-ALEError:
-  <<: *DiagnosticError
-  cterm: 'underline'
-ALEWarning:
-  <<: *DiagnosticWarn
-  cterm: 'underline'
-ALEInfo:
-  <<: *DiagnosticInfo
-  cterm: 'underline'
-ALEStyleError:
-  <<: *DiagnosticError
-  cterm: 'underline'
-ALEStyleWarning:
-  <<: *DiagnosticWarn
-  cterm: 'underline'
-ALEErrorLine:
-  <<: *Normal
-ALEWarningLine:
-  <<: *Normal
-ALEInfoLine:
-  <<: *Normal
-CocHighlightText:
-  <<: *Normal
-  cterm: 'bold'
-CocErrorSign:
-  <<: *DiagnosticError
-CocWarningSign:
-  <<: *DiagnosticWarn
-CocInfoSign:
-  <<: *DiagnosticInfo
-CocHintSign:
-  <<: *DiagnosticHint
-CocErrorHighlight:
-  <<: *Normal
-  cterm: 'underline'
-CocWarningHighlight:
-  <<: *Normal
-  cterm: 'underline'
-CocInfoHighlight:
-  <<: *Normal
-  cterm: 'underline'
-CocHintHighlight:
-  <<: *Normal
-  cterm: 'underline'
-CocDeprecatedHighlight:
-  <<: *Normal
-  cterm: 'underline'
-CocUnusedHighlight:
-  <<: *Normal
-  cterm: 'underline'
-CocErrorVirtualText:
-  <<: *DiagnosticError
-CocWarningVirtualText:
-  <<: *DiagnosticWarn
-CocInfoVirtualText:
-  <<: *DiagnosticInfo
-CocHintVirtualText:
-  <<: *DiagnosticHint
-CocCodeLens:
-  <<: *DiagnosticInfo
-CocFloating:
-  <<: *Normal
-  ctermbg: *black
-CocErrorFloat:
-  <<: *DiagnosticError
-CocWarningFloat:
-  <<: *DiagnosticWarn
-CocInfoFloat:
-  <<: *DiagnosticInfo
-CocHintFloat:
-  <<: *DiagnosticHint
-LspDiagnosticsDefaultError:
-  <<: *DiagnosticError
-LspDiagnosticsDefaultWarning:
-  <<: *DiagnosticWarn
-LspDiagnosticsDefaultInformation:
-  <<: *DiagnosticInfo
-LspDiagnosticsDefaultHint:
-  <<: *DiagnosticHint
-LspDiagnosticsVirtualTextError:
-  <<: *DiagnosticError
-LspDiagnosticsVirtualTextWarning:
-  <<: *DiagnosticWarn
-LspDiagnosticsVirtualTextInformation:
-  <<: *DiagnosticInfo
-LspDiagnosticsVirtualTextHint:
-  <<: *DiagnosticHint
-LspDiagnosticsUnderlineError:
-  <<: *DiagnosticError
-  cterm: "underline"
-LspDiagnosticsUnderlineWarning:
-  <<: *DiagnosticWarn
-  cterm: "underline"
-LspDiagnosticsUnderlineInformation:
-  <<: *DiagnosticInfo
-  cterm: "underline"
-LspDiagnosticsUnderlineHint:
-  <<: *DiagnosticHint
-  cterm: "underline"
-LspDiagnosticsFloatingError:
-  <<: *Normal
-  ctermbg: *black
-LspDiagnosticsFloatingWarning:
-  <<: *NormalFloat
-LspDiagnosticsFloatingInformation:
-  <<: *NormalFloat
-LspDiagnosticsFloatingHint:
-  <<: *NormalFloat
-LspReferenceText:
-  <<: *Normal
-  cterm: 'bold'
-LspReferenceRead:
-  <<: *Normal
-  cterm: 'bold'
-LspReferenceWrite:
-  <<: *Normal
-  cterm: 'bold'
-TelescopeNormal:
-  <<: *NormalFloat
-TelescopePreviewNormal:
-  <<: *NormalFloat
-TelescopeSelection:
-  <<: *Normal
-  cterm: "reverse"
+Normal: &Normal                       { ctermbg: *none, ctermfg: *none, cterm: *none, guifg: *none, guibg: *none, gui: *none }
+TermCursor:                           { cterm: 'reverse' }
+NormalFloat: &NormalFloat             { <<: *Normal, ctermbg: *black }
+Underlined:                           { <<: *Normal, ctermfg: *magenta, cterm: 'underline' }
+Error:                                { <<: *Normal, ctermbg: *red, ctermfg: *white }
+Todo:                                 { <<: *Normal, ctermfg: *yellow, cterm: 'bold' }
+ColorColumn: &ColorColumn             { <<: *Normal, ctermbg: *darkgrey }
+CursorColumn:                         { <<: *ColorColumn }
+CursorLine:                           { <<: *Normal, ctermbg: *black }
+VertSplit:                            { <<: *Normal, ctermfg: *black }
+LineNr:                               { <<: *Normal, ctermfg: *darkgrey }
+CursorLineNr:                         { <<: *Normal, ctermbg: *black, ctermfg: *yellow }
+Folded:                               { <<: *Normal, ctermfg: *darkgrey }
+FoldColumn:                           { <<: *Normal, ctermfg: *darkgrey }
+SignColumn:                           { <<: *Normal }
+Pmenu:                                { <<: *Normal, ctermbg: *black }
+PmenuSel:                             { <<: *Normal, ctermbg: *black, cterm: 'reverse' }
+StatusLine:                           { <<: *Normal, ctermbg: *black }
+StatusLineNc:                         { <<: *Normal, ctermbg: *black, ctermfg: *darkgrey }
+TabLine:                              { <<: *Normal, ctermbg: *black, ctermfg: *grey }
+TabLineFill:                          { <<: *Normal, ctermbg: *black, ctermfg: *black }
+TabLineSel:                           { <<: *Normal, ctermbg: *black, ctermfg: *green }
+MatchParen:                           { <<: *Normal, cterm: 'bold,underline' }
+Search: &Search                       { <<: *Normal, ctermbg: *yellow, ctermfg: *background }
+IncSearch: &IncSearch                 { <<: *Normal, ctermbg: *background, ctermfg: *yellow, cterm: 'reverse' }
+WildMenu:                             { <<: *Search }
+Repeat:                               { <<: *Search }
+Substitute:                           { <<: *IncSearch }
+Visual:                               { <<: *Normal, cterm: 'reverse' }
+Conceal: &Conceal                     { <<: *Normal, ctermfg: *darkgrey }
+Whitespace:                           { <<: *Conceal }
+EndOfBuffer:                          { <<: *Conceal }
+NonText:                              { <<: *Conceal }
+SpecialKey:                           { <<: *Normal, ctermfg: *darkgrey }
+Directory:                            { <<: *Normal, ctermfg: *blue }
+Title: &Title                         { <<: *Normal, ctermfg: *green }
+ErrorMsg: &ErrorMsg                   { <<: *Normal, ctermfg: *red }
+ModeMsg:                              { <<: *Normal }
+MsgArea:                              { <<: *Normal }
+MsgSeperator:                         { <<: *Normal }
+MoreMsg:                              { <<: *Normal }
+WarningMsg:                           { <<: *ErrorMsg }
+Question:                             { <<: *Title }
+DiffAdd: &DiffAdd                     { <<: *Normal, ctermbg: *green, ctermfg: *black }
+DiffDelete: &DiffDelete               { <<: *Normal, ctermbg: *red, ctermfg: *black }
+DiffChange:                           { <<: *Normal, ctermbg: *yellow, ctermfg: *black }
+DiffText:                             { <<: *Normal, ctermbg: *blue, ctermfg: *black }
+DiffAdded:                            { <<: *DiffAdd }
+DiffRemoved:                          { <<: *DiffDelete }
+SignifySignAdd: &SignifySignAdd       { <<: *Normal, ctermfg: *green }
+SignifySignDelete: &SignifySignDelete { <<: *Normal, ctermfg: *red }
+SignifySignChange: &SignifySignChange { <<: *Normal, ctermfg: *yellow }
+GitGutterAdd:                         { <<: *SignifySignAdd }
+GitGutterDelete:                      { <<: *SignifySignDelete }
+GitGutterChange:                      { <<: *SignifySignChange }
+GitSignsAdd:                          { <<: *SignifySignAdd }
+GitSignsDelete:                       { <<: *SignifySignDelete }
+GitSignsChange:                       { <<: *SignifySignChange }
+SpellBad: &SpellBad                   { <<: *Normal, ctermfg: *darkgrey, cterm: 'underline' }
+SpellCap:                             { <<: *SpellBad }
+SpellLocal:                           { <<: *SpellBad }
+DiagnosticError: &DiagnosticError     { <<: *Normal, ctermfg: *red }
+DiagnosticWarn: &DiagnosticWarn       { <<: *Normal, ctermfg: *yellow }
+DiagnosticInfo: &DiagnosticInfo       { <<: *Normal, ctermfg: *blue }
+DiagnosticHint: &DiagnosticHint       { <<: *Normal, ctermfg: *grey }
+ALEError:                             { <<: *DiagnosticError, cterm: 'underline' }
+ALEWarning:                           { <<: *DiagnosticWarn, cterm: 'underline' }
+ALEInfo:                              { <<: *DiagnosticInfo, cterm: 'underline' }
+ALEStyleError:                        { <<: *DiagnosticError, cterm: 'underline' }
+ALEStyleWarning:                      { <<: *DiagnosticWarn, cterm: 'underline' }
+ALEErrorLine:                         { <<: *Normal }
+ALEWarningLine:                       { <<: *Normal }
+ALEInfoLine:                          { <<: *Normal }
+CocHighlightText:                     { <<: *Normal, cterm: 'bold' }
+CocErrorSign:                         { <<: *DiagnosticError }
+CocWarningSign:                       { <<: *DiagnosticWarn }
+CocInfoSign:                          { <<: *DiagnosticInfo }
+CocHintSign:                          { <<: *DiagnosticHint }
+CocErrorHighlight:                    { <<: *Normal, cterm: 'underline' }
+CocWarningHighlight:                  { <<: *Normal, cterm: 'underline' }
+CocInfoHighlight:                     { <<: *Normal, cterm: 'underline' }
+CocHintHighlight:                     { <<: *Normal, cterm: 'underline' }
+CocDeprecatedHighlight:               { <<: *Normal, cterm: 'underline' }
+CocUnusedHighlight:                   { <<: *Normal, cterm: 'underline' }
+CocErrorVirtualText:                  { <<: *DiagnosticError }
+CocWarningVirtualText:                { <<: *DiagnosticWarn }
+CocInfoVirtualText:                   { <<: *DiagnosticInfo }
+CocHintVirtualText:                   { <<: *DiagnosticHint }
+CocCodeLens:                          { <<: *DiagnosticInfo }
+CocFloating:                          { <<: *Normal, ctermbg: *black }
+CocErrorFloat:                        { <<: *DiagnosticError }
+CocWarningFloat:                      { <<: *DiagnosticWarn }
+CocInfoFloat:                         { <<: *DiagnosticInfo }
+CocHintFloat:                         { <<: *DiagnosticHint }
+LspDiagnosticsDefaultError:           { <<: *DiagnosticError }
+LspDiagnosticsDefaultWarning:         { <<: *DiagnosticWarn }
+LspDiagnosticsDefaultInformation:     { <<: *DiagnosticInfo }
+LspDiagnosticsDefaultHint:            { <<: *DiagnosticHint }
+LspDiagnosticsVirtualTextError:       { <<: *DiagnosticError }
+LspDiagnosticsVirtualTextWarning:     { <<: *DiagnosticWarn }
+LspDiagnosticsVirtualTextInformation: { <<: *DiagnosticInfo }
+LspDiagnosticsVirtualTextHint:        { <<: *DiagnosticHint }
+LspDiagnosticsUnderlineError:         { <<: *DiagnosticError, cterm: 'underline' }
+LspDiagnosticsUnderlineWarning:       { <<: *DiagnosticWarn, cterm: 'underline' }
+LspDiagnosticsUnderlineInformation:   { <<: *DiagnosticInfo, cterm: 'underline' }
+LspDiagnosticsUnderlineHint:          { <<: *DiagnosticHint, cterm: 'underline' }
+LspDiagnosticsFloatingError:          { <<: *Normal, ctermbg: *black }
+LspDiagnosticsFloatingWarning:        { <<: *NormalFloat }
+LspDiagnosticsFloatingInformation:    { <<: *NormalFloat }
+LspDiagnosticsFloatingHint:           { <<: *NormalFloat }
+LspReferenceText:                     { <<: *Normal, cterm: 'bold' }
+LspReferenceRead:                     { <<: *Normal, cterm: 'bold' }
+LspReferenceWrite:                    { <<: *Normal, cterm: 'bold' }
+TelescopeNormal:                      { <<: *NormalFloat }
+TelescopePreviewNormal:               { <<: *NormalFloat }
+TelescopeSelection:                   { <<: *Normal, cterm: 'reverse' }

@@ -24,13 +24,6 @@ hi StatusLineNc ctermbg=247 ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi TabLine ctermbg=247 ctermfg=7 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi TabLineFill ctermbg=247 ctermfg=247 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi TabLineSel ctermbg=247 ctermfg=10 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi MiniTablineCurrent ctermbg=247 ctermfg=10 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi MiniTablineVisible ctermbg=247 ctermfg=7 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi MiniTablineHidden ctermbg=247 ctermfg=7 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi MiniTablineModifiedCurrent ctermbg=247 ctermfg=11 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi MiniTablineModifiedVisible ctermbg=247 ctermfg=11 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi MiniTablineModifiedHidden ctermbg=247 ctermfg=11 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi MiniTablineFill ctermbg=247 ctermfg=247 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi MatchParen ctermbg=NONE ctermfg=NONE cterm=bold,underline guifg=NONE guibg=NONE gui=NONE
 hi Search ctermbg=11 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi IncSearch ctermfg=11 cterm=reverse guifg=NONE guibg=NONE gui=NONE
@@ -125,7 +118,7 @@ hi LspReferenceWrite ctermbg=NONE ctermfg=NONE cterm=bold guifg=NONE guibg=NONE 
 hi TelescopeNormal ctermbg=247 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi TelescopePreviewNormal ctermbg=247 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi TelescopeSelection ctermbg=NONE ctermfg=NONE cterm=reverse guifg=NONE guibg=NONE gui=NONE
-hi Normal ctermbg=NONE ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi None ctermbg=NONE ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Function ctermbg=NONE ctermfg=14 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Identifier ctermbg=NONE ctermfg=14 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Constant ctermbg=NONE ctermfg=13 cterm=NONE guifg=NONE guibg=NONE gui=NONE
