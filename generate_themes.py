@@ -1,6 +1,7 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import os
 
+# python -m pip install pyyaml
 import yaml
 
 
