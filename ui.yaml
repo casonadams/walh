@@ -23,14 +23,14 @@ CursorColumn:                         { <<: *ColorColumn }
 CursorLine:                           { <<: *Normal, ctermbg: *black }
 VertSplit:                            { <<: *Normal, ctermfg: *black }
 LineNr:                               { <<: *Normal, ctermfg: *darkgrey }
-CursorLineNr:                         { <<: *Normal, ctermbg: *black, ctermfg: *yellow }
+CursorLineNr:                         { <<: *Normal, ctermfg: *grey }
 Folded:                               { <<: *Normal, ctermfg: *darkgrey }
 FoldColumn:                           { <<: *Normal, ctermfg: *darkgrey }
 SignColumn:                           { <<: *Normal }
 Pmenu:                                { <<: *Normal, ctermbg: *black }
 PmenuSel:                             { <<: *Normal, ctermbg: *black, cterm: 'reverse' }
 StatusLine:                           { <<: *Normal, ctermbg: *black }
-StatusLineNc:                         { <<: *Normal, ctermbg: *black, ctermfg: *darkgrey }
+StatusLineNC:                         { <<: *Normal, ctermbg: *black, ctermfg: *darkgrey }
 TabLine:                              { <<: *Normal, ctermbg: *black, ctermfg: *grey }
 TabLineFill:                          { <<: *Normal, ctermbg: *black, ctermfg: *black }
 TabLineSel:                           { <<: *Normal, ctermbg: *black, ctermfg: *green }
@@ -68,8 +68,11 @@ GitGutterAdd:                         { <<: *Add }
 GitGutterDelete:                      { <<: *Delete }
 GitGutterChange:                      { <<: *Change }
 GitSignsAdd:                          { <<: *Add }
+GitSignsAddNR:                        { <<: *Add }
 GitSignsDelete:                       { <<: *Delete }
+GitSignsDeleteNR:                     { <<: *Delete }
 GitSignsChange:                       { <<: *Change }
+GitSignsChangeNR:                     { <<: *Change }
 SpellBad: &SpellBad                   { <<: *Normal, ctermfg: *darkgrey, cterm: 'underline' }
 SpellCap:                             { <<: *SpellBad }
 SpellLocal:                           { <<: *SpellBad }
