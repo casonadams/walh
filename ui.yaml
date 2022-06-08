@@ -40,7 +40,7 @@ IncSearch: &IncSearch                 { <<: *Normal, ctermbg: *background, cterm
 WildMenu:                             { <<: *Search }
 Repeat:                               { <<: *Search }
 Substitute:                           { <<: *IncSearch }
-Visual:                               { <<: *Normal, cterm: 'reverse' }
+Visual:                               { <<: *Normal, ctermbg: *black }
 Conceal: &Conceal                     { <<: *Normal, ctermfg: *darkgrey }
 Whitespace:                           { <<: *Conceal }
 EndOfBuffer:                          { <<: *Conceal }

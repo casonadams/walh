@@ -30,7 +30,7 @@ hi IncSearch ctermbg=0 ctermfg=11 cterm=reverse guifg=NONE guibg=NONE gui=NONE
 hi WildMenu ctermbg=11 ctermfg=0 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Repeat ctermbg=11 ctermfg=0 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Substitute ctermbg=0 ctermfg=11 cterm=reverse guifg=NONE guibg=NONE gui=NONE
-hi Visual ctermbg=NONE ctermfg=NONE cterm=reverse guifg=NONE guibg=NONE gui=NONE
+hi Visual ctermbg=247 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Conceal ctermbg=NONE ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Whitespace ctermbg=NONE ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi EndOfBuffer ctermbg=NONE ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
