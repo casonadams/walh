@@ -23,7 +23,7 @@ CursorColumn:                         { <<: *ColorColumn }
 CursorLine:                           { <<: *Normal, ctermbg: *black }
 VertSplit:                            { <<: *Normal, ctermfg: *black }
 LineNr:                               { <<: *Normal, ctermfg: *darkgrey }
-CursorLineNr:                         { <<: *Normal, ctermfg: *grey }
+CursorLineNr:                         { <<: *Normal, ctermfg: *grey, ctermbg: *black }
 Folded:                               { <<: *Normal, ctermfg: *darkgrey }
 FoldColumn:                           { <<: *Normal, ctermfg: *darkgrey }
 SignColumn:                           { <<: *Normal }

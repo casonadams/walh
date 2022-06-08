@@ -13,7 +13,7 @@ hi CursorColumn ctermbg=8 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi CursorLine ctermbg=247 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi VertSplit ctermbg=NONE ctermfg=247 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi LineNr ctermbg=NONE ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi CursorLineNr ctermbg=NONE ctermfg=7 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi CursorLineNr ctermbg=247 ctermfg=7 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Folded ctermbg=NONE ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi FoldColumn ctermbg=NONE ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi SignColumn ctermbg=NONE ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
