@@ -30,7 +30,7 @@ hi IncSearch ctermbg=0 ctermfg=11 cterm=reverse guifg=NONE guibg=NONE gui=NONE
 hi WildMenu ctermbg=11 ctermfg=0 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Repeat ctermbg=11 ctermfg=0 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Substitute ctermbg=0 ctermfg=11 cterm=reverse guifg=NONE guibg=NONE gui=NONE
-hi Visual ctermbg=NONE ctermfg=NONE cterm=bold guifg=NONE guibg=NONE gui=NONE
+hi Visual ctermbg=NONE ctermfg=NONE cterm=reverse guifg=NONE guibg=NONE gui=NONE
 hi Conceal ctermbg=NONE ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Whitespace ctermbg=NONE ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi EndOfBuffer ctermbg=NONE ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
@@ -45,12 +45,12 @@ hi MsgSeperator ctermbg=NONE ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=N
 hi MoreMsg ctermbg=NONE ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi WarningMsg ctermbg=NONE ctermfg=9 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Question ctermbg=NONE ctermfg=10 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi DiffAdd ctermbg=10 ctermfg=247 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi DiffDelete ctermbg=9 ctermfg=247 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi DiffChange ctermbg=11 ctermfg=247 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi DiffText ctermbg=12 ctermfg=247 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi DiffAdded ctermbg=10 ctermfg=247 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi DiffRemoved ctermbg=9 ctermfg=247 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi DiffAdd ctermbg=10 ctermfg=15 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi DiffDelete ctermbg=9 ctermfg=15 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi DiffChange ctermbg=11 ctermfg=15 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi DiffText ctermbg=12 ctermfg=15 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi DiffAdded ctermbg=10 ctermfg=15 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi DiffRemoved ctermbg=9 ctermfg=15 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi SignifySignAdd ctermbg=NONE ctermfg=10 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi SignifySignDelete ctermbg=NONE ctermfg=9 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi SignifySignChange ctermbg=NONE ctermfg=11 cterm=NONE guifg=NONE guibg=NONE gui=NONE

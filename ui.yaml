@@ -40,7 +40,7 @@ IncSearch: &IncSearch                 { <<: *Normal, ctermbg: *background, cterm
 WildMenu:                             { <<: *Search }
 Repeat:                               { <<: *Search }
 Substitute:                           { <<: *IncSearch }
-Visual:                               { <<: *Normal, cterm: 'bold' }
+Visual:                               { <<: *Normal, cterm: 'reverse' }
 Conceal: &Conceal                     { <<: *Normal, ctermfg: *darkgrey }
 Whitespace:                           { <<: *Conceal }
 EndOfBuffer:                          { <<: *Conceal }
@@ -55,10 +55,10 @@ MsgSeperator:                         { <<: *Normal }
 MoreMsg:                              { <<: *Normal }
 WarningMsg:                           { <<: *ErrorMsg }
 Question:                             { <<: *Title }
-DiffAdd: &DiffAdd                     { <<: *Normal, ctermbg: *green, ctermfg: *black }
-DiffDelete: &DiffDelete               { <<: *Normal, ctermbg: *red, ctermfg: *black }
-DiffChange:                           { <<: *Normal, ctermbg: *yellow, ctermfg: *black }
-DiffText:                             { <<: *Normal, ctermbg: *blue, ctermfg: *black }
+DiffAdd: &DiffAdd                     { <<: *Normal, ctermbg: *green, ctermfg: *white }
+DiffDelete: &DiffDelete               { <<: *Normal, ctermbg: *red, ctermfg: *white }
+DiffChange:                           { <<: *Normal, ctermbg: *yellow, ctermfg: *white }
+DiffText:                             { <<: *Normal, ctermbg: *blue, ctermfg: *white }
 DiffAdded:                            { <<: *DiffAdd }
 DiffRemoved:                          { <<: *DiffDelete }
 SignifySignAdd: &Add                  { <<: *Normal, ctermfg: *green }
