@@ -118,9 +118,10 @@ hi LspDiagnosticsFloatingHint ctermbg=247 ctermfg=NONE cterm=NONE guifg=NONE gui
 hi LspReferenceText ctermbg=NONE ctermfg=NONE cterm=bold guifg=NONE guibg=NONE gui=NONE
 hi LspReferenceRead ctermbg=NONE ctermfg=NONE cterm=bold guifg=NONE guibg=NONE gui=NONE
 hi LspReferenceWrite ctermbg=NONE ctermfg=NONE cterm=bold guifg=NONE guibg=NONE gui=NONE
-hi TelescopeNormal ctermbg=247 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi TelescopePreviewNormal ctermbg=247 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi TelescopeSelection ctermbg=NONE ctermfg=NONE cterm=reverse guifg=NONE guibg=NONE gui=NONE
+hi TelescopeNormal ctermbg=NONE ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi TelescopePreviewNormal ctermbg=NONE ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi TelescopeSelection ctermbg=247 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi TelescopePromptNormal ctermbg=247 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi None ctermbg=NONE ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Function ctermbg=NONE ctermfg=11 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Identifier ctermbg=NONE ctermfg=13 cterm=NONE guifg=NONE guibg=NONE gui=NONE

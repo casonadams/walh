@@ -128,6 +128,7 @@ LspDiagnosticsFloatingHint:           { <<: *NormalFloat }
 LspReferenceText:                     { <<: *Normal, cterm: 'bold' }
 LspReferenceRead:                     { <<: *Normal, cterm: 'bold' }
 LspReferenceWrite:                    { <<: *Normal, cterm: 'bold' }
-TelescopeNormal:                      { <<: *NormalFloat }
-TelescopePreviewNormal:               { <<: *NormalFloat }
-TelescopeSelection:                   { <<: *Normal, cterm: 'reverse' }
+TelescopeNormal:                      { <<: *Normal }
+TelescopePreviewNormal:               { <<: *Normal }
+TelescopeSelection:                   { <<: *Normal, ctermbg: *black }
+TelescopePromptNormal:                { <<: *NormalFloat }
