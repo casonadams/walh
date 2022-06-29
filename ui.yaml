@@ -23,7 +23,7 @@ CursorColumn:                         { <<: *ColorColumn }
 CursorLine:                           { <<: *Normal, ctermbg: *black }
 VertSplit:                            { <<: *Normal, ctermfg: *black }
 LineNr:                               { <<: *Normal, ctermfg: *darkgrey }
-CursorLineNr:                         { <<: *Normal, ctermfg: *grey }
+CursorLineNr:                         { <<: *Normal, ctermfg: *grey, ctermbg: *black }
 Folded:                               { <<: *Normal, ctermfg: *darkgrey }
 FoldColumn:                           { <<: *Normal, ctermfg: *darkgrey }
 SignColumn:                           { <<: *Normal }
@@ -55,10 +55,10 @@ MsgSeperator:                         { <<: *Normal }
 MoreMsg:                              { <<: *Normal }
 WarningMsg:                           { <<: *ErrorMsg }
 Question:                             { <<: *Title }
-DiffAdd: &DiffAdd                     { <<: *Normal, ctermbg: *green, ctermfg: *black }
-DiffDelete: &DiffDelete               { <<: *Normal, ctermbg: *red, ctermfg: *black }
-DiffChange:                           { <<: *Normal, ctermbg: *yellow, ctermfg: *black }
-DiffText:                             { <<: *Normal, ctermbg: *blue, ctermfg: *black }
+DiffAdd: &DiffAdd                     { <<: *Normal, ctermbg: *green, ctermfg: *white }
+DiffDelete: &DiffDelete               { <<: *Normal, ctermbg: *red, ctermfg: *white }
+DiffChange:                           { <<: *Normal, ctermbg: *yellow, ctermfg: *white }
+DiffText:                             { <<: *Normal, ctermbg: *blue, ctermfg: *white }
 DiffAdded:                            { <<: *DiffAdd }
 DiffRemoved:                          { <<: *DiffDelete }
 SignifySignAdd: &Add                  { <<: *Normal, ctermfg: *green }
