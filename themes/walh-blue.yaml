@@ -1,0 +1,51 @@
+darkgrey: &darkgrey 8
+red: &red 9
+green: &green 10
+yellow: &yellow 11
+blue: &blue 12
+magenta: &magenta 13
+cyan: &cyan 14
+white: &white 15
+orange: &orange 208
+
+None: &None     { ctermbg: "NONE", ctermfg: "NONE", cterm: "NONE", guifg: "NONE", guibg: "NONE", gui: "NONE" }
+
+Normal:         { <<: *None, ctermfg: *yellow }
+Function:       { <<: *None, ctermfg: *red }
+Identifier:     { <<: *None, ctermfg: *red }
+
+Constant:       { <<: *None, ctermfg: *cyan }
+String:         { <<: *None, ctermfg: *cyan }
+Character:      { <<: *None, ctermfg: *cyan }
+Number:         { <<: *None, ctermfg: *cyan }
+Boolean:        { <<: *None, ctermfg: *cyan }
+Float:          { <<: *None, ctermfg: *cyan }
+
+Statement:      { <<: *None, ctermfg: *white }
+Conditional:    { <<: *None, ctermfg: *white }
+Repeat:         { <<: *None, ctermfg: *white }
+Label:          { <<: *None, ctermfg: *yellow }
+Operator:       { <<: *None, ctermfg: *orange }
+Keyword:        { <<: *None, ctermfg: *white }
+Exception:      { <<: *None, ctermfg: *white }
+
+Include:        { <<: *None, ctermfg: *green }
+PreProc:        { <<: *None, ctermfg: *green }
+Define:         { <<: *None, ctermfg: *green }
+Macro:          { <<: *None, ctermfg: *green }
+PreCondit:      { <<: *None, ctermfg: *green }
+
+SpecialKey:     { <<: *None, ctermfg: *cyan }
+Special:        { <<: *None, ctermfg: *magenta }
+SpecialChar:    { <<: *None, ctermfg: *magenta }
+Tag:            { <<: *None, ctermfg: *magenta }
+Delimeter:      { <<: *None }
+SpecialComment: { <<: *None, ctermfg: *magenta }
+Debug:          { <<: *None, ctermfg: *magenta }
+
+Type:           { <<: *None, ctermfg: *orange }
+StorageClass:   { <<: *None, ctermfg: *orange }
+Structure:      { <<: *None, ctermfg: *orange }
+Typedef:        { <<: *None, ctermfg: *orange }
+
+Comment:        { <<: *None, ctermfg: *darkgrey }

@@ -1,7 +1,7 @@
 hi clear
 syntax reset
 set notermguicolors
-let g:colors_name = 'walh-solarized'
+let g:colors_name = 'walh-blue'
 hi Normal ctermbg=NONE ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi TermCursor cterm=reverse
 hi NormalFloat ctermbg=0 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
@@ -123,34 +123,36 @@ hi TelescopePreviewNormal ctermbg=NONE ctermfg=NONE cterm=NONE guifg=NONE guibg=
 hi TelescopeSelection ctermbg=0 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi TelescopePromptNormal ctermbg=0 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi None ctermbg=NONE ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi Function ctermbg=NONE ctermfg=12 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi Identifier ctermbg=NONE ctermfg=12 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi Normal ctermbg=NONE ctermfg=11 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi Function ctermbg=NONE ctermfg=9 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi Identifier ctermbg=NONE ctermfg=9 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Constant ctermbg=NONE ctermfg=14 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi String ctermbg=NONE ctermfg=14 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Character ctermbg=NONE ctermfg=14 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Number ctermbg=NONE ctermfg=14 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Boolean ctermbg=NONE ctermfg=14 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Float ctermbg=NONE ctermfg=14 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi Statement ctermbg=NONE ctermfg=10 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi Conditional ctermbg=NONE ctermfg=10 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi Repeat ctermbg=NONE ctermfg=10 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi Label ctermbg=NONE ctermfg=10 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi Operator ctermbg=NONE ctermfg=10 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi Keyword ctermbg=NONE ctermfg=10 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi Exception ctermbg=NONE ctermfg=10 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi Include ctermbg=NONE ctermfg=208 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi PreProc ctermbg=NONE ctermfg=208 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi Define ctermbg=NONE ctermfg=208 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi Macro ctermbg=NONE ctermfg=208 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi PreCondit ctermbg=NONE ctermfg=208 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi Special ctermbg=NONE ctermfg=208 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi SpecialChar ctermbg=NONE ctermfg=9 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi Tag ctermbg=NONE ctermfg=9 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi Delimeter ctermbg=NONE ctermfg=9 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi SpecialComment ctermbg=NONE ctermfg=9 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi Debug ctermbg=NONE ctermfg=9 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi Type ctermbg=NONE ctermfg=11 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi StorageClass ctermbg=NONE ctermfg=11 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi Structure ctermbg=NONE ctermfg=11 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi Typedef ctermbg=NONE ctermfg=11 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi Comment ctermbg=NONE ctermfg=10 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi Statement ctermbg=NONE ctermfg=15 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi Conditional ctermbg=NONE ctermfg=15 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi Repeat ctermbg=NONE ctermfg=15 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi Label ctermbg=NONE ctermfg=11 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi Operator ctermbg=NONE ctermfg=208 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi Keyword ctermbg=NONE ctermfg=15 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi Exception ctermbg=NONE ctermfg=15 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi Include ctermbg=NONE ctermfg=10 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi PreProc ctermbg=NONE ctermfg=10 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi Define ctermbg=NONE ctermfg=10 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi Macro ctermbg=NONE ctermfg=10 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi PreCondit ctermbg=NONE ctermfg=10 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi SpecialKey ctermbg=NONE ctermfg=14 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi Special ctermbg=NONE ctermfg=13 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi SpecialChar ctermbg=NONE ctermfg=13 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi Tag ctermbg=NONE ctermfg=13 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi Delimeter ctermbg=NONE ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi SpecialComment ctermbg=NONE ctermfg=13 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi Debug ctermbg=NONE ctermfg=13 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi Type ctermbg=NONE ctermfg=208 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi StorageClass ctermbg=NONE ctermfg=208 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi Structure ctermbg=NONE ctermfg=208 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi Typedef ctermbg=NONE ctermfg=208 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi Comment ctermbg=NONE ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE

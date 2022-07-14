@@ -1,4 +1,3 @@
-grey: &grey 7
 darkgrey: &darkgrey 8
 red: &red 9
 green: &green 10
@@ -8,10 +7,8 @@ magenta: &magenta 13
 cyan: &cyan 14
 white: &white 15
 orange: &orange 208
-black: &black 247
-none: &none "NONE"
 
-None: &None     { ctermbg: *none, ctermfg: *none, cterm: *none, guifg: *none, guibg: *none, gui: *none }
+None: &None     { ctermbg: "NONE", ctermfg: "NONE", cterm: "NONE", guifg: "NONE", guibg: "NONE", gui: "NONE" }
 
 Function:       { <<: *None, ctermfg: *green }
 Identifier:     { <<: *None, ctermfg: *blue }

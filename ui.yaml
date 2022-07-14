@@ -1,5 +1,4 @@
-background: &background 0
-grey: &grey 7
+black: &black 0
 darkgrey: &darkgrey 8
 red: &red 9
 green: &green 10
@@ -8,11 +7,8 @@ blue: &blue 12
 magenta: &magenta 13
 cyan: &cyan 14
 white: &white 15
-orange: &orange 208
-black: &black 247
-none: &none 'NONE'
 
-Normal: &Normal                       { ctermbg: *none, ctermfg: *none, cterm: *none, guifg: *none, guibg: *none, gui: *none }
+Normal: &Normal                       { ctermbg: "NONE", ctermfg: "NONE", cterm: "NONE", guifg: "NONE", guibg: "NONE", gui: "NONE" }
 TermCursor:                           { cterm: 'reverse' }
 NormalFloat: &NormalFloat             { <<: *Normal, ctermbg: *black }
 Underlined:                           { <<: *Normal, ctermfg: *magenta, cterm: 'underline' }
@@ -23,7 +19,7 @@ CursorColumn:                         { <<: *ColorColumn }
 CursorLine:                           { <<: *Normal, ctermbg: *black }
 VertSplit:                            { <<: *Normal, ctermfg: *black }
 LineNr:                               { <<: *Normal, ctermfg: *darkgrey }
-CursorLineNr:                         { <<: *Normal, ctermfg: *grey, ctermbg: *black }
+CursorLineNr:                         { <<: *Normal, ctermbg: *black }
 Folded:                               { <<: *Normal, ctermfg: *darkgrey }
 FoldColumn:                           { <<: *Normal, ctermfg: *darkgrey }
 SignColumn:                           { <<: *Normal }
@@ -31,12 +27,12 @@ Pmenu:                                { <<: *Normal, ctermbg: *black }
 PmenuSel:                             { <<: *Normal, ctermbg: *black, cterm: 'reverse' }
 StatusLine:                           { <<: *Normal, ctermbg: *black }
 StatusLineNC:                         { <<: *Normal, ctermbg: *black, ctermfg: *darkgrey }
-TabLine:                              { <<: *Normal, ctermbg: *black, ctermfg: *grey }
+TabLine:                              { <<: *Normal, ctermbg: *black, ctermfg: *darkgrey }
 TabLineFill:                          { <<: *Normal, ctermbg: *black, ctermfg: *black }
-TabLineSel:                           { <<: *Normal, ctermbg: *black, ctermfg: *green }
+TabLineSel:                           { <<: *Normal, ctermbg: *black }
 MatchParen:                           { <<: *Normal, cterm: 'bold,underline' }
-Search: &Search                       { <<: *Normal, ctermbg: *yellow, ctermfg: *background }
-IncSearch: &IncSearch                 { <<: *Normal, ctermbg: *background, ctermfg: *yellow, cterm: 'reverse' }
+Search: &Search                       { <<: *Normal, ctermbg: *yellow, ctermfg: *black }
+IncSearch: &IncSearch                 { <<: *Normal, ctermbg: *black, ctermfg: *yellow, cterm: 'reverse' }
 WildMenu:                             { <<: *Search }
 Repeat:                               { <<: *Search }
 Substitute:                           { <<: *IncSearch }
@@ -79,7 +75,7 @@ SpellLocal:                           { <<: *SpellBad }
 DiagnosticError: &Error               { <<: *Normal, ctermfg: *red }
 DiagnosticWarn: &Warn                 { <<: *Normal, ctermfg: *yellow }
 DiagnosticInfo: &Info                 { <<: *Normal, ctermfg: *blue }
-DiagnosticHint: &Hint                 { <<: *Normal, ctermfg: *grey }
+DiagnosticHint: &Hint                 { <<: *Normal }
 ALEError:                             { <<: *Error, cterm: 'underline' }
 ALEWarning:                           { <<: *Warn, cterm: 'underline' }
 ALEInfo:                              { <<: *Info, cterm: 'underline' }
