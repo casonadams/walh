@@ -17,16 +17,13 @@ yes walh does mean what you think it does
 
 these are similar to `base16-shell` and add additional index colors.
 
-walh uses the following colors
-
-- `colour208` as `orange`
-- `colour247` as `black` (StatusLine, BufferLine, and CursorLine)
+walh uses `colour208` as `orange`
 
 So it might not look correct unless those colors are set accordingly.
 
 ### additional plugins to make it smooth
 
-**NOTE** use one or the other
+**NOTE** use one or the other for more syntax highlight support
 
 - `sheerun/vim-polyglot`
 - `nvim-treesitter/nvim-treesitter`
@@ -41,6 +38,7 @@ So it might not look correct unless those colors are set accordingly.
 
 | Themes              |
 | ------------------- |
+| walh-blue           |
 | walh-darcula        |
 | walh-default        |
 | walh-default-legacy |
