@@ -30,21 +30,21 @@ StatusLineNC:                         { <<: *Normal, ctermbg: *black, ctermfg: *
 TabLine:                              { <<: *Normal, ctermbg: *black, ctermfg: *darkgrey }
 TabLineFill:                          { <<: *Normal, ctermbg: *black, ctermfg: *black }
 TabLineSel:                           { <<: *Normal, ctermbg: *black }
-BufferCurrent:                        { <<: *Normal, ctermfg: *white }
-BufferCurrentIndex:                   { <<: *Normal, ctermfg: *magenta }
-BufferCurrentMod:                     { <<: *Normal, ctermfg: *yellow }
-BufferCurrentSign:                    { <<: *Normal, ctermfg: *blue }
-BufferCurrentTarget:                  { <<: *Normal, ctermfg: *red }
-BufferVisible:                        { <<: *Normal, ctermbg: *black, ctermfg: *darkgrey }
-BufferVisibleIndex:                   { <<: *Normal, ctermbg: *black, ctermfg: *magenta }
-BufferVisibleMod:                     { <<: *Normal, ctermbg: *black, ctermfg: *yellow }
-BufferVisibleSign:                    { <<: *Normal, ctermbg: *black, ctermfg: *darkgrey }
-BufferVisibleTarget:                  { <<: *Normal, ctermbg: *black, ctermfg: *red }
-BufferInactive:                       { <<: *Normal, ctermbg: *black, ctermfg: *darkgrey }
-BufferInactiveIndex:                  { <<: *Normal, ctermbg: *black, ctermfg: *magenta }
-BufferInactiveMod:                    { <<: *Normal, ctermbg: *black, ctermfg: *yellow }
-BufferInactiveSign:                   { <<: *Normal, ctermbg: *black, ctermfg: *darkgrey }
-BufferInactiveTarget:                 { <<: *Normal, ctermbg: *black, ctermfg: *red }
+BufferCurrent:                        { <<: *Normal, ctermbg: *black, ctermfg: *white }
+BufferCurrentIndex:                   { <<: *Normal, ctermbg: *black, ctermfg: *magenta }
+BufferCurrentMod:                     { <<: *Normal, ctermbg: *black, ctermfg: *yellow }
+BufferCurrentSign:                    { <<: *Normal, ctermbg: *black, ctermfg: *blue }
+BufferCurrentTarget:                  { <<: *Normal, ctermbg: *black, ctermfg: *red }
+BufferVisible:                        { <<: *Normal, ctermfg: *darkgrey }
+BufferVisibleIndex:                   { <<: *Normal, ctermfg: *magenta }
+BufferVisibleMod:                     { <<: *Normal, ctermfg: *yellow }
+BufferVisibleSign:                    { <<: *Normal, ctermfg: *darkgrey }
+BufferVisibleTarget:                  { <<: *Normal, ctermfg: *red }
+BufferInactive:                       { <<: *Normal, ctermfg: *darkgrey }
+BufferInactiveIndex:                  { <<: *Normal, ctermfg: *magenta }
+BufferInactiveMod:                    { <<: *Normal, ctermfg: *yellow }
+BufferInactiveSign:                   { <<: *Normal, ctermfg: *darkgrey }
+BufferInactiveTarget:                 { <<: *Normal, ctermfg: *red }
 MatchParen:                           { <<: *Normal, cterm: 'bold,underline' }
 Search: &Search                       { <<: *Normal, ctermbg: *yellow, ctermfg: *black }
 IncSearch: &IncSearch                 { <<: *Normal, ctermbg: *black, ctermfg: *yellow, cterm: 'reverse' }
