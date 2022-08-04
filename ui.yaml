@@ -45,6 +45,8 @@ BufferInactiveIndex:                  { <<: *Normal, ctermfg: *magenta }
 BufferInactiveMod:                    { <<: *Normal, ctermfg: *yellow }
 BufferInactiveSign:                   { <<: *Normal, ctermfg: *darkgrey }
 BufferInactiveTarget:                 { <<: *Normal, ctermfg: *red }
+BufferTabpages:                       { <<: *Normal, guibg: 'bg' }
+BufferTabpageFill:                    { <<: *Normal, guibg: 'bg' }
 MatchParen:                           { <<: *Normal, cterm: 'bold,underline' }
 Search: &Search                       { <<: *Normal, ctermbg: *yellow, ctermfg: *black }
 IncSearch: &IncSearch                 { <<: *Normal, ctermbg: *black, ctermfg: *yellow, cterm: 'reverse' }
