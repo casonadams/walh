@@ -68,10 +68,10 @@ MsgSeperator:                         { <<: *Normal }
 MoreMsg:                              { <<: *Normal }
 WarningMsg:                           { <<: *ErrorMsg }
 Question:                             { <<: *Title }
-DiffAdd: &DiffAdd                     { <<: *Normal, ctermbg: *green, ctermfg: *white }
-DiffDelete: &DiffDelete               { <<: *Normal, ctermbg: *red, ctermfg: *white }
-DiffChange:                           { <<: *Normal, ctermbg: *yellow, ctermfg: *white }
-DiffText:                             { <<: *Normal, ctermbg: *blue, ctermfg: *white }
+DiffAdd: &DiffAdd                     { <<: *Normal, ctermbg: *green, ctermfg: *black }
+DiffDelete: &DiffDelete               { <<: *Normal, ctermbg: *red, ctermfg: *black }
+DiffChange:                           { <<: *Normal, ctermbg: *yellow, ctermfg: *black }
+DiffText:                             { <<: *Normal, ctermbg: *blue, ctermfg: *black }
 DiffAdded:                            { <<: *DiffAdd }
 DiffRemoved:                          { <<: *DiffDelete }
 SignifySignAdd: &Add                  { <<: *Normal, ctermfg: *green }
