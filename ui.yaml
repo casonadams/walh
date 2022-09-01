@@ -145,3 +145,6 @@ TelescopeNormal:                      { <<: *Normal }
 TelescopePreviewNormal:               { <<: *Normal }
 TelescopeSelection:                   { <<: *Normal, ctermbg: *black }
 TelescopePromptNormal:                { <<: *NormalFloat }
+
+ActiveWindow:                         { <<: *Normal }
+InactiveWindow:                       { <<: *Normal, ctermbg: *black }

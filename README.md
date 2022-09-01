@@ -51,3 +51,17 @@ So it might not look correct unless those colors are set accordingly.
 set notermguicolors
 colorscheme walh-default
 ```
+
+## Pane Dimming
+
+### neovim
+
+```sh
+vim.opt.winhighlight = "Normal:ActiveWindow,NormalNC:InactiveWindow"
+```
+
+### vim
+
+```sh
+set winhighlight=Normal:ActiveWindow,NormalNC:InactiveWindow
+```
