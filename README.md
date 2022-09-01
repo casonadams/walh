@@ -59,9 +59,3 @@ colorscheme walh-default
 ```sh
 vim.opt.winhighlight = "Normal:ActiveWindow,NormalNC:InactiveWindow"
 ```
-
-### vim
-
-```sh
-set winhighlight=Normal:ActiveWindow,NormalNC:InactiveWindow
-```
