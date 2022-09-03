@@ -9,6 +9,8 @@ cyan: &cyan 14
 white: &white 15
 
 Normal: &Normal                       { ctermbg: "NONE", ctermfg: "NONE", cterm: "NONE", guifg: "NONE", guibg: "NONE", gui: "NONE" }
+NormalNC:                             { <<: *Normal, ctermbg: *black }
+NvimTreeNormalNC:                     { <<: *Normal, ctermbg: *black }
 
 TermCursor:                           { cterm: 'reverse' }
 NormalFloat: &NormalFloat             { <<: *Normal, ctermbg: *black }

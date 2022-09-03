@@ -54,8 +54,10 @@ colorscheme walh-default
 
 ## Pane Dimming
 
-### neovim
+- neovim on by (default)
+
+To disable
 
 ```sh
-vim.opt.winhighlight = "Normal:ActiveWindow,NormalNC:InactiveWindow"
+vim.opt.winhighlight = "NormalNC:Normal"
 ```
