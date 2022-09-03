@@ -9,44 +9,54 @@ cyan: &cyan 14
 white: &white 15
 
 Normal: &Normal                       { ctermbg: "NONE", ctermfg: "NONE", cterm: "NONE", guifg: "NONE", guibg: "NONE", gui: "NONE" }
+
 TermCursor:                           { cterm: 'reverse' }
 NormalFloat: &NormalFloat             { <<: *Normal, ctermbg: *black }
 Underlined:                           { <<: *Normal, ctermfg: *magenta, cterm: 'underline' }
 Error:                                { <<: *Normal, ctermbg: *red, ctermfg: *white }
 Todo:                                 { <<: *Normal, ctermfg: *yellow, cterm: 'bold' }
+
 ColorColumn: &ColorColumn             { <<: *Normal, ctermbg: *darkgrey }
 CursorColumn:                         { <<: *ColorColumn }
 CursorLine:                           { <<: *Normal, ctermbg: *black }
 VertSplit:                            { <<: *Normal, ctermfg: *black }
 LineNr:                               { <<: *Normal, ctermfg: *darkgrey }
 CursorLineNr:                         { <<: *Normal, ctermbg: *black }
+
 Folded:                               { <<: *Normal, ctermfg: *darkgrey }
 FoldColumn:                           { <<: *Normal, ctermfg: *darkgrey }
 SignColumn:                           { <<: *Normal }
+
 Pmenu:                                { <<: *Normal, ctermbg: *black }
 PmenuSel:                             { <<: *Normal, ctermbg: *black, cterm: 'reverse' }
+
 StatusLine:                           { <<: *Normal, ctermbg: *black }
 StatusLineNC:                         { <<: *Normal, ctermbg: *black, ctermfg: *darkgrey }
-TabLine:                              { <<: *Normal, ctermbg: *black, ctermfg: *darkgrey }
-TabLineFill:                          { <<: *Normal, ctermbg: *black, ctermfg: *black }
-TabLineSel:                           { <<: *Normal, ctermbg: *black }
-BufferCurrent:                        { <<: *Normal, ctermbg: *black, ctermfg: *white }
-BufferCurrentIndex:                   { <<: *Normal, ctermbg: *black, ctermfg: *magenta }
-BufferCurrentMod:                     { <<: *Normal, ctermbg: *black, ctermfg: *yellow }
-BufferCurrentSign:                    { <<: *Normal, ctermbg: *black, ctermfg: *blue }
-BufferCurrentTarget:                  { <<: *Normal, ctermbg: *black, ctermfg: *red }
+TabLine:                              { <<: *Normal }
+TabLineFill:                          { <<: *Normal }
+TabLineSel:                           { <<: *Normal, ctermfg: *green }
+
+BufferCurrent:                        { <<: *Normal, ctermfg: *white }
+BufferCurrentIndex:                   { <<: *Normal, ctermfg: *magenta }
+BufferCurrentMod:                     { <<: *Normal, ctermfg: *yellow }
+BufferCurrentSign:                    { <<: *Normal, ctermfg: *blue }
+BufferCurrentTarget:                  { <<: *Normal, ctermfg: *red }
+
 BufferVisible:                        { <<: *Normal, ctermfg: *darkgrey }
 BufferVisibleIndex:                   { <<: *Normal, ctermfg: *magenta }
 BufferVisibleMod:                     { <<: *Normal, ctermfg: *yellow }
 BufferVisibleSign:                    { <<: *Normal, ctermfg: *darkgrey }
 BufferVisibleTarget:                  { <<: *Normal, ctermfg: *red }
+
 BufferInactive:                       { <<: *Normal, ctermfg: *darkgrey }
 BufferInactiveIndex:                  { <<: *Normal, ctermfg: *magenta }
 BufferInactiveMod:                    { <<: *Normal, ctermfg: *yellow }
 BufferInactiveSign:                   { <<: *Normal, ctermfg: *darkgrey }
 BufferInactiveTarget:                 { <<: *Normal, ctermfg: *red }
+
 BufferTabpages:                       { <<: *Normal, guibg: 'bg' }
 BufferTabpageFill:                    { <<: *Normal, guibg: 'bg' }
+
 MatchParen:                           { <<: *Normal, cterm: 'bold,underline' }
 Search: &Search                       { <<: *Normal, ctermbg: *yellow, ctermfg: *black }
 IncSearch: &IncSearch                 { <<: *Normal, ctermbg: *black, ctermfg: *yellow, cterm: 'reverse' }
@@ -54,13 +64,16 @@ WildMenu:                             { <<: *Search }
 Repeat:                               { <<: *Search }
 Substitute:                           { <<: *IncSearch }
 Visual:                               { <<: *Normal, cterm: 'reverse' }
+
 Conceal: &Conceal                     { <<: *Normal, ctermfg: *darkgrey }
 Whitespace:                           { <<: *Conceal }
 EndOfBuffer:                          { <<: *Conceal }
 NonText:                              { <<: *Conceal }
+
 SpecialKey:                           { <<: *Normal, ctermfg: *darkgrey }
 Directory:                            { <<: *Normal, ctermfg: *blue }
 Title: &Title                         { <<: *Normal, ctermfg: *green }
+
 ErrorMsg: &ErrorMsg                   { <<: *Normal, ctermfg: *red }
 ModeMsg:                              { <<: *Normal }
 MsgArea:                              { <<: *Normal }
@@ -68,15 +81,18 @@ MsgSeperator:                         { <<: *Normal }
 MoreMsg:                              { <<: *Normal }
 WarningMsg:                           { <<: *ErrorMsg }
 Question:                             { <<: *Title }
+
 DiffAdd: &DiffAdd                     { <<: *Normal, ctermbg: *green, ctermfg: *black }
 DiffDelete: &DiffDelete               { <<: *Normal, ctermbg: *red, ctermfg: *black }
 DiffChange:                           { <<: *Normal, ctermbg: *yellow, ctermfg: *black }
 DiffText:                             { <<: *Normal, ctermbg: *blue, ctermfg: *black }
 DiffAdded:                            { <<: *DiffAdd }
 DiffRemoved:                          { <<: *DiffDelete }
+
 SignifySignAdd: &Add                  { <<: *Normal, ctermfg: *green }
 SignifySignDelete: &Delete            { <<: *Normal, ctermfg: *red }
 SignifySignChange: &Change            { <<: *Normal, ctermfg: *yellow }
+
 GitGutterAdd:                         { <<: *Add }
 GitGutterDelete:                      { <<: *Delete }
 GitGutterChange:                      { <<: *Change }
@@ -86,13 +102,16 @@ GitSignsDelete:                       { <<: *Delete }
 GitSignsDeleteNR:                     { <<: *Delete }
 GitSignsChange:                       { <<: *Change }
 GitSignsChangeNR:                     { <<: *Change }
+
 SpellBad: &SpellBad                   { <<: *Normal, ctermfg: *darkgrey, cterm: 'underline' }
 SpellCap:                             { <<: *SpellBad }
 SpellLocal:                           { <<: *SpellBad }
+
 DiagnosticError: &Error               { <<: *Normal, ctermfg: *red }
 DiagnosticWarn: &Warn                 { <<: *Normal, ctermfg: *yellow }
 DiagnosticInfo: &Info                 { <<: *Normal, ctermfg: *blue }
 DiagnosticHint: &Hint                 { <<: *Normal }
+
 ALEError:                             { <<: *Error, cterm: 'underline' }
 ALEWarning:                           { <<: *Warn, cterm: 'underline' }
 ALEInfo:                              { <<: *Info, cterm: 'underline' }
@@ -101,50 +120,56 @@ ALEStyleWarning:                      { <<: *Warn, cterm: 'underline' }
 ALEErrorLine:                         { <<: *Normal }
 ALEWarningLine:                       { <<: *Normal }
 ALEInfoLine:                          { <<: *Normal }
+
 CocHighlightText:                     { <<: *Normal, cterm: 'bold' }
 CocErrorSign:                         { <<: *Error }
 CocWarningSign:                       { <<: *Warn }
 CocInfoSign:                          { <<: *Info }
 CocHintSign:                          { <<: *Hint }
+
 CocErrorHighlight:                    { <<: *Normal, cterm: 'underline' }
 CocWarningHighlight:                  { <<: *Normal, cterm: 'underline' }
 CocInfoHighlight:                     { <<: *Normal, cterm: 'underline' }
 CocHintHighlight:                     { <<: *Normal, cterm: 'underline' }
 CocDeprecatedHighlight:               { <<: *Normal, cterm: 'underline' }
 CocUnusedHighlight:                   { <<: *Normal, cterm: 'underline' }
-CocErrorVirtualText:                  { <<: *Error }
-CocWarningVirtualText:                { <<: *Warn }
-CocInfoVirtualText:                   { <<: *Info }
-CocHintVirtualText:                   { <<: *Hint }
+
+CocErrorVirtualText:                  { <<: *Error, ctermbg: *black }
+CocWarningVirtualText:                { <<: *Warn, ctermbg: *black }
+CocInfoVirtualText:                   { <<: *Info, ctermbg: *black }
+CocHintVirtualText:                   { <<: *Hint, ctermbg: *black }
+
 CocCodeLens:                          { <<: *Info }
+
 CocFloating:                          { <<: *Normal, ctermbg: *black }
 CocErrorFloat:                        { <<: *Error }
 CocWarningFloat:                      { <<: *Warn }
 CocInfoFloat:                         { <<: *Info }
 CocHintFloat:                         { <<: *Hint }
+
 LspDiagnosticsDefaultError:           { <<: *Error }
 LspDiagnosticsDefaultWarning:         { <<: *Warn }
 LspDiagnosticsDefaultInformation:     { <<: *Info }
 LspDiagnosticsDefaultHint:            { <<: *Hint }
-LspDiagnosticsVirtualTextError:       { <<: *Error }
-LspDiagnosticsVirtualTextWarning:     { <<: *Warn }
-LspDiagnosticsVirtualTextInformation: { <<: *Info }
-LspDiagnosticsVirtualTextHint:        { <<: *Hint }
+
+LspDiagnosticsVirtualTextError:       { <<: *Error, ctermbg: *black }
+LspDiagnosticsVirtualTextWarning:     { <<: *Warn, ctermbg: *black }
+LspDiagnosticsVirtualTextInformation: { <<: *Info, ctermbg: *black }
+LspDiagnosticsVirtualTextHint:        { <<: *Hint, ctermbg: *black }
+
 LspDiagnosticsUnderlineError:         { <<: *Error, cterm: 'underline' }
 LspDiagnosticsUnderlineWarning:       { <<: *Warn, cterm: 'underline' }
 LspDiagnosticsUnderlineInformation:   { <<: *Info, cterm: 'underline' }
 LspDiagnosticsUnderlineHint:          { <<: *Hint, cterm: 'underline' }
+
 LspDiagnosticsFloatingError:          { <<: *Normal, ctermbg: *black }
 LspDiagnosticsFloatingWarning:        { <<: *NormalFloat }
 LspDiagnosticsFloatingInformation:    { <<: *NormalFloat }
 LspDiagnosticsFloatingHint:           { <<: *NormalFloat }
+
 LspReferenceText:                     { <<: *Normal, cterm: 'bold' }
 LspReferenceRead:                     { <<: *Normal, cterm: 'bold' }
 LspReferenceWrite:                    { <<: *Normal, cterm: 'bold' }
-TelescopeNormal:                      { <<: *Normal }
-TelescopePreviewNormal:               { <<: *Normal }
-TelescopeSelection:                   { <<: *Normal, ctermbg: *black }
-TelescopePromptNormal:                { <<: *NormalFloat }
 
-ActiveWindow:                         { <<: *Normal }
-InactiveWindow:                       { <<: *Normal, ctermbg: *black }
+TelescopeNormal:                      { <<: *Normal, ctermbg: *black }
+TelescopePromptNormal:                { <<: *Normal, guibg: 'bg' }
