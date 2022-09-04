@@ -67,8 +67,8 @@ vim.opt.winhighlight = "NormalNC:Normal"
 Add the following to `~/.tmux.conf` for dimming that matches `walh`
 
 ```conf
-set -g pane-active-border-style bg=colour0
-set -g pane-border-style bg=colour0
+set -g pane-active-border-style bg=color0
+set -g pane-border-style bg=color0
 set-window-option -g window-active-style bg=terminal
-set-window-option -g window-style bg=colour0
+set-window-option -g window-style bg=color0
 ```
