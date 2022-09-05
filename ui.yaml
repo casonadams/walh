@@ -9,8 +9,8 @@ cyan: &cyan 14
 white: &white 15
 
 Normal: &Normal                       { ctermbg: "NONE", ctermfg: "NONE", cterm: "NONE", guifg: "NONE", guibg: "NONE", gui: "NONE" }
-NormalNC:                             { <<: *Normal, ctermbg: *black }
-NvimTreeNormalNC:                     { <<: *Normal, ctermbg: *black }
+Active:                               { <<: *Normal }
+Inactive:                             { <<: *Normal, ctermbg: *black }
 
 TermCursor:                           { cterm: 'reverse' }
 NormalFloat: &NormalFloat             { <<: *Normal, ctermbg: *black }
@@ -34,20 +34,20 @@ PmenuSel:                             { <<: *Normal, ctermbg: *black, cterm: 're
 
 StatusLine:                           { <<: *Normal, ctermbg: *black }
 StatusLineNC:                         { <<: *Normal, ctermbg: *black, ctermfg: *darkgrey }
-TabLine:                              { <<: *Normal }
-TabLineFill:                          { <<: *Normal }
-TabLineSel:                           { <<: *Normal, ctermfg: *green }
+TabLine:                              { <<: *Normal, ctermfg: *darkgrey }
+TabLineFill:                          { <<: *Normal, ctermfg: *darkgrey, ctermbg: *black }
+TabLineSel:                           { <<: *Normal, ctermfg: *white }
 
 BufferCurrent:                        { <<: *Normal, ctermfg: *white }
 BufferCurrentIndex:                   { <<: *Normal, ctermfg: *magenta }
 BufferCurrentMod:                     { <<: *Normal, ctermfg: *yellow }
-BufferCurrentSign:                    { <<: *Normal, ctermfg: *blue }
+BufferCurrentSign:                    { <<: *Normal, ctermfg: *white }
 BufferCurrentTarget:                  { <<: *Normal, ctermfg: *red }
 
-BufferVisible:                        { <<: *Normal, ctermfg: *darkgrey }
+BufferVisible:                        { <<: *Normal }
 BufferVisibleIndex:                   { <<: *Normal, ctermfg: *magenta }
 BufferVisibleMod:                     { <<: *Normal, ctermfg: *yellow }
-BufferVisibleSign:                    { <<: *Normal, ctermfg: *darkgrey }
+BufferVisibleSign:                    { <<: *Normal }
 BufferVisibleTarget:                  { <<: *Normal, ctermfg: *red }
 
 BufferInactive:                       { <<: *Normal, ctermfg: *darkgrey }
@@ -57,7 +57,7 @@ BufferInactiveSign:                   { <<: *Normal, ctermfg: *darkgrey }
 BufferInactiveTarget:                 { <<: *Normal, ctermfg: *red }
 
 BufferTabpages:                       { <<: *Normal, guibg: 'bg' }
-BufferTabpageFill:                    { <<: *Normal, guibg: 'bg' }
+BufferTabpageFill:                    { <<: *Normal, ctermfg: *darkgrey, guibg: 'bg' }
 
 MatchParen:                           { <<: *Normal, cterm: 'bold,underline' }
 Search: &Search                       { <<: *Normal, ctermbg: *yellow, ctermfg: *black }

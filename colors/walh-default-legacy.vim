@@ -3,8 +3,8 @@ syntax reset
 set notermguicolors
 let g:colors_name = 'walh-default-legacy'
 hi Normal ctermbg=NONE ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi NormalNC ctermbg=0 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi NvimTreeNormalNC ctermbg=0 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi Active ctermbg=NONE ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi Inactive ctermbg=0 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi TermCursor cterm=reverse
 hi NormalFloat ctermbg=0 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Underlined ctermbg=NONE ctermfg=13 cterm=underline guifg=NONE guibg=NONE gui=NONE
@@ -23,18 +23,18 @@ hi Pmenu ctermbg=0 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi PmenuSel ctermbg=0 ctermfg=NONE cterm=reverse guifg=NONE guibg=NONE gui=NONE
 hi StatusLine ctermbg=0 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi StatusLineNC ctermbg=0 ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi TabLine ctermbg=NONE ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi TabLineFill ctermbg=NONE ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi TabLineSel ctermbg=NONE ctermfg=10 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi TabLine ctermbg=NONE ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi TabLineFill ctermbg=0 ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi TabLineSel ctermbg=NONE ctermfg=15 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi BufferCurrent ctermbg=NONE ctermfg=15 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi BufferCurrentIndex ctermbg=NONE ctermfg=13 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi BufferCurrentMod ctermbg=NONE ctermfg=11 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi BufferCurrentSign ctermbg=NONE ctermfg=12 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi BufferCurrentSign ctermbg=NONE ctermfg=15 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi BufferCurrentTarget ctermbg=NONE ctermfg=9 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi BufferVisible ctermbg=NONE ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi BufferVisible ctermbg=NONE ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi BufferVisibleIndex ctermbg=NONE ctermfg=13 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi BufferVisibleMod ctermbg=NONE ctermfg=11 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi BufferVisibleSign ctermbg=NONE ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi BufferVisibleSign ctermbg=NONE ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi BufferVisibleTarget ctermbg=NONE ctermfg=9 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi BufferInactive ctermbg=NONE ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi BufferInactiveIndex ctermbg=NONE ctermfg=13 cterm=NONE guifg=NONE guibg=NONE gui=NONE
@@ -42,7 +42,7 @@ hi BufferInactiveMod ctermbg=NONE ctermfg=11 cterm=NONE guifg=NONE guibg=NONE gu
 hi BufferInactiveSign ctermbg=NONE ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi BufferInactiveTarget ctermbg=NONE ctermfg=9 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi BufferTabpages ctermbg=NONE ctermfg=NONE cterm=NONE guifg=NONE guibg=bg gui=NONE
-hi BufferTabpageFill ctermbg=NONE ctermfg=NONE cterm=NONE guifg=NONE guibg=bg gui=NONE
+hi BufferTabpageFill ctermbg=NONE ctermfg=8 cterm=NONE guifg=NONE guibg=bg gui=NONE
 hi MatchParen ctermbg=NONE ctermfg=NONE cterm=bold,underline guifg=NONE guibg=NONE gui=NONE
 hi Search ctermbg=11 ctermfg=0 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi IncSearch ctermbg=0 ctermfg=11 cterm=reverse guifg=NONE guibg=NONE gui=NONE
@@ -171,3 +171,10 @@ hi StorageClass ctermbg=NONE ctermfg=10 cterm=NONE guifg=NONE guibg=NONE gui=NON
 hi Structure ctermbg=NONE ctermfg=10 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Typedef ctermbg=NONE ctermfg=10 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Comment ctermbg=NONE ctermfg=12 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+if get(g:, 'walh_dimming')
+  hi def link NormalNC Inactive
+  hi def link NvimTreeNormalNC Inactive
+else
+  hi def link NormalNC Active
+  hi def link NvimTreeNormalNC Active
+endif

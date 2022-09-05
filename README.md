@@ -52,14 +52,10 @@ set notermguicolors
 colorscheme walh-default
 ```
 
-## Pane Dimming
-
-- neovim on by (default)
-
-To disable
+## Pane Dimming neovim
 
 ```sh
-vim.opt.winhighlight = "NormalNC:Normal"
+vim.g.walh_dimming = 1
 ```
 
 ## Tmux Dimming
