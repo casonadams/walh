@@ -14,6 +14,7 @@ Inactive:                             { <<: *Normal, ctermbg: *black }
 
 TermCursor:                           { cterm: 'reverse' }
 NormalFloat: &NormalFloat             { <<: *Normal, ctermbg: *black }
+FloatBorder:                          { <<: *Normal, ctermbg: *black }
 Underlined:                           { <<: *Normal, ctermfg: *magenta, cterm: 'underline' }
 Error:                                { <<: *Normal, ctermbg: *red, ctermfg: *white }
 Todo:                                 { <<: *Normal, ctermfg: *yellow, cterm: 'bold' }
@@ -172,6 +173,3 @@ LspDiagnosticsFloatingHint:           { <<: *NormalFloat }
 LspReferenceText:                     { <<: *Normal, cterm: 'bold' }
 LspReferenceRead:                     { <<: *Normal, cterm: 'bold' }
 LspReferenceWrite:                    { <<: *Normal, cterm: 'bold' }
-
-TelescopeNormal:                      { <<: *Normal, ctermbg: *black }
-TelescopePromptNormal:                { <<: *Normal, guibg: 'bg' }

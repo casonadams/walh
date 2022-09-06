@@ -7,6 +7,7 @@ hi Active ctermbg=NONE ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Inactive ctermbg=0 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi TermCursor cterm=reverse
 hi NormalFloat ctermbg=0 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi FloatBorder ctermbg=0 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Underlined ctermbg=NONE ctermfg=13 cterm=underline guifg=NONE guibg=NONE gui=NONE
 hi Error ctermbg=9 ctermfg=15 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Todo ctermbg=NONE ctermfg=11 cterm=bold guifg=NONE guibg=NONE gui=NONE
@@ -137,8 +138,6 @@ hi LspDiagnosticsFloatingHint ctermbg=0 ctermfg=NONE cterm=NONE guifg=NONE guibg
 hi LspReferenceText ctermbg=NONE ctermfg=NONE cterm=bold guifg=NONE guibg=NONE gui=NONE
 hi LspReferenceRead ctermbg=NONE ctermfg=NONE cterm=bold guifg=NONE guibg=NONE gui=NONE
 hi LspReferenceWrite ctermbg=NONE ctermfg=NONE cterm=bold guifg=NONE guibg=NONE gui=NONE
-hi TelescopeNormal ctermbg=0 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi TelescopePromptNormal ctermbg=NONE ctermfg=NONE cterm=NONE guifg=NONE guibg=bg gui=NONE
 hi None ctermbg=NONE ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Function ctermbg=NONE ctermfg=12 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Identifier ctermbg=NONE ctermfg=9 cterm=NONE guifg=NONE guibg=NONE gui=NONE
