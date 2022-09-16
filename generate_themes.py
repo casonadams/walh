@@ -34,8 +34,8 @@ def read_links(config):
         return links
 
 
-def dimming():
-    dimming = [
+def options():
+    options = [
         "if get(g:, 'walh_dimming')",
         "  hi def link NormalNC Inactive",
         "  hi def link NvimTreeNormalNC Inactive",
@@ -44,7 +44,7 @@ def dimming():
         "  hi def link NvimTreeNormalNC Active",
         "endif",
     ]
-    return dimming
+    return options
 
 
 def gen_theme():
@@ -61,7 +61,7 @@ def gen_theme():
         c = read_config(f"themes/{theme}")
 
         print(f"creating * {theme_name} * theme")
-        output = p + ui + c + dimming() + links
+        output = p + ui + c + options() + links
         with open(f"colors/{theme_name}.vim", "w") as file:
             file.writelines("%s\n" % line for line in output)
 

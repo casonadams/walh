@@ -13,8 +13,8 @@ Active:                               { <<: *Normal }
 Inactive:                             { <<: *Normal, ctermbg: *black }
 
 TermCursor:                           { cterm: 'reverse' }
-NormalFloat: &NormalFloat             { <<: *Normal, ctermbg: *black }
-FloatBorder:                          { <<: *Normal, ctermbg: *black }
+NormalFloat: &NormalFloat             { <<: *Normal }
+FloatBorder:                          { <<: *Normal }
 Underlined:                           { <<: *Normal, ctermfg: *magenta, cterm: 'underline' }
 Error:                                { <<: *Normal, ctermbg: *red, ctermfg: *white }
 Todo:                                 { <<: *Normal, ctermfg: *yellow, cterm: 'bold' }
@@ -30,8 +30,10 @@ Folded:                               { <<: *Normal, ctermfg: *darkgrey }
 FoldColumn:                           { <<: *Normal, ctermfg: *darkgrey }
 SignColumn:                           { <<: *Normal }
 
-Pmenu:                                { <<: *Normal, ctermbg: *black }
-PmenuSel:                             { <<: *Normal, ctermbg: *black, cterm: 'reverse' }
+Pmenu:                                { <<: *Normal }
+PmenuSel:                             { <<: *Normal, ctermfg: *yellow, ctermbg: *black }
+PmenuSbar:                            { <<: *Normal, ctermbg: *black }
+PmenuThumb:                           { <<: *Normal, ctermbg: *darkgrey }
 
 StatusLine:                           { <<: *Normal, ctermbg: *black }
 StatusLineNC:                         { <<: *Normal, ctermbg: *black, ctermfg: *darkgrey }
@@ -144,7 +146,7 @@ CocHintVirtualText:                   { <<: *Hint, ctermbg: *black }
 
 CocCodeLens:                          { <<: *Info }
 
-CocFloating:                          { <<: *Normal, ctermbg: *black }
+CocFloating:                          { <<: *Normal }
 CocErrorFloat:                        { <<: *Error }
 CocWarningFloat:                      { <<: *Warn }
 CocInfoFloat:                         { <<: *Info }
@@ -165,7 +167,7 @@ LspDiagnosticsUnderlineWarning:       { <<: *Warn, cterm: 'underline' }
 LspDiagnosticsUnderlineInformation:   { <<: *Info, cterm: 'underline' }
 LspDiagnosticsUnderlineHint:          { <<: *Hint, cterm: 'underline' }
 
-LspDiagnosticsFloatingError:          { <<: *Normal, ctermbg: *black }
+LspDiagnosticsFloatingError:          { <<: *NormalFloat }
 LspDiagnosticsFloatingWarning:        { <<: *NormalFloat }
 LspDiagnosticsFloatingInformation:    { <<: *NormalFloat }
 LspDiagnosticsFloatingHint:           { <<: *NormalFloat }

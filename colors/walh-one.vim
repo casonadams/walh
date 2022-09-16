@@ -6,8 +6,8 @@ hi Normal ctermbg=NONE ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Active ctermbg=NONE ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Inactive ctermbg=0 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi TermCursor cterm=reverse
-hi NormalFloat ctermbg=0 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi FloatBorder ctermbg=0 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi NormalFloat ctermbg=NONE ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi FloatBorder ctermbg=NONE ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Underlined ctermbg=NONE ctermfg=13 cterm=underline guifg=NONE guibg=NONE gui=NONE
 hi Error ctermbg=9 ctermfg=15 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Todo ctermbg=NONE ctermfg=11 cterm=bold guifg=NONE guibg=NONE gui=NONE
@@ -20,8 +20,10 @@ hi CursorLineNr ctermbg=0 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Folded ctermbg=NONE ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi FoldColumn ctermbg=NONE ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi SignColumn ctermbg=NONE ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi Pmenu ctermbg=0 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi PmenuSel ctermbg=0 ctermfg=NONE cterm=reverse guifg=NONE guibg=NONE gui=NONE
+hi Pmenu ctermbg=NONE ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi PmenuSel ctermbg=0 ctermfg=11 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi PmenuSbar ctermbg=0 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi PmenuThumb ctermbg=8 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi StatusLine ctermbg=0 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi StatusLineNC ctermbg=0 ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi TabLine ctermbg=NONE ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
@@ -114,7 +116,7 @@ hi CocWarningVirtualText ctermbg=0 ctermfg=11 cterm=NONE guifg=NONE guibg=NONE g
 hi CocInfoVirtualText ctermbg=0 ctermfg=12 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi CocHintVirtualText ctermbg=0 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi CocCodeLens ctermbg=NONE ctermfg=12 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi CocFloating ctermbg=0 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi CocFloating ctermbg=NONE ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi CocErrorFloat ctermbg=NONE ctermfg=9 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi CocWarningFloat ctermbg=NONE ctermfg=11 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi CocInfoFloat ctermbg=NONE ctermfg=12 cterm=NONE guifg=NONE guibg=NONE gui=NONE
@@ -131,10 +133,10 @@ hi LspDiagnosticsUnderlineError ctermbg=NONE ctermfg=9 cterm=underline guifg=NON
 hi LspDiagnosticsUnderlineWarning ctermbg=NONE ctermfg=11 cterm=underline guifg=NONE guibg=NONE gui=NONE
 hi LspDiagnosticsUnderlineInformation ctermbg=NONE ctermfg=12 cterm=underline guifg=NONE guibg=NONE gui=NONE
 hi LspDiagnosticsUnderlineHint ctermbg=NONE ctermfg=NONE cterm=underline guifg=NONE guibg=NONE gui=NONE
-hi LspDiagnosticsFloatingError ctermbg=0 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi LspDiagnosticsFloatingWarning ctermbg=0 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi LspDiagnosticsFloatingInformation ctermbg=0 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi LspDiagnosticsFloatingHint ctermbg=0 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi LspDiagnosticsFloatingError ctermbg=NONE ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi LspDiagnosticsFloatingWarning ctermbg=NONE ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi LspDiagnosticsFloatingInformation ctermbg=NONE ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi LspDiagnosticsFloatingHint ctermbg=NONE ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi LspReferenceText ctermbg=NONE ctermfg=NONE cterm=bold guifg=NONE guibg=NONE gui=NONE
 hi LspReferenceRead ctermbg=NONE ctermfg=NONE cterm=bold guifg=NONE guibg=NONE gui=NONE
 hi LspReferenceWrite ctermbg=NONE ctermfg=NONE cterm=bold guifg=NONE guibg=NONE gui=NONE
