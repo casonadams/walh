@@ -16,7 +16,7 @@ TermCursor:                           { cterm: 'reverse' }
 NormalFloat: &NormalFloat             { <<: *Normal, ctermbg: *black }
 FloatBorder:                          { <<: *Normal, ctermbg: *black }
 Underlined:                           { <<: *Normal, ctermfg: *magenta, cterm: 'underline' }
-Error:                                { <<: *Normal, ctermbg: *red, ctermfg: *white }
+Error:                                { <<: *Normal, cterm: 'underline'}
 Todo:                                 { <<: *Normal, ctermfg: *yellow, cterm: 'bold' }
 
 ColorColumn: &ColorColumn             { <<: *Normal, ctermbg: *darkgrey }

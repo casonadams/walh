@@ -9,7 +9,7 @@ hi TermCursor cterm=reverse
 hi NormalFloat ctermbg=0 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi FloatBorder ctermbg=0 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Underlined ctermbg=NONE ctermfg=13 cterm=underline guifg=NONE guibg=NONE gui=NONE
-hi Error ctermbg=9 ctermfg=15 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi Error ctermbg=NONE ctermfg=NONE cterm=underline guifg=NONE guibg=NONE gui=NONE
 hi Todo ctermbg=NONE ctermfg=11 cterm=bold guifg=NONE guibg=NONE gui=NONE
 hi ColorColumn ctermbg=8 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi CursorColumn ctermbg=8 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
