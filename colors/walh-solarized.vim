@@ -46,6 +46,8 @@ hi BufferInactiveSign ctermbg=0 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gu
 hi BufferInactiveTarget ctermbg=0 ctermfg=9 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi BufferTabpages ctermbg=0 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi BufferTabpageFill ctermbg=0 ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi BufferLineTabSelected ctermbg=NONE ctermfg=NONE cterm=italic,bold guifg=NONE guibg=NONE gui=NONE
+hi PanelHeading ctermbg=NONE ctermfg=12 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi MatchParen ctermbg=NONE ctermfg=NONE cterm=bold,underline guifg=NONE guibg=NONE gui=NONE
 hi Search ctermbg=11 ctermfg=0 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi IncSearch ctermbg=0 ctermfg=11 cterm=reverse guifg=NONE guibg=NONE gui=NONE

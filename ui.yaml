@@ -63,6 +63,9 @@ BufferInactiveTarget:                 { <<: *Normal, ctermfg: *red, ctermbg: *bl
 BufferTabpages:                       { <<: *Normal, ctermbg: *black }
 BufferTabpageFill:                    { <<: *Normal, ctermfg: *darkgrey, ctermbg: *black }
 
+BufferLineTabSelected:                { <<: *Normal, cterm: 'italic,bold' }
+PanelHeading:                         { <<: *Normal, ctermfg: *blue }
+
 MatchParen:                           { <<: *Normal, cterm: 'bold,underline' }
 Search: &Search                       { <<: *Normal, ctermbg: *yellow, ctermfg: *black }
 IncSearch: &IncSearch                 { <<: *Normal, ctermbg: *black, ctermfg: *yellow, cterm: 'reverse' }
