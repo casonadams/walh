@@ -67,9 +67,9 @@ BufferLineTabSelected:                { <<: *Normal, cterm: 'italic,bold' }
 PanelHeading:                         { <<: *Normal, ctermfg: *blue }
 
 MatchParen:                           { <<: *Normal, cterm: 'bold,underline' }
-Search: &Search                       { <<: *Normal, ctermbg: *yellow, ctermfg: *black }
-IncSearch: &IncSearch                 { <<: *Normal, ctermbg: *black, ctermfg: *yellow, cterm: 'reverse' }
-WildMenu:                             { <<: *Search }
+Search: &Search                       { <<: *Normal, ctermbg: *black, }
+IncSearch: &IncSearch                 { <<: *Normal, ctermbg: *black, cterm: 'bold,underline' }
+WildMenu:                             { <<: *IncSearch }
 Repeat:                               { <<: *Search }
 Substitute:                           { <<: *IncSearch }
 Visual:                               { <<: *Normal, cterm: 'reverse' }
