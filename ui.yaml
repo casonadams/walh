@@ -67,8 +67,8 @@ BufferLineTabSelected:                { <<: *Normal, cterm: 'italic,bold' }
 PanelHeading:                         { <<: *Normal, ctermfg: *blue }
 
 MatchParen:                           { <<: *Normal, cterm: 'bold,underline' }
-Search: &Search                       { <<: *Normal, ctermbg: *black, }
-IncSearch: &IncSearch                 { <<: *Normal, ctermbg: *black, cterm: 'bold,underline' }
+Search: &Search                       { <<: *Normal, ctermbg: *black, cterm: 'bold' }
+IncSearch: &IncSearch                 { <<: *Normal, ctermfg: *yellow, ctermbg: *black, cterm: 'bold' }
 WildMenu:                             { <<: *IncSearch }
 Repeat:                               { <<: *Search }
 Substitute:                           { <<: *IncSearch }
