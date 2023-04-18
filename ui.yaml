@@ -68,10 +68,10 @@ PanelHeading:                         { <<: *Normal, ctermfg: *blue }
 
 MatchParen:                           { <<: *Normal, cterm: 'bold,underline' }
 Search: &Search                       { <<: *Normal, ctermbg: *black, cterm: 'bold' }
-IncSearch: &IncSearch                 { <<: *Normal, ctermfg: *yellow, ctermbg: *black, cterm: 'bold' }
+IncSearch: &IncSearch                 { <<: *Normal, ctermbg: *black, cterm: 'bold,reverse' }
 WildMenu:                             { <<: *IncSearch }
 Repeat:                               { <<: *Search }
-Substitute:                           { <<: *IncSearch }
+Substitute:                           { <<: *Search }
 Visual:                               { <<: *Normal, cterm: 'reverse' }
 
 Conceal: &Conceal                     { <<: *Normal, ctermfg: *darkgrey }
