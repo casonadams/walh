@@ -32,15 +32,15 @@ FoldColumn:                           { <<: *Normal, ctermfg: *darkgrey }
 SignColumn:                           { <<: *Normal }
 
 Pmenu:                                { <<: *Normal }
-PmenuSel:                             { <<: *Normal, ctermfg: *yellow, ctermbg: *black }
+PmenuSel:                             { <<: *Normal, ctermbg: *black, cterm: 'bold' }
 PmenuSbar:                            { <<: *Normal, ctermbg: *black }
 PmenuThumb:                           { <<: *Normal, ctermbg: *darkgrey }
 
 StatusLine:                           { <<: *Normal, ctermbg: *black }
 StatusLineNC:                         { <<: *Normal, ctermbg: *black, ctermfg: *darkgrey }
 TabLine:                              { <<: *Normal, ctermfg: *darkgrey, ctermbg: *black }
-TabLineFill:                          { <<: *Normal, ctermfg: *darkgrey, ctermbg: *black }
-TabLineSel:                           { <<: *Normal, ctermfg: *yellow, ctermbg: *black }
+TabLineFill: &TablineFill             { <<: *Normal, ctermfg: *darkgrey, ctermbg: *black }
+TabLineSel: &TablineSel               { <<: *Normal, ctermbg: *black, cterm: "bold" }
 
 BufferCurrent:                        { <<: *Normal, ctermfg: *yellow, ctermbg: *black }
 BufferCurrentIndex:                   { <<: *Normal, ctermfg: *magenta, ctermbg: *black }
@@ -67,7 +67,7 @@ BufferLineTabSelected:                { <<: *Normal, cterm: 'italic,bold' }
 PanelHeading:                         { <<: *Normal, ctermfg: *blue }
 
 MatchParen:                           { <<: *Normal, cterm: 'bold,underline' }
-Search: &Search                       { <<: *Normal, ctermbg: *black, cterm: 'bold' }
+Search: &Search                       { <<: *Normal, ctermbg: *black, cterm: 'reverse' }
 IncSearch: &IncSearch                 { <<: *Normal, ctermbg: *black, cterm: 'bold,reverse' }
 WildMenu:                             { <<: *IncSearch }
 Repeat:                               { <<: *Search }
@@ -179,3 +179,27 @@ LspDiagnosticsFloatingHint:           { <<: *NormalFloat }
 LspReferenceText:                     { <<: *Normal, cterm: 'bold' }
 LspReferenceRead:                     { <<: *Normal, cterm: 'bold' }
 LspReferenceWrite:                    { <<: *Normal, cterm: 'bold' }
+
+MiniCursorword:                       { <<: *Normal, ctermbg: *black, cterm: 'bold' }
+MiniCursorwordCurrent:                { <<: *Normal, ctermbg: *black, cterm: 'bold' }
+MiniTablineFill:                      { <<: *TablineFill }
+MiniTablineCurrent:                   { <<: *TablineSel }
+MiniTablineModifiedCurrent:           { <<: *TablineSel, ctermfg: *yellow }
+MiniTablineModifiedVisible:           { <<: *TablineSel, ctermfg: *yellow, cterm: "NONE" }
+MiniTablineModifiedHidden:            { <<: *TablineSel, ctermfg: *yellow, cterm: "NONE" }
+MiniTrailspace:                       { <<: *ErrorMsg }
+CmpItemAbbrDeprecated:                { <<: *Normal, ctermfg: *darkgrey, cterm: 'strikethrough'}
+
+CmpItemAbbrMatch:                     { <<: *Normal, ctermfg: *blue }
+CmpItemAbbrMatchFuzzy:                { <<: *Normal, ctermfg: *blue }
+
+CmpItemKindVariable:                  { <<: *Normal, ctermfg: *cyan }
+CmpItemKindInterface:                 { <<: *Normal, ctermfg: *cyan }
+CmpItemKindText:                      { <<: *Normal, ctermfg: *cyan }
+
+CmpItemKindFunction:                  { <<: *Normal, ctermfg: *magenta }
+CmpItemKindMethod:                    { <<: *Normal, ctermfg: *magenta }
+
+CmpItemKindKeyword:                   { <<: *Normal }
+CmpItemKindProperty:                  { <<: *Normal }
+CmpItemKindUnit:                      { <<: *Normal }
