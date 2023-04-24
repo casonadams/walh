@@ -184,6 +184,7 @@ MiniCursorword:                       { <<: *Normal, ctermbg: *black, cterm: 'bo
 MiniCursorwordCurrent:                { <<: *Normal, ctermbg: *black, cterm: 'bold' }
 MiniTablineFill:                      { <<: *TablineFill }
 MiniTablineCurrent:                   { <<: *TablineSel }
+MiniTablineVisible:                   { <<: *Normal }
 MiniTablineModifiedCurrent:           { <<: *TablineSel, ctermfg: *yellow }
 MiniTablineModifiedVisible:           { <<: *TablineSel, ctermfg: *yellow, cterm: "NONE" }
 MiniTablineModifiedHidden:            { <<: *TablineSel, ctermfg: *yellow, cterm: "NONE" }

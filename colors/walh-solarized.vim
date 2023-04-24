@@ -146,6 +146,7 @@ hi MiniCursorword ctermbg=0 ctermfg=NONE cterm=bold guifg=NONE guibg=NONE gui=NO
 hi MiniCursorwordCurrent ctermbg=0 ctermfg=NONE cterm=bold guifg=NONE guibg=NONE gui=NONE
 hi MiniTablineFill ctermbg=0 ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi MiniTablineCurrent ctermbg=0 ctermfg=NONE cterm=bold guifg=NONE guibg=NONE gui=NONE
+hi MiniTablineVisible ctermbg=NONE ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi MiniTablineModifiedCurrent ctermbg=0 ctermfg=11 cterm=bold guifg=NONE guibg=NONE gui=NONE
 hi MiniTablineModifiedVisible ctermbg=0 ctermfg=11 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi MiniTablineModifiedHidden ctermbg=0 ctermfg=11 cterm=NONE guifg=NONE guibg=NONE gui=NONE
