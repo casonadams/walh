@@ -40,7 +40,7 @@ StatusLine:                           { <<: *Normal, ctermbg: *black }
 StatusLineNC:                         { <<: *Normal, ctermbg: *black, ctermfg: *darkgrey }
 TabLine:                              { <<: *Normal, ctermfg: *darkgrey, ctermbg: *black }
 TabLineFill: &TablineFill             { <<: *Normal, ctermfg: *darkgrey, ctermbg: *black }
-TabLineSel: &TablineSel               { <<: *Normal, ctermbg: *black, cterm: "bold" }
+TabLineSel: &TablineSel               { <<: *Normal, ctermbg: *black }
 
 BufferCurrent:                        { <<: *Normal, ctermfg: *yellow, ctermbg: *black }
 BufferCurrentIndex:                   { <<: *Normal, ctermfg: *magenta, ctermbg: *black }
@@ -67,8 +67,8 @@ BufferLineTabSelected:                { <<: *Normal, cterm: 'italic,bold' }
 PanelHeading:                         { <<: *Normal, ctermfg: *blue }
 
 MatchParen:                           { <<: *Normal, cterm: 'bold,underline' }
-Search: &Search                       { <<: *Normal, ctermbg: *black, cterm: 'reverse' }
-IncSearch: &IncSearch                 { <<: *Normal, ctermbg: *black, cterm: 'bold,reverse' }
+Search: &Search                       { <<: *Normal, ctermfg: *black, ctermbg: *yellow }
+IncSearch: &IncSearch                 { <<: *Normal, ctermfg: *black, ctermbg: *yellow, cterm: 'bold' }
 WildMenu:                             { <<: *IncSearch }
 Repeat:                               { <<: *Search }
 Substitute:                           { <<: *Search }
@@ -189,6 +189,7 @@ MiniTablineModifiedCurrent:           { <<: *TablineSel, ctermfg: *yellow }
 MiniTablineModifiedVisible:           { <<: *TablineSel, ctermfg: *yellow, cterm: "NONE" }
 MiniTablineModifiedHidden:            { <<: *TablineSel, ctermfg: *yellow, cterm: "NONE" }
 MiniTrailspace:                       { <<: *ErrorMsg }
+
 CmpItemAbbrDeprecated:                { <<: *Normal, ctermfg: *darkgrey, cterm: 'strikethrough'}
 
 CmpItemAbbrMatch:                     { <<: *Normal, ctermfg: *blue }

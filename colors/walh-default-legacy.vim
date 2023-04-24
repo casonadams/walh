@@ -28,7 +28,7 @@ hi StatusLine ctermbg=0 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi StatusLineNC ctermbg=0 ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi TabLine ctermbg=0 ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi TabLineFill ctermbg=0 ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi TabLineSel ctermbg=0 ctermfg=NONE cterm=bold guifg=NONE guibg=NONE gui=NONE
+hi TabLineSel ctermbg=0 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi BufferCurrent ctermbg=0 ctermfg=11 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi BufferCurrentIndex ctermbg=0 ctermfg=13 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi BufferCurrentMod ctermbg=0 ctermfg=11 cterm=italic guifg=NONE guibg=NONE gui=NONE
@@ -49,11 +49,11 @@ hi BufferTabpageFill ctermbg=0 ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NO
 hi BufferLineTabSelected ctermbg=NONE ctermfg=NONE cterm=italic,bold guifg=NONE guibg=NONE gui=NONE
 hi PanelHeading ctermbg=NONE ctermfg=12 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi MatchParen ctermbg=NONE ctermfg=NONE cterm=bold,underline guifg=NONE guibg=NONE gui=NONE
-hi Search ctermbg=0 ctermfg=NONE cterm=reverse guifg=NONE guibg=NONE gui=NONE
-hi IncSearch ctermbg=0 ctermfg=NONE cterm=bold,reverse guifg=NONE guibg=NONE gui=NONE
-hi WildMenu ctermbg=0 ctermfg=NONE cterm=bold,reverse guifg=NONE guibg=NONE gui=NONE
-hi Repeat ctermbg=0 ctermfg=NONE cterm=reverse guifg=NONE guibg=NONE gui=NONE
-hi Substitute ctermbg=0 ctermfg=NONE cterm=reverse guifg=NONE guibg=NONE gui=NONE
+hi Search ctermbg=11 ctermfg=0 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi IncSearch ctermbg=11 ctermfg=0 cterm=bold guifg=NONE guibg=NONE gui=NONE
+hi WildMenu ctermbg=11 ctermfg=0 cterm=bold guifg=NONE guibg=NONE gui=NONE
+hi Repeat ctermbg=11 ctermfg=0 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi Substitute ctermbg=11 ctermfg=0 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Visual ctermbg=NONE ctermfg=NONE cterm=reverse guifg=NONE guibg=NONE gui=NONE
 hi Conceal ctermbg=NONE ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Whitespace ctermbg=NONE ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
@@ -145,9 +145,9 @@ hi LspReferenceWrite ctermbg=NONE ctermfg=NONE cterm=bold guifg=NONE guibg=NONE 
 hi MiniCursorword ctermbg=0 ctermfg=NONE cterm=bold guifg=NONE guibg=NONE gui=NONE
 hi MiniCursorwordCurrent ctermbg=0 ctermfg=NONE cterm=bold guifg=NONE guibg=NONE gui=NONE
 hi MiniTablineFill ctermbg=0 ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi MiniTablineCurrent ctermbg=0 ctermfg=NONE cterm=bold guifg=NONE guibg=NONE gui=NONE
+hi MiniTablineCurrent ctermbg=0 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi MiniTablineVisible ctermbg=NONE ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi MiniTablineModifiedCurrent ctermbg=0 ctermfg=11 cterm=bold guifg=NONE guibg=NONE gui=NONE
+hi MiniTablineModifiedCurrent ctermbg=0 ctermfg=11 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi MiniTablineModifiedVisible ctermbg=0 ctermfg=11 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi MiniTablineModifiedHidden ctermbg=0 ctermfg=11 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi MiniTrailspace ctermbg=NONE ctermfg=9 cterm=NONE guifg=NONE guibg=NONE gui=NONE
