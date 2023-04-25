@@ -42,29 +42,39 @@ TabLine:                              { <<: *Normal, ctermfg: *darkgrey, ctermbg
 TabLineFill: &TablineFill             { <<: *Normal, ctermfg: *darkgrey, ctermbg: *black }
 TabLineSel: &TablineSel               { <<: *Normal, ctermbg: *black }
 
-BufferCurrent:                        { <<: *Normal, ctermfg: *yellow, ctermbg: *black }
-BufferCurrentIndex:                   { <<: *Normal, ctermfg: *magenta, ctermbg: *black }
-BufferCurrentMod:                     { <<: *Normal, ctermfg: *yellow, cterm: 'italic', ctermbg: *black }
-BufferCurrentSign:                    { <<: *Normal, ctermbg: *black }
-BufferCurrentTarget:                  { <<: *Normal, ctermfg: *red, ctermbg: *black }
+BufferLineBufferSelected:             { <<: *Normal }
+BufferLineCloseButtonSelected:        { <<: *Normal }
+BufferLineIndicatorSelected:          { <<: *Normal }
 
-BufferVisible:                        { <<: *Normal, ctermbg: *black }
-BufferVisibleIndex:                   { <<: *Normal, ctermfg: *magenta, ctermbg: *black }
-BufferVisibleMod:                     { <<: *Normal, ctermbg: *black, cterm: 'italic' }
-BufferVisibleSign:                    { <<: *Normal, ctermbg: *black }
-BufferVisibleTarget:                  { <<: *Normal, ctermfg: *red, ctermbg: *black }
+BufferLineModified:                   { <<: *Normal, ctermfg: *yellow }
+BufferLineModifiedVisible:            { <<: *Normal, ctermfg: *yellow }
+BufferLineModifiedSelected:           { <<: *Normal, ctermfg: *yellow }
 
-BufferInactive:                       { <<: *Normal, ctermfg: *darkgrey, ctermbg: *black }
-BufferInactiveIndex:                  { <<: *Normal, ctermfg: *magenta, ctermbg: *black }
-BufferInactiveMod:                    { <<: *Normal, ctermfg: *darkgrey, ctermbg: *black, cterm: 'italic' }
-BufferInactiveSign:                   { <<: *Normal, ctermbg: *black }
-BufferInactiveTarget:                 { <<: *Normal, ctermfg: *red, ctermbg: *black }
+BufferLineDiagnostic:                   { <<: *Normal }
+BufferLineDiagnosticVisible:            { <<: *Normal }
+BufferLineDiagnosticSelected:           { <<: *Normal }
 
-BufferTabpages:                       { <<: *Normal, ctermbg: *black }
-BufferTabpageFill:                    { <<: *Normal, ctermfg: *darkgrey, ctermbg: *black }
+# BufferLineCurrent:                        { <<: *Normal, ctermbg: *black }
+# BufferLineCurrentIndex:                   { <<: *Normal, ctermfg: *magenta, ctermbg: *black }
+# BufferLineCurrentMod:                     { <<: *Normal, ctermfg: *yellow, ctermbg: *black }
+# BufferLineCurrentSign:                    { <<: *Normal, ctermbg: *black }
+# BufferLineCurrentTarget:                  { <<: *Normal, ctermfg: *red, ctermbg: *black }
+# BufferLineVisible:                        { <<: *Normal, ctermbg: *black }
+# BufferLineVisibleIndex:                   { <<: *Normal, ctermfg: *magenta, ctermbg: *black }
+# BufferLineVisibleMod:                     { <<: *Normal, ctermbg: *black }
+# BufferLineVisibleSign:                    { <<: *Normal, ctermbg: *black }
+# BufferLineVisibleTarget:                  { <<: *Normal, ctermfg: *red, ctermbg: *black }
+# BufferLineInactive:                       { <<: *Normal, ctermfg: *darkgrey, ctermbg: *black }
+# BufferLineInactiveIndex:                  { <<: *Normal, ctermfg: *magenta, ctermbg: *black }
+# BufferLineInactiveMod:                    { <<: *Normal, ctermfg: *darkgrey, ctermbg: *black }
+# BufferLineInactiveSign:                   { <<: *Normal, ctermbg: *black }
+# BufferLineInactiveTarget:                 { <<: *Normal, ctermfg: *red, ctermbg: *black }
+# BufferLineTabpages:                       { <<: *Normal, ctermbg: *black }
+# BufferLineTabpageFill:                    { <<: *Normal, ctermfg: *darkgrey, ctermbg: *black }
 
 BufferLineTabSelected:                { <<: *Normal, cterm: 'italic,bold' }
 PanelHeading:                         { <<: *Normal, ctermfg: *blue }
+
 
 MatchParen:                           { <<: *Normal, cterm: 'bold,underline' }
 Search: &Search                       { <<: *Normal, ctermfg: *black, ctermbg: *yellow }
@@ -179,16 +189,6 @@ LspDiagnosticsFloatingHint:           { <<: *NormalFloat }
 LspReferenceText:                     { <<: *Normal, cterm: 'bold' }
 LspReferenceRead:                     { <<: *Normal, cterm: 'bold' }
 LspReferenceWrite:                    { <<: *Normal, cterm: 'bold' }
-
-MiniCursorword:                       { <<: *Normal, ctermbg: *black, cterm: 'bold' }
-MiniCursorwordCurrent:                { <<: *Normal, ctermbg: *black, cterm: 'bold' }
-MiniTablineFill:                      { <<: *TablineFill }
-MiniTablineCurrent:                   { <<: *TablineSel }
-MiniTablineVisible:                   { <<: *Normal }
-MiniTablineModifiedCurrent:           { <<: *TablineSel, ctermfg: *yellow }
-MiniTablineModifiedVisible:           { <<: *TablineSel, ctermfg: *yellow, cterm: "NONE" }
-MiniTablineModifiedHidden:            { <<: *TablineSel, ctermfg: *yellow, cterm: "NONE" }
-MiniTrailspace:                       { <<: *ErrorMsg }
 
 CmpItemAbbrDeprecated:                { <<: *Normal, ctermfg: *darkgrey, cterm: 'strikethrough'}
 
