@@ -42,39 +42,7 @@ TabLine:                              { <<: *Normal, ctermfg: *darkgrey, ctermbg
 TabLineFill: &TablineFill             { <<: *Normal, ctermfg: *darkgrey, ctermbg: *black }
 TabLineSel: &TablineSel               { <<: *Normal, ctermbg: *black }
 
-BufferLineBufferSelected:             { <<: *Normal }
-BufferLineCloseButtonSelected:        { <<: *Normal }
-BufferLineIndicatorSelected:          { <<: *Normal }
-
-BufferLineModified:                   { <<: *Normal, ctermfg: *yellow }
-BufferLineModifiedVisible:            { <<: *Normal, ctermfg: *yellow }
-BufferLineModifiedSelected:           { <<: *Normal, ctermfg: *yellow }
-
-BufferLineDiagnostic:                   { <<: *Normal }
-BufferLineDiagnosticVisible:            { <<: *Normal }
-BufferLineDiagnosticSelected:           { <<: *Normal }
-
-# BufferLineCurrent:                        { <<: *Normal, ctermbg: *black }
-# BufferLineCurrentIndex:                   { <<: *Normal, ctermfg: *magenta, ctermbg: *black }
-# BufferLineCurrentMod:                     { <<: *Normal, ctermfg: *yellow, ctermbg: *black }
-# BufferLineCurrentSign:                    { <<: *Normal, ctermbg: *black }
-# BufferLineCurrentTarget:                  { <<: *Normal, ctermfg: *red, ctermbg: *black }
-# BufferLineVisible:                        { <<: *Normal, ctermbg: *black }
-# BufferLineVisibleIndex:                   { <<: *Normal, ctermfg: *magenta, ctermbg: *black }
-# BufferLineVisibleMod:                     { <<: *Normal, ctermbg: *black }
-# BufferLineVisibleSign:                    { <<: *Normal, ctermbg: *black }
-# BufferLineVisibleTarget:                  { <<: *Normal, ctermfg: *red, ctermbg: *black }
-# BufferLineInactive:                       { <<: *Normal, ctermfg: *darkgrey, ctermbg: *black }
-# BufferLineInactiveIndex:                  { <<: *Normal, ctermfg: *magenta, ctermbg: *black }
-# BufferLineInactiveMod:                    { <<: *Normal, ctermfg: *darkgrey, ctermbg: *black }
-# BufferLineInactiveSign:                   { <<: *Normal, ctermbg: *black }
-# BufferLineInactiveTarget:                 { <<: *Normal, ctermfg: *red, ctermbg: *black }
-# BufferLineTabpages:                       { <<: *Normal, ctermbg: *black }
-# BufferLineTabpageFill:                    { <<: *Normal, ctermfg: *darkgrey, ctermbg: *black }
-
-BufferLineTabSelected:                { <<: *Normal, cterm: 'italic,bold' }
-PanelHeading:                         { <<: *Normal, ctermfg: *blue }
-
+PanelHeading:                         { <<: *Normal, ctermfg: *blue, ctermbg: *black }
 
 MatchParen:                           { <<: *Normal, cterm: 'bold,underline' }
 Search: &Search                       { <<: *Normal, ctermfg: *black, ctermbg: *yellow }
