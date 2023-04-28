@@ -42,14 +42,11 @@ TabLine:                              { <<: *Normal, ctermfg: *darkgrey, ctermbg
 TabLineFill: &TablineFill             { <<: *Normal, ctermfg: *darkgrey, ctermbg: *black }
 TabLineSel: &TablineSel               { <<: *Normal, ctermbg: *black }
 
-PanelHeading:                         { <<: *Normal, ctermfg: *blue, ctermbg: *black }
-
 MatchParen:                           { <<: *Normal, cterm: 'bold,underline' }
 Search: &Search                       { <<: *Normal, ctermfg: *black, ctermbg: *yellow }
-IncSearch: &IncSearch                 { <<: *Normal, ctermfg: *black, ctermbg: *yellow, cterm: 'bold' }
-WildMenu:                             { <<: *IncSearch }
-Repeat:                               { <<: *Search }
-Substitute:                           { <<: *Search }
+IncSearch: &IncSearch                 { <<: *Normal, ctermfg: *white, ctermbg: *red }
+Substitute:                           { <<: *Normal, ctermbg: *black, ctermfg: *yellow, cterm: "reverse" }
+
 Visual:                               { <<: *Normal, cterm: 'reverse' }
 
 Conceal: &Conceal                     { <<: *Normal, ctermfg: *darkgrey }
@@ -66,6 +63,7 @@ ModeMsg:                              { <<: *Normal }
 MsgArea:                              { <<: *Normal }
 MsgSeperator:                         { <<: *Normal }
 MoreMsg:                              { <<: *Normal }
+WildMenu:                             { <<: *Normal }
 WarningMsg:                           { <<: *ErrorMsg }
 Question:                             { <<: *Title }
 
@@ -76,13 +74,9 @@ DiffText:                             { <<: *Normal, ctermbg: *blue, ctermfg: *b
 DiffAdded:                            { <<: *DiffAdd }
 DiffRemoved:                          { <<: *DiffDelete }
 
-SignifySignAdd: &Add                  { <<: *Normal, ctermfg: *green }
-SignifySignDelete: &Delete            { <<: *Normal, ctermfg: *red }
-SignifySignChange: &Change            { <<: *Normal, ctermfg: *yellow }
-
-GitGutterAdd:                         { <<: *Add }
-GitGutterDelete:                      { <<: *Delete }
-GitGutterChange:                      { <<: *Change }
+GitGutterAdd: &Add                    { <<: *Normal, ctermfg: *green }
+GitGutterDelete: &Delete              { <<: *Normal, ctermfg: *red }
+GitGutterChange: &Change              { <<: *Normal, ctermfg: *yellow }
 GitSignsAdd:                          { <<: *Add }
 GitSignsAddNR:                        { <<: *Add }
 GitSignsDelete:                       { <<: *Delete }
@@ -90,7 +84,7 @@ GitSignsDeleteNR:                     { <<: *Delete }
 GitSignsChange:                       { <<: *Change }
 GitSignsChangeNR:                     { <<: *Change }
 
-SpellBad: &SpellBad                   { <<: *Normal, ctermfg: *darkgrey, cterm: 'underline' }
+SpellBad: &SpellBad                   { <<: *Normal, ctermfg: *red }
 SpellCap:                             { <<: *SpellBad }
 SpellLocal:                           { <<: *SpellBad }
 

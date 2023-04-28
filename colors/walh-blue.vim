@@ -29,13 +29,10 @@ hi StatusLineNC ctermbg=0 ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi TabLine ctermbg=0 ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi TabLineFill ctermbg=0 ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi TabLineSel ctermbg=0 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi PanelHeading ctermbg=0 ctermfg=12 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi MatchParen ctermbg=NONE ctermfg=NONE cterm=bold,underline guifg=NONE guibg=NONE gui=NONE
 hi Search ctermbg=11 ctermfg=0 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi IncSearch ctermbg=11 ctermfg=0 cterm=bold guifg=NONE guibg=NONE gui=NONE
-hi WildMenu ctermbg=11 ctermfg=0 cterm=bold guifg=NONE guibg=NONE gui=NONE
-hi Repeat ctermbg=11 ctermfg=0 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi Substitute ctermbg=11 ctermfg=0 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi IncSearch ctermbg=9 ctermfg=15 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi Substitute ctermbg=0 ctermfg=11 cterm=reverse guifg=NONE guibg=NONE gui=NONE
 hi Visual ctermbg=NONE ctermfg=NONE cterm=reverse guifg=NONE guibg=NONE gui=NONE
 hi Conceal ctermbg=NONE ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Whitespace ctermbg=NONE ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
@@ -49,6 +46,7 @@ hi ModeMsg ctermbg=NONE ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi MsgArea ctermbg=NONE ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi MsgSeperator ctermbg=NONE ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi MoreMsg ctermbg=NONE ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi WildMenu ctermbg=NONE ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi WarningMsg ctermbg=NONE ctermfg=9 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Question ctermbg=NONE ctermfg=10 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi DiffAdd ctermbg=10 ctermfg=0 cterm=NONE guifg=NONE guibg=NONE gui=NONE
@@ -57,9 +55,6 @@ hi DiffChange ctermbg=11 ctermfg=0 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi DiffText ctermbg=12 ctermfg=0 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi DiffAdded ctermbg=10 ctermfg=0 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi DiffRemoved ctermbg=9 ctermfg=0 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi SignifySignAdd ctermbg=NONE ctermfg=10 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi SignifySignDelete ctermbg=NONE ctermfg=9 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi SignifySignChange ctermbg=NONE ctermfg=11 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi GitGutterAdd ctermbg=NONE ctermfg=10 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi GitGutterDelete ctermbg=NONE ctermfg=9 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi GitGutterChange ctermbg=NONE ctermfg=11 cterm=NONE guifg=NONE guibg=NONE gui=NONE
@@ -69,9 +64,9 @@ hi GitSignsDelete ctermbg=NONE ctermfg=9 cterm=NONE guifg=NONE guibg=NONE gui=NO
 hi GitSignsDeleteNR ctermbg=NONE ctermfg=9 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi GitSignsChange ctermbg=NONE ctermfg=11 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi GitSignsChangeNR ctermbg=NONE ctermfg=11 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi SpellBad ctermbg=NONE ctermfg=8 cterm=underline guifg=NONE guibg=NONE gui=NONE
-hi SpellCap ctermbg=NONE ctermfg=8 cterm=underline guifg=NONE guibg=NONE gui=NONE
-hi SpellLocal ctermbg=NONE ctermfg=8 cterm=underline guifg=NONE guibg=NONE gui=NONE
+hi SpellBad ctermbg=NONE ctermfg=9 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi SpellCap ctermbg=NONE ctermfg=9 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi SpellLocal ctermbg=NONE ctermfg=9 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi DiagnosticError ctermbg=NONE ctermfg=9 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi DiagnosticWarn ctermbg=NONE ctermfg=11 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi DiagnosticInfo ctermbg=NONE ctermfg=12 cterm=NONE guifg=NONE guibg=NONE gui=NONE

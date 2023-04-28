@@ -1,14 +1,21 @@
 # walh
 
-A vim theme repo that is easy on the eyes and for long hours looking at a
-screen. All colors are used from the ANSI colors of the terminal in use. A color
-scheme for vim
-
-- Options for light and dark mode based on terminal settings.
-
 yes walh does mean what you think it does
 
 **walh** = "winnebago audi lamborghini hatchback"
+
+A vim theme repo that is easy on the eyes and for long hours looking at a
+screen. All colors are used from the ANSI colors of the terminal in use. A color
+scheme for vim.
+
+- Options for light and dark mode based on terminal settings.
+
+Supported plugins highlights:
+
+- [NeoVim bulit-in LSP](https://neovim.io/doc/user/lsp.html)
+- [ale](https://github.com/dense-analysis/ale)
+- [coc.nvim](https://github.com/neoclide/coc.nvim)
+- [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
 
 ## Designed to be run with x-shell
 
@@ -67,6 +74,32 @@ set -g pane-active-border-style bg=color0
 set -g pane-border-style bg=color0
 set-window-option -g window-active-style bg=terminal
 set-window-option -g window-style bg=color0
+```
+
+## extending with neovim
+
+[nvim_set_hl()](https://neovim.io/doc/user/api.html#nvim_set_hl())
+
+This command creates a highlight group caled `PanelHeading`
+
+```lua
+local c = {
+  black = 0,
+  darkgrey = 8,
+  red = 9,
+  green = 10,
+  yellow = 11,
+  blue = 12,
+  magenta = 13,
+  cyan = 14,
+  white = 15,
+  none = "NONE",
+}
+
+vim.api.nvim_set_hl(
+    0, "PanelHeading",
+    { ctermfg = c.black, ctermbg = c.blue, bold = true }
+)
 ```
 
 ## bufferline.nvim
