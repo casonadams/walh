@@ -64,9 +64,9 @@ hi GitSignsDelete ctermbg=NONE ctermfg=9 cterm=NONE guifg=NONE guibg=NONE gui=NO
 hi GitSignsDeleteNR ctermbg=NONE ctermfg=9 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi GitSignsChange ctermbg=NONE ctermfg=11 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi GitSignsChangeNR ctermbg=NONE ctermfg=11 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi SpellBad ctermbg=NONE ctermfg=9 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi SpellCap ctermbg=NONE ctermfg=9 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi SpellLocal ctermbg=NONE ctermfg=9 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi SpellBad ctermbg=NONE ctermfg=NONE cterm=undercurl guifg=NONE guibg=NONE gui=NONE
+hi SpellCap ctermbg=NONE ctermfg=NONE cterm=undercurl guifg=NONE guibg=NONE gui=NONE
+hi SpellLocal ctermbg=NONE ctermfg=NONE cterm=undercurl guifg=NONE guibg=NONE gui=NONE
 hi DiagnosticError ctermbg=NONE ctermfg=9 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi DiagnosticWarn ctermbg=NONE ctermfg=11 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi DiagnosticInfo ctermbg=NONE ctermfg=12 cterm=NONE guifg=NONE guibg=NONE gui=NONE

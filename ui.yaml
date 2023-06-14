@@ -84,7 +84,7 @@ GitSignsDeleteNR:                     { <<: *Delete }
 GitSignsChange:                       { <<: *Change }
 GitSignsChangeNR:                     { <<: *Change }
 
-SpellBad: &SpellBad                   { <<: *Normal, ctermfg: *red }
+SpellBad: &SpellBad                   { <<: *Normal, cterm: "undercurl" }
 SpellCap:                             { <<: *SpellBad }
 SpellLocal:                           { <<: *SpellBad }
 
