@@ -10,6 +10,23 @@ scheme for vim.
 
 - Options for light and dark mode based on terminal settings.
 
+## screenshots walh vs default
+
+- walh on the left, default on the right
+- using alacritty-shell (tomorrow, and tomorrow-dark themes)
+
+### light terminal colors
+
+![light background](screenshots/light-bg.png)
+
+### dark terminal colors
+
+![dark background](screenshots/dark-bg.png)
+
+### visual mode
+
+![visual mode](screenshots/visual-mode.png)
+
 Supported plugins highlights:
 
 - [NeoVim bulit-in LSP](https://neovim.io/doc/user/lsp.html)
