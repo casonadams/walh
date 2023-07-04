@@ -15,11 +15,11 @@ scheme for vim.
 - walh on the left, default on the right
 - using alacritty-shell (tomorrow, and tomorrow-dark themes)
 
-### light terminal colors
+### light terminal colors (tomorrow)
 
 ![light background](screenshots/light-bg.png)
 
-### dark terminal colors
+### dark terminal colors (tomorrow-dark)
 
 ![dark background](screenshots/dark-bg.png)
 
