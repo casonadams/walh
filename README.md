@@ -10,18 +10,34 @@ scheme for vim.
 
 - Options for light and dark mode based on terminal settings.
 
-## screenshots walh vs default
+## screenshots walh vs default term colors only
 
 - walh on the left, default on the right
-- using alacritty-shell (tomorrow, and tomorrow-dark themes)
+- `walh-default-legacy` highlights used
 
-### light terminal colors (tomorrow)
+### tomorrow
 
-![light background](screenshots/light-bg.png)
+![tomorrow](screenshots/tomorrow.png)
 
-### dark terminal colors (tomorrow-dark)
+### tomorrow-dark
 
-![dark background](screenshots/dark-bg.png)
+![tomorrow-dark](screenshots/tomorrow-dark.png)
+
+### gruvbox-dark
+
+![gruvbox-dark](screenshots/gruvbox-dark.png)
+
+### gruvbox-light
+
+![gruvbox-light](screenshots/gruvbox-light.png)
+
+### nord
+
+![nord](screenshots/nord.png)
+
+### solarized-dark
+
+![solarized-dark](screenshots/solarized-dark.png)
 
 ### visual mode
 
