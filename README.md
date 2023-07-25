@@ -113,7 +113,7 @@ set-window-option -g window-style bg=color0
 
 [nvim_set_hl()](https://neovim.io/doc/user/api.html#nvim_set_hl())
 
-This command creates a highlight group caled `PanelHeading`
+This command creates a highlight group called `PanelHeading`
 
 ```lua
 local c = {
