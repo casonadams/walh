@@ -13,7 +13,8 @@ Normal: &Normal                       { ctermbg: "NONE", ctermfg: "NONE", cterm:
 Active:                               { <<: *Normal }
 Inactive:                             { <<: *Normal, ctermbg: *black }
 
-TermCursor:                           { cterm: 'reverse' }
+TermCursor:                           { <<: *Normal, cterm: 'reverse' }
+Cursor:                               { <<: *Normal, cterm: 'reverse' }
 NormalFloat: &NormalFloat             { <<: *Normal }
 FloatBorder:                          { <<: *Normal }
 Underlined:                           { <<: *Normal, ctermfg: *magenta, cterm: 'underline' }
