@@ -13,6 +13,7 @@ hi Underlined ctermbg=NONE ctermfg=13 cterm=underline guifg=NONE guibg=NONE gui=
 hi Error ctermbg=NONE ctermfg=NONE cterm=underline guifg=NONE guibg=NONE gui=NONE
 hi Todo ctermbg=NONE ctermfg=11 cterm=bold guifg=NONE guibg=NONE gui=NONE
 hi ColorColumn ctermbg=8 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi QuickFix ctermbg=NONE ctermfg=14 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi CursorColumn ctermbg=8 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi CursorLine ctermbg=0 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi VertSplit ctermbg=NONE ctermfg=0 cterm=NONE guifg=NONE guibg=NONE gui=NONE
@@ -30,10 +31,11 @@ hi StatusLineNC ctermbg=0 ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi TabLine ctermbg=0 ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi TabLineFill ctermbg=0 ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi TabLineSel ctermbg=0 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi MatchParen ctermbg=NONE ctermfg=NONE cterm=bold,underline guifg=NONE guibg=NONE gui=NONE
+hi MatchParen ctermbg=0 ctermfg=NONE cterm=bold,underline guifg=NONE guibg=NONE gui=NONE
 hi Search ctermbg=11 ctermfg=0 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi IncSearch ctermbg=9 ctermfg=15 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi IncSearch ctermbg=9 ctermfg=0 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Substitute ctermbg=0 ctermfg=11 cterm=reverse guifg=NONE guibg=NONE gui=NONE
+hi CurSearch ctermbg=9 ctermfg=0 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Visual ctermbg=NONE ctermfg=NONE cterm=reverse guifg=NONE guibg=NONE gui=NONE
 hi Conceal ctermbg=NONE ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Whitespace ctermbg=NONE ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
@@ -68,6 +70,7 @@ hi GitSignsChangeNR ctermbg=NONE ctermfg=11 cterm=NONE guifg=NONE guibg=NONE gui
 hi SpellBad ctermbg=NONE ctermfg=NONE cterm=undercurl guifg=NONE guibg=NONE gui=NONE
 hi SpellCap ctermbg=NONE ctermfg=NONE cterm=undercurl guifg=NONE guibg=NONE gui=NONE
 hi SpellLocal ctermbg=NONE ctermfg=NONE cterm=undercurl guifg=NONE guibg=NONE gui=NONE
+hi SpellRare ctermbg=NONE ctermfg=NONE cterm=undercurl guifg=NONE guibg=NONE gui=NONE
 hi DiagnosticError ctermbg=NONE ctermfg=9 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi DiagnosticWarn ctermbg=NONE ctermfg=11 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi DiagnosticInfo ctermbg=NONE ctermfg=12 cterm=NONE guifg=NONE guibg=NONE gui=NONE

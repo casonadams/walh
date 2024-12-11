@@ -22,6 +22,7 @@ Error:                                { <<: *Normal, cterm: 'underline'}
 Todo:                                 { <<: *Normal, ctermfg: *yellow, cterm: 'bold' }
 
 ColorColumn: &ColorColumn             { <<: *Normal, ctermbg: *darkgrey }
+QuickFix:                             { <<: *Normal, ctermfg: *cyan }
 CursorColumn:                         { <<: *ColorColumn }
 CursorLine:                           { <<: *Normal, ctermbg: *black }
 VertSplit:                            { <<: *Normal, ctermfg: *black }
@@ -43,10 +44,11 @@ TabLine:                              { <<: *Normal, ctermfg: *darkgrey, ctermbg
 TabLineFill: &TablineFill             { <<: *Normal, ctermfg: *darkgrey, ctermbg: *black }
 TabLineSel: &TablineSel               { <<: *Normal, ctermbg: *black }
 
-MatchParen:                           { <<: *Normal, cterm: 'bold,underline' }
+MatchParen:                           { <<: *Normal, ctermbg: *black, cterm: 'bold,underline' }
 Search: &Search                       { <<: *Normal, ctermfg: *black, ctermbg: *yellow }
-IncSearch: &IncSearch                 { <<: *Normal, ctermfg: *white, ctermbg: *red }
+IncSearch: &IncSearch                 { <<: *Normal, ctermfg: *black, ctermbg: *red }
 Substitute:                           { <<: *Normal, ctermbg: *black, ctermfg: *yellow, cterm: "reverse" }
+CurSearch:                            { <<: *IncSearch }
 
 Visual:                               { <<: *Normal, cterm: 'reverse' }
 
@@ -88,6 +90,7 @@ GitSignsChangeNR:                     { <<: *Change }
 SpellBad: &SpellBad                   { <<: *Normal, cterm: "undercurl" }
 SpellCap:                             { <<: *SpellBad }
 SpellLocal:                           { <<: *SpellBad }
+SpellRare:                            { <<: *SpellBad }
 
 DiagnosticError: &Error               { <<: *Normal, ctermfg: *red }
 DiagnosticWarn: &Warn                 { <<: *Normal, ctermfg: *yellow }
