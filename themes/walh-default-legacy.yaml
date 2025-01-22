@@ -1,11 +1,12 @@
+black: &black 0
+red: &red 1
+green: &green 2
+yellow: &yellow 3
+blue: &blue 4
+magenta: &magenta 5
+cyan: &cyan 6
+white: &white 7
 darkgrey: &darkgrey 8
-red: &red 9
-green: &green 10
-yellow: &yellow 11
-blue: &blue 12
-magenta: &magenta 13
-cyan: &cyan 14
-white: &white 15
 orange: &orange 208
 
 None: &None     { ctermbg: "NONE", ctermfg: "NONE", cterm: "NONE", guifg: "NONE", guibg: "NONE", gui: "NONE" }
