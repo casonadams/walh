@@ -156,18 +156,40 @@ LspReferenceText:                     { <<: *Normal, cterm: 'bold' }
 LspReferenceRead:                     { <<: *Normal, cterm: 'bold' }
 LspReferenceWrite:                    { <<: *Normal, cterm: 'bold' }
 
-CmpItemAbbrDeprecated:                { <<: *Normal, ctermfg: *darkgrey, cterm: 'strikethrough'}
+CmpItemAbbrDeprecated:                { <<: *Normal, ctermfg: *darkgrey, cterm: "strikethrough" }
+CmpItemAbbrMatch:                     { <<: *Normal, ctermfg: *blue, cterm: "bold" }
+CmpItemAbbrMatchFuzzy:                { <<: *Normal, ctermfg: *blue, cterm: "bold" }
+CmpItemMenu:                          { <<: *Normal, ctermfg: *magenta, cterm: "italic" }
 
-CmpItemAbbrMatch:                     { <<: *Normal, ctermfg: *blue }
-CmpItemAbbrMatchFuzzy:                { <<: *Normal, ctermfg: *blue }
+CmpItemKindField:                     { <<: *Normal, ctermfg: *red }
+CmpItemKindProperty:                  { <<: *Normal, ctermfg: *red }
+CmpItemKindEvent:                     { <<: *Normal, ctermfg: *red }
 
-CmpItemKindVariable:                  { <<: *Normal, ctermfg: *cyan }
-CmpItemKindInterface:                 { <<: *Normal, ctermfg: *cyan }
-CmpItemKindText:                      { <<: *Normal, ctermfg: *cyan }
+CmpItemKindText:                      { <<: *Normal, ctermfg: *darkgrey }
+CmpItemKindEnum:                      { <<: *Normal, ctermfg: *darkgrey }
+CmpItemKindKeyword:                   { <<: *Normal, ctermfg: *darkgrey }
 
-CmpItemKindFunction:                  { <<: *Normal, ctermfg: *magenta }
-CmpItemKindMethod:                    { <<: *Normal, ctermfg: *magenta }
+CmpItemKindConstant:                  { <<: *Normal, ctermfg: *red }
+CmpItemKindConstructor:               { <<: *Normal, ctermfg: *red }
+CmpItemKindReference:                 { <<: *Normal, ctermfg: *red }
 
-CmpItemKindKeyword:                   { <<: *Normal }
-CmpItemKindProperty:                  { <<: *Normal }
-CmpItemKindUnit:                      { <<: *Normal }
+CmpItemKindFunction:                  { <<: *Normal, ctermfg: *blue }
+CmpItemKindStruct:                    { <<: *Normal, ctermfg: *blue }
+CmpItemKindClass:                     { <<: *Normal, ctermfg: *blue }
+CmpItemKindModule:                    { <<: *Normal, ctermfg: *blue }
+CmpItemKindOperator:                  { <<: *Normal, ctermfg: *blue }
+
+CmpItemKindVariable:                  { <<: *Normal, ctermfg: *darkgrey }
+CmpItemKindFile:                      { <<: *Normal, ctermfg: *darkgrey }
+
+CmpItemKindUnit:                      { <<: *Normal, ctermfg: *red }
+CmpItemKindSnippet:                   { <<: *Normal, ctermfg: *red }
+CmpItemKindFolder:                    { <<: *Normal, ctermfg: *red }
+
+CmpItemKindMethod:                    { <<: *Normal, ctermfg: *cyan }
+CmpItemKindValue:                     { <<: *Normal, ctermfg: *cyan }
+CmpItemKindEnumMember:                { <<: *Normal, ctermfg: *cyan }
+
+CmpItemKindInterface:                 { <<: *Normal, ctermfg: *green }
+CmpItemKindColor:                     { <<: *Normal, ctermfg: *green }
+CmpItemKindTypeParameter:             { <<: *Normal, ctermfg: *green }
