@@ -25,7 +25,7 @@ ColorColumn: &ColorColumn             { <<: *Normal, ctermbg: *darkgrey }
 QuickFix:                             { <<: *Normal, ctermfg: *cyan }
 CursorColumn:                         { <<: *ColorColumn }
 CursorLine:                           { <<: *Normal, ctermbg: *black }
-VertSplit:                            { <<: *Normal, ctermfg: *black }
+VertSplit:                            { <<: *Normal, ctermfg: *darkgrey }
 LineNr:                               { <<: *Normal, ctermfg: *darkgrey }
 CursorLineNr:                         { <<: *Normal, ctermbg: *black }
 

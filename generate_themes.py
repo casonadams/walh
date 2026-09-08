@@ -36,6 +36,9 @@ def read_links(config):
 
 def options():
     options = [
+        "if !empty($WALH_MODE)",
+        "  let &background = $WALH_MODE",
+        "endif",
         "if get(g:, 'walh_dimming')",
         "  hi def link NormalNC Inactive",
         "  hi def link NvimTreeNormalNC Inactive",

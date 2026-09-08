@@ -61,6 +61,16 @@ walh uses `colour208` as `orange`
 
 So it might not look correct unless those colors are set accordingly.
 
+walh-shell also computes two derived slots from each theme's own
+foreground/background so panels and secondary text never blend into the
+terminal background, and exports `WALH_MODE=dark|light` so walh sets
+vim's `background` automatically:
+
+| Slot | Role |
+| ---- | ---- |
+| `colour236` | Surface: panels, floats, status/tab lines, cursor line |
+| `colour246` | Dim: line numbers, folds, split divider, secondary text (40% wash on dark palettes, 50% on light) |
+
 ### additional plugins to make it smooth
 
 **NOTE** use one or the other for more syntax highlight support

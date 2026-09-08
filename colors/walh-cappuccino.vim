@@ -16,7 +16,7 @@ hi ColorColumn ctermbg=8 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi QuickFix ctermbg=NONE ctermfg=6 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi CursorColumn ctermbg=8 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi CursorLine ctermbg=0 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi VertSplit ctermbg=NONE ctermfg=0 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi VertSplit ctermbg=NONE ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi LineNr ctermbg=NONE ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi CursorLineNr ctermbg=0 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Folded ctermbg=NONE ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
@@ -184,6 +184,9 @@ hi StorageClass ctermbg=NONE ctermfg=4 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Structure ctermbg=NONE ctermfg=4 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Typedef ctermbg=NONE ctermfg=4 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Comment ctermbg=NONE ctermfg=8 cterm=italic guifg=NONE guibg=NONE gui=NONE
+if !empty($WALH_MODE)
+  let &background = $WALH_MODE
+endif
 if get(g:, 'walh_dimming')
   hi def link NormalNC Inactive
   hi def link NvimTreeNormalNC Inactive
