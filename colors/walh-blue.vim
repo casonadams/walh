@@ -196,3 +196,16 @@ else
   hi def link NormalNC Active
   hi def link NvimTreeNormalNC Active
 endif
+if !empty($WALH_MODE) && $WALH_MODE ==# 'light'
+  hi Conceal ctermbg=NONE ctermfg=7 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+  hi Whitespace ctermbg=NONE ctermfg=7 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+  hi EndOfBuffer ctermbg=NONE ctermfg=7 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+  hi NonText ctermbg=NONE ctermfg=7 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+  hi SpecialKey ctermbg=NONE ctermfg=7 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+else
+  hi Conceal ctermbg=NONE ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+  hi Whitespace ctermbg=NONE ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+  hi EndOfBuffer ctermbg=NONE ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+  hi NonText ctermbg=NONE ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+  hi SpecialKey ctermbg=NONE ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+endif

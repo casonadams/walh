@@ -34,6 +34,21 @@ def read_links(config):
         return links
 
 
+def faint():
+    # Faint tier: barely-visible text (buffer-end tildes, concealed text).
+    # Light palettes keep grey (7) ghosted next to the readable dim on
+    # bright-black (8); dark palettes use the dim slot for both.
+    faint_groups = ("Conceal", "Whitespace", "EndOfBuffer", "NonText", "SpecialKey")
+    attrs = "ctermbg=NONE ctermfg={} cterm=NONE guifg=NONE guibg=NONE gui=NONE"
+    return [
+        "if !empty($WALH_MODE) && $WALH_MODE ==# 'light'",
+        *[f"  hi {group} {attrs.format(7)}" for group in faint_groups],
+        "else",
+        *[f"  hi {group} {attrs.format(8)}" for group in faint_groups],
+        "endif",
+    ]
+
+
 def options():
     options = [
         "if !empty($WALH_MODE)",
@@ -64,7 +79,7 @@ def gen_theme():
         c = read_config(f"themes/{theme}")
 
         print(f"creating * {theme_name} * theme")
-        output = p + ui + c + options() + links
+        output = p + ui + c + options() + faint() + links
         with open(f"colors/{theme_name}.vim", "w") as file:
             file.writelines("%s\n" % line for line in output)
 
