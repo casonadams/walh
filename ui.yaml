@@ -52,19 +52,13 @@ CurSearch:                            { <<: *IncSearch }
 
 Visual:                               { <<: *Normal, cterm: 'reverse' }
 
-Conceal: &Conceal                     { <<: *Normal, ctermfg: *darkgrey }
-Whitespace:                           { <<: *Conceal }
-EndOfBuffer:                          { <<: *Conceal }
-NonText:                              { <<: *Conceal }
-
-SpecialKey:                           { <<: *Normal, ctermfg: *darkgrey }
 Directory:                            { <<: *Normal, ctermfg: *blue }
 Title: &Title                         { <<: *Normal, ctermfg: *green }
 
 ErrorMsg: &ErrorMsg                   { <<: *Normal, ctermfg: *red }
 ModeMsg:                              { <<: *Normal }
 MsgArea:                              { <<: *Normal }
-MsgSeperator:                         { <<: *Normal }
+MsgSeparator:                         { <<: *Normal }
 MoreMsg:                              { <<: *Normal }
 WildMenu:                             { <<: *Normal }
 WarningMsg:                           { <<: *ErrorMsg }
@@ -81,10 +75,13 @@ GitGutterAdd: &Add                    { <<: *Normal, ctermfg: *green }
 GitGutterDelete: &Delete              { <<: *Normal, ctermfg: *red }
 GitGutterChange: &Change              { <<: *Normal, ctermfg: *yellow }
 GitSignsAdd:                          { <<: *Add }
+GitSignsAddNr:                        { <<: *Add }
 GitSignsAddNR:                        { <<: *Add }
 GitSignsDelete:                       { <<: *Delete }
+GitSignsDeleteNr:                     { <<: *Delete }
 GitSignsDeleteNR:                     { <<: *Delete }
 GitSignsChange:                       { <<: *Change }
+GitSignsChangeNr:                     { <<: *Change }
 GitSignsChangeNR:                     { <<: *Change }
 
 SpellBad: &SpellBad                   { <<: *Normal, cterm: "undercurl" }
@@ -96,6 +93,26 @@ DiagnosticError: &Error               { <<: *Normal, ctermfg: *red }
 DiagnosticWarn: &Warn                 { <<: *Normal, ctermfg: *yellow }
 DiagnosticInfo: &Info                 { <<: *Normal, ctermfg: *blue }
 DiagnosticHint: &Hint                 { <<: *Normal }
+
+DiagnosticSignError:                  { <<: *Error }
+DiagnosticSignWarn:                   { <<: *Warn }
+DiagnosticSignInfo:                   { <<: *Info }
+DiagnosticSignHint:                   { <<: *Hint }
+
+DiagnosticVirtualTextError:           { <<: *Error, ctermbg: *black }
+DiagnosticVirtualTextWarn:            { <<: *Warn, ctermbg: *black }
+DiagnosticVirtualTextInfo:            { <<: *Info, ctermbg: *black }
+DiagnosticVirtualTextHint:            { <<: *Hint, ctermbg: *black }
+
+DiagnosticUnderlineError:             { <<: *Error, cterm: 'underline' }
+DiagnosticUnderlineWarn:              { <<: *Warn, cterm: 'underline' }
+DiagnosticUnderlineInfo:              { <<: *Info, cterm: 'underline' }
+DiagnosticUnderlineHint:              { <<: *Hint, cterm: 'underline' }
+
+DiagnosticFloatingError:              { <<: *NormalFloat }
+DiagnosticFloatingWarn:               { <<: *NormalFloat }
+DiagnosticFloatingInfo:               { <<: *NormalFloat }
+DiagnosticFloatingHint:              { <<: *NormalFloat }
 
 ALEError:                             { <<: *Error, cterm: 'underline' }
 ALEWarning:                           { <<: *Warn, cterm: 'underline' }

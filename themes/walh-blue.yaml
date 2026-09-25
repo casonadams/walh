@@ -40,7 +40,7 @@ SpecialKey:     { <<: *None, ctermfg: *cyan }
 Special:        { <<: *None, ctermfg: *magenta }
 SpecialChar:    { <<: *None, ctermfg: *magenta }
 Tag:            { <<: *None, ctermfg: *magenta }
-Delimeter:      { <<: *None }
+Delimiter:      { <<: *None }
 SpecialComment: { <<: *None, ctermfg: *magenta }
 Debug:          { <<: *None, ctermfg: *magenta }
 

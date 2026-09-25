@@ -37,7 +37,7 @@ PreCondit:      { <<: *None, ctermfg: *blue }
 Special:        { <<: *None, ctermfg: *yellow }
 SpecialChar:    { <<: *None, ctermfg: *orange }
 Tag:            { <<: *None }
-Delimeter:      { <<: *None }
+Delimiter:      { <<: *None }
 SpecialComment: { <<: *None, ctermfg: *green }
 Debug:          { <<: *None }
 
