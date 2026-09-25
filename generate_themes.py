@@ -59,6 +59,77 @@ def options():
         "endif",
     ]
 
+def treesitter_links():
+    links = [
+        ("@variable", "Identifier"),
+        ("@variable.builtin", "Special"),
+        ("@variable.parameter", "Identifier"),
+        ("@variable.member", "Identifier"),
+        ("@constant", "Constant"),
+        ("@constant.builtin", "Special"),
+        ("@module", "Include"),
+        ("@label", "Label"),
+        ("@string", "String"),
+        ("@string.documentation", "Comment"),
+        ("@string.regexp", "SpecialChar"),
+        ("@string.escape", "SpecialChar"),
+        ("@character", "Character"),
+        ("@character.special", "SpecialChar"),
+        ("@boolean", "Boolean"),
+        ("@number", "Number"),
+        ("@number.float", "Float"),
+        ("@type", "Type"),
+        ("@type.builtin", "Type"),
+        ("@type.definition", "Typedef"),
+        ("@function", "Function"),
+        ("@function.builtin", "Special"),
+        ("@function.macro", "Macro"),
+        ("@function.method", "Function"),
+        ("@constructor", "Special"),
+        ("@operator", "Operator"),
+        ("@keyword", "Keyword"),
+        ("@keyword.function", "Keyword"),
+        ("@keyword.return", "Keyword"),
+        ("@keyword.operator", "Operator"),
+        ("@keyword.import", "Include"),
+        ("@punctuation.delimiter", "Delimiter"),
+        ("@punctuation.bracket", "Delimiter"),
+        ("@punctuation.special", "Delimiter"),
+        ("@comment", "Comment"),
+        ("@comment.documentation", "Comment"),
+        ("@tag", "Tag"),
+        ("@tag.attribute", "Identifier"),
+        ("@tag.delimiter", "Delimiter"),
+        ("@markup.heading", "Title"),
+        ("@markup.link", "Underlined"),
+        ("@markup.link.url", "Underlined"),
+        ("@markup.list", "Delimiter"),
+        ("@markup.raw", "String"),
+        ("@diff.plus", "diffAdded"),
+        ("@diff.minus", "diffRemoved"),
+        ("@diff.delta", "DiffChange"),
+        ("@lsp.type.class", "Structure"),
+        ("@lsp.type.decorator", "Function"),
+        ("@lsp.type.enum", "Type"),
+        ("@lsp.type.enumMember", "Constant"),
+        ("@lsp.type.function", "Function"),
+        ("@lsp.type.interface", "Type"),
+        ("@lsp.type.macro", "Macro"),
+        ("@lsp.type.method", "Function"),
+        ("@lsp.type.namespace", "Structure"),
+        ("@lsp.type.parameter", "Identifier"),
+        ("@lsp.type.property", "Identifier"),
+        ("@lsp.type.struct", "Structure"),
+        ("@lsp.type.type", "Type"),
+        ("@lsp.type.typeParameter", "Typedef"),
+        ("@lsp.type.variable", "Identifier"),
+    ]
+    return [
+        "if has('nvim')",
+        *[f"  hi def link {src} {dst}" for src, dst in links],
+        "endif",
+    ]
+
 
 def gen_theme():
     ui = read_config("ui.yaml")
@@ -75,7 +146,7 @@ def gen_theme():
         c = read_config(f"themes/{theme_file}")
 
         print(f"creating * {theme_name} * theme")
-        output = p + ui + c + options() + faint() + links
+        output = p + ui + c + options() + faint() + treesitter_links() + links
         with open(f"colors/{theme_name}.vim", "w") as f:
             f.writelines(f"{line}\n" for line in output)
 

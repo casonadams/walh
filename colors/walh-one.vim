@@ -224,3 +224,67 @@ else
   hi NonText ctermbg=NONE ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
   hi SpecialKey ctermbg=NONE ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 endif
+if has('nvim')
+  hi def link @variable Identifier
+  hi def link @variable.builtin Special
+  hi def link @variable.parameter Identifier
+  hi def link @variable.member Identifier
+  hi def link @constant Constant
+  hi def link @constant.builtin Special
+  hi def link @module Include
+  hi def link @label Label
+  hi def link @string String
+  hi def link @string.documentation Comment
+  hi def link @string.regexp SpecialChar
+  hi def link @string.escape SpecialChar
+  hi def link @character Character
+  hi def link @character.special SpecialChar
+  hi def link @boolean Boolean
+  hi def link @number Number
+  hi def link @number.float Float
+  hi def link @type Type
+  hi def link @type.builtin Type
+  hi def link @type.definition Typedef
+  hi def link @function Function
+  hi def link @function.builtin Special
+  hi def link @function.macro Macro
+  hi def link @function.method Function
+  hi def link @constructor Special
+  hi def link @operator Operator
+  hi def link @keyword Keyword
+  hi def link @keyword.function Keyword
+  hi def link @keyword.return Keyword
+  hi def link @keyword.operator Operator
+  hi def link @keyword.import Include
+  hi def link @punctuation.delimiter Delimiter
+  hi def link @punctuation.bracket Delimiter
+  hi def link @punctuation.special Delimiter
+  hi def link @comment Comment
+  hi def link @comment.documentation Comment
+  hi def link @tag Tag
+  hi def link @tag.attribute Identifier
+  hi def link @tag.delimiter Delimiter
+  hi def link @markup.heading Title
+  hi def link @markup.link Underlined
+  hi def link @markup.link.url Underlined
+  hi def link @markup.list Delimiter
+  hi def link @markup.raw String
+  hi def link @diff.plus diffAdded
+  hi def link @diff.minus diffRemoved
+  hi def link @diff.delta DiffChange
+  hi def link @lsp.type.class Structure
+  hi def link @lsp.type.decorator Function
+  hi def link @lsp.type.enum Type
+  hi def link @lsp.type.enumMember Constant
+  hi def link @lsp.type.function Function
+  hi def link @lsp.type.interface Type
+  hi def link @lsp.type.macro Macro
+  hi def link @lsp.type.method Function
+  hi def link @lsp.type.namespace Structure
+  hi def link @lsp.type.parameter Identifier
+  hi def link @lsp.type.property Identifier
+  hi def link @lsp.type.struct Structure
+  hi def link @lsp.type.type Type
+  hi def link @lsp.type.typeParameter Typedef
+  hi def link @lsp.type.variable Identifier
+endif
