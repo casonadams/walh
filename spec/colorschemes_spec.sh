@@ -56,7 +56,7 @@ Describe 'Theme Generator and Highlights'
           -c "source colors/walh-gruvbox.vim" \
           -c "echo &background" \
           -c "echo synIDattr(synIDtrans(hlID('Conceal')), 'fg#')" \
-          -c "qa!" 2>&1
+          -c "qa!" 2>&1 | tr -d '\r'
       }
       When call test_light_mode
       The status should be success
@@ -71,7 +71,7 @@ Describe 'Theme Generator and Highlights'
           -c "source colors/walh-gruvbox.vim" \
           -c "echo &background" \
           -c "echo synIDattr(synIDtrans(hlID('Conceal')), 'fg#')" \
-          -c "qa!" 2>&1
+          -c "qa!" 2>&1 | tr -d '\r'
       }
       When call test_dark_mode
       The status should be success
@@ -86,7 +86,7 @@ Describe 'Theme Generator and Highlights'
           -c "source colors/walh-gruvbox.vim" \
           -c "redir => m | silent hi NormalNC | redir END" \
           -c "echo m" \
-          -c "qa!" 2>&1
+          -c "qa!" 2>&1 | tr -d '\r'
       }
       When call test_dimming_on
       The status should be success
@@ -99,7 +99,7 @@ Describe 'Theme Generator and Highlights'
           -c "source colors/walh-gruvbox.vim" \
           -c "redir => m | silent hi NormalNC | redir END" \
           -c "echo m" \
-          -c "qa!" 2>&1
+          -c "qa!" 2>&1 | tr -d '\r'
       }
       When call test_dimming_off
       The status should be success
