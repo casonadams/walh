@@ -13,6 +13,7 @@ hi Underlined ctermbg=NONE ctermfg=5 cterm=underline guifg=NONE guibg=NONE gui=N
 hi Error ctermbg=NONE ctermfg=NONE cterm=underline guifg=NONE guibg=NONE gui=NONE
 hi Todo ctermbg=NONE ctermfg=3 cterm=bold guifg=NONE guibg=NONE gui=NONE
 hi ColorColumn ctermbg=8 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi QuickFixLine ctermbg=NONE ctermfg=6 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi QuickFix ctermbg=NONE ctermfg=6 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi CursorColumn ctermbg=8 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi CursorLine ctermbg=0 ctermfg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
@@ -53,6 +54,8 @@ hi DiffChange ctermbg=3 ctermfg=0 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi DiffText ctermbg=4 ctermfg=0 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi DiffAdded ctermbg=2 ctermfg=0 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi DiffRemoved ctermbg=1 ctermfg=0 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi diffAdded ctermbg=2 ctermfg=0 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi diffRemoved ctermbg=1 ctermfg=0 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi GitGutterAdd ctermbg=NONE ctermfg=2 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi GitGutterDelete ctermbg=NONE ctermfg=1 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi GitGutterChange ctermbg=NONE ctermfg=3 cterm=NONE guifg=NONE guibg=NONE gui=NONE

@@ -42,7 +42,7 @@ if command -v nvim >/dev/null 2>&1; then
   echo "Testing sourcing and highlight groups in Neovim..."
   for theme in "${themes[@]}"; do
     nvim --headless -u NONE -c "source $theme" \
-      -c "if !hlexists('MsgSeparator') || !hlexists('Delimiter') || !hlexists('DiagnosticVirtualTextError') | cquit 1 | endif" \
+      -c "if !hlexists('MsgSeparator') || !hlexists('Delimiter') || !hlexists('DiagnosticVirtualTextError') || !hlexists('QuickFixLine') || !hlexists('diffAdded') | cquit 1 | endif" \
       -c "qa!"
   done
   echo "Neovim sourcing checks passed."

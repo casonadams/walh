@@ -22,7 +22,8 @@ Error:                                { <<: *Normal, cterm: 'underline'}
 Todo:                                 { <<: *Normal, ctermfg: *yellow, cterm: 'bold' }
 
 ColorColumn: &ColorColumn             { <<: *Normal, ctermbg: *darkgrey }
-QuickFix:                             { <<: *Normal, ctermfg: *cyan }
+QuickFixLine: &QuickFixLine             { <<: *Normal, ctermfg: *cyan }
+QuickFix:                             { <<: *QuickFixLine }
 CursorColumn:                         { <<: *ColorColumn }
 CursorLine:                           { <<: *Normal, ctermbg: *black }
 VertSplit:                            { <<: *Normal, ctermfg: *darkgrey }
@@ -70,6 +71,8 @@ DiffChange:                           { <<: *Normal, ctermbg: *yellow, ctermfg: 
 DiffText:                             { <<: *Normal, ctermbg: *blue, ctermfg: *black }
 DiffAdded:                            { <<: *DiffAdd }
 DiffRemoved:                          { <<: *DiffDelete }
+diffAdded:                            { <<: *DiffAdd }
+diffRemoved:                          { <<: *DiffDelete }
 
 GitGutterAdd: &Add                    { <<: *Normal, ctermfg: *green }
 GitGutterDelete: &Delete              { <<: *Normal, ctermfg: *red }

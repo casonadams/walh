@@ -34,7 +34,7 @@ Describe 'Theme Generator and Highlights'
       for theme in blue cappuccino darcula default default-legacy gruvbox nord one solarized tokyo-night; do
         nvim --headless -u NONE \
           -c "source colors/walh-$theme.vim" \
-          -c "if !hlexists('MsgSeparator') || !hlexists('Delimiter') || !hlexists('DiagnosticVirtualTextError') || !hlexists('DiagnosticUnderlineError') | cquit 1 | endif" \
+          -c "if !hlexists('MsgSeparator') || !hlexists('Delimiter') || !hlexists('DiagnosticVirtualTextError') || !hlexists('DiagnosticUnderlineError') || !hlexists('QuickFixLine') || !hlexists('diffAdded') | cquit 1 | endif" \
           -c "qa!" || return 1
       done
     }
