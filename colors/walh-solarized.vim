@@ -200,7 +200,7 @@ hi Type ctermbg=NONE ctermfg=3 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi StorageClass ctermbg=NONE ctermfg=3 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Structure ctermbg=NONE ctermfg=3 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Typedef ctermbg=NONE ctermfg=3 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi Comment ctermbg=NONE ctermfg=2 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi Comment ctermbg=NONE ctermfg=8 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 if !empty($WALH_MODE)
   let &background = $WALH_MODE
 endif

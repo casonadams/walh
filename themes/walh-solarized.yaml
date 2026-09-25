@@ -46,4 +46,4 @@ StorageClass:   { <<: *None, ctermfg: *yellow }
 Structure:      { <<: *None, ctermfg: *yellow }
 Typedef:        { <<: *None, ctermfg: *yellow }
 
-Comment:        { <<: *None, ctermfg: *green }
+Comment:        { <<: *None, ctermfg: *darkgrey }

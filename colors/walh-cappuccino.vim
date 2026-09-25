@@ -178,13 +178,13 @@ hi Character ctermbg=NONE ctermfg=2 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Number ctermbg=NONE ctermfg=208 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Boolean ctermbg=NONE ctermfg=208 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Float ctermbg=NONE ctermfg=208 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi Statement ctermbg=NONE ctermfg=1 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi Conditional ctermbg=NONE ctermfg=1 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi Repeat ctermbg=NONE ctermfg=1 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi Label ctermbg=NONE ctermfg=1 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi Statement ctermbg=NONE ctermfg=5 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi Conditional ctermbg=NONE ctermfg=5 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi Repeat ctermbg=NONE ctermfg=5 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi Label ctermbg=NONE ctermfg=5 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Operator ctermbg=NONE ctermfg=5 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi Keyword ctermbg=NONE ctermfg=1 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi Exception ctermbg=NONE ctermfg=1 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi Keyword ctermbg=NONE ctermfg=5 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi Exception ctermbg=NONE ctermfg=5 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Include ctermbg=NONE ctermfg=3 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi PreProc ctermbg=NONE ctermfg=3 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Define ctermbg=NONE ctermfg=3 cterm=NONE guifg=NONE guibg=NONE gui=NONE
@@ -196,10 +196,10 @@ hi Tag ctermbg=NONE ctermfg=5 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Delimiter ctermbg=NONE ctermfg=7 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi SpecialComment ctermbg=NONE ctermfg=8 cterm=italic guifg=NONE guibg=NONE gui=NONE
 hi Debug ctermbg=NONE ctermfg=1 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi Type ctermbg=NONE ctermfg=4 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi StorageClass ctermbg=NONE ctermfg=4 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi Structure ctermbg=NONE ctermfg=4 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi Typedef ctermbg=NONE ctermfg=4 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi Type ctermbg=NONE ctermfg=3 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi StorageClass ctermbg=NONE ctermfg=3 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi Structure ctermbg=NONE ctermfg=3 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi Typedef ctermbg=NONE ctermfg=3 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Comment ctermbg=NONE ctermfg=8 cterm=italic guifg=NONE guibg=NONE gui=NONE
 if !empty($WALH_MODE)
   let &background = $WALH_MODE

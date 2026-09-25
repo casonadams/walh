@@ -21,13 +21,13 @@ Number:         { <<: *None, ctermfg: *orange }
 Boolean:        { <<: *None, ctermfg: *orange }
 Float:          { <<: *None, ctermfg: *orange }
 
-Statement:      { <<: *None, ctermfg: *red }
-Conditional:    { <<: *None, ctermfg: *red }
-Repeat:         { <<: *None, ctermfg: *red }
-Label:          { <<: *None, ctermfg: *red }
+Statement:      { <<: *None, ctermfg: *magenta }
+Conditional:    { <<: *None, ctermfg: *magenta }
+Repeat:         { <<: *None, ctermfg: *magenta }
+Label:          { <<: *None, ctermfg: *magenta }
 Operator:       { <<: *None, ctermfg: *magenta }
-Keyword:        { <<: *None, ctermfg: *red }
-Exception:      { <<: *None, ctermfg: *red }
+Keyword:        { <<: *None, ctermfg: *magenta }
+Exception:      { <<: *None, ctermfg: *magenta }
 
 Include:        { <<: *None, ctermfg: *yellow }
 PreProc:        { <<: *None, ctermfg: *yellow }
@@ -41,9 +41,9 @@ Delimiter:      { <<: *None, ctermfg: *white }
 SpecialComment: { <<: *None, ctermfg: *darkgrey, cterm: "italic" }
 Debug:          { <<: *None, ctermfg: *red }
 
-Type:           { <<: *None, ctermfg: *blue }
-StorageClass:   { <<: *None, ctermfg: *blue }
-Structure:      { <<: *None, ctermfg: *blue }
-Typedef:        { <<: *None, ctermfg: *blue }
+Type:           { <<: *None, ctermfg: *yellow }
+StorageClass:   { <<: *None, ctermfg: *yellow }
+Structure:      { <<: *None, ctermfg: *yellow }
+Typedef:        { <<: *None, ctermfg: *yellow }
 
 Comment:        { <<: *None, ctermfg: *darkgrey, cterm: "italic" }
