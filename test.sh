@@ -48,4 +48,13 @@ if command -v nvim >/dev/null 2>&1; then
   echo "Neovim sourcing checks passed."
 fi
 
+echo "=== 5. ShellSpec BDD Suite ==="
+if command -v shellspec >/dev/null 2>&1; then
+  shellspec -s bash
+  if command -v zsh >/dev/null 2>&1; then
+    shellspec -s zsh
+  fi
+  echo "ShellSpec passed."
+fi
+
 echo "=== All tests and quality gates passed successfully! ==="
