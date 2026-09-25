@@ -45,7 +45,7 @@ scheme for vim.
 
 Supported plugins highlights:
 
-- [NeoVim bulit-in LSP](https://neovim.io/doc/user/lsp.html)
+- [NeoVim built-in LSP](https://neovim.io/doc/user/lsp.html)
 - [ale](https://github.com/dense-analysis/ale)
 - [coc.nvim](https://github.com/neoclide/coc.nvim)
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
@@ -68,9 +68,8 @@ vim's `background` automatically:
 
 | Slot | Role |
 | ---- | ---- |
-| `colour236` | Surface: panels, floats, status/tab lines, cursor line |
-| `colour246` | Dim: line numbers, folds, split divider, secondary text (40% wash on dark palettes, 50% on light) |
-
+| `color0` | Surface: panels, floats, status/tab lines, cursor line (15% mix toward foreground) |
+| `color8` | Dim: line numbers, folds, split divider, secondary text (40% wash on dark palettes, 50% on light) |
 ### additional plugins to make it smooth
 
 **NOTE** use one or the other for more syntax highlight support
@@ -89,6 +88,7 @@ vim's `background` automatically:
 | Themes              |
 | ------------------- |
 | walh-blue           |
+| walh-cappuccino     |
 | walh-darcula        |
 | walh-default        |
 | walh-default-legacy |
@@ -96,7 +96,7 @@ vim's `background` automatically:
 | walh-nord           |
 | walh-one            |
 | walh-solarized      |
-
+| walh-tokyo-night    |
 ```init.vim
 set notermguicolors
 colorscheme walh-default
@@ -169,237 +169,20 @@ local c = {
 local bufferline = require("bufferline")
 bufferline.setup({
   highlights = {
-    fill = {
-      ctermfg = c.none,
-      ctermbg = c.black,
-    },
-    background = {
-      ctermfg = c.darkgrey,
-      ctermbg = c.black,
-    },
-    tab = {
-      ctermfg = c.darkgrey,
-      ctermbg = c.black,
-    },
-    tab_selected = {
-      ctermfg = c.none,
-      ctermbg = c.black,
-    },
-    tab_close = {
-      ctermfg = c.none,
-      ctermbg = c.black,
-    },
-    tab_separator = {
-      ctermfg = c.darkgrey,
-      ctermbg = c.black,
-    },
-    tab_separator_selected = {
-      ctermfg = c.none,
-      ctermbg = c.black,
-    },
-    close_button = {
-      ctermfg = c.darkgrey,
-      ctermbg = c.black,
-    },
-    close_button_visible = {
-      ctermfg = c.darkgrey,
-      ctermbg = c.black,
-    },
-    close_button_selected = {
-      ctermfg = c.none,
-      ctermbg = c.black,
-    },
-    buffer_visible = {
-      ctermfg = c.darkgrey,
-      ctermbg = c.black,
-    },
-    buffer_selected = {
-      ctermfg = c.none,
-      ctermbg = c.black,
-    },
-    numbers = {
-      ctermfg = c.none,
-      ctermbg = c.black,
-    },
-    numbers_visible = {
-      ctermfg = c.none,
-      ctermbg = c.black,
-    },
-    numbers_selected = {
-      ctermfg = c.none,
-      ctermbg = c.black,
-    },
-    diagnostic = {
-      ctermfg = c.none,
-      ctermbg = c.black,
-    },
-    diagnostic_visible = {
-      ctermfg = c.none,
-      ctermbg = c.black,
-    },
-    diagnostic_selected = {
-      ctermfg = c.none,
-      ctermbg = c.black,
-    },
-    hint = {
-      ctermfg = c.none,
-      ctermbg = c.black,
-    },
-    hint_visible = {
-      ctermfg = c.none,
-      ctermbg = c.black,
-    },
-    hint_selected = {
-      ctermfg = c.none,
-      ctermbg = c.black,
-    },
-    hint_diagnostic = {
-      ctermfg = c.none,
-      ctermbg = c.black,
-    },
-    hint_diagnostic_visible = {
-      ctermfg = c.none,
-      ctermbg = c.black,
-    },
-    hint_diagnostic_selected = {
-      ctermfg = c.none,
-      ctermbg = c.black,
-    },
-    info = {
-      ctermfg = c.none,
-      ctermbg = c.black,
-    },
-    info_visible = {
-      ctermfg = c.none,
-      ctermbg = c.black,
-    },
-    info_selected = {
-      ctermfg = c.none,
-      ctermbg = c.black,
-    },
-    info_diagnostic = {
-      ctermfg = c.none,
-      ctermbg = c.black,
-    },
-    info_diagnostic_visible = {
-      ctermfg = c.none,
-      ctermbg = c.black,
-    },
-    info_diagnostic_selected = {
-      ctermfg = c.none,
-      ctermbg = c.black,
-    },
-    warning = {
-      ctermfg = c.none,
-      ctermbg = c.black,
-    },
-    warning_visible = {
-      ctermfg = c.none,
-      ctermbg = c.black,
-    },
-    warning_selected = {
-      ctermfg = c.none,
-      ctermbg = c.black,
-    },
-    warning_diagnostic = {
-      ctermfg = c.none,
-      ctermbg = c.black,
-    },
-    warning_diagnostic_visible = {
-      ctermfg = c.none,
-      ctermbg = c.black,
-    },
-    warning_diagnostic_selected = {
-      ctermfg = c.none,
-      ctermbg = c.black,
-    },
-    error = {
-      ctermfg = c.none,
-      ctermbg = c.black,
-    },
-    error_visible = {
-      ctermfg = c.none,
-      ctermbg = c.black,
-    },
-    error_selected = {
-      ctermfg = c.none,
-      ctermbg = c.black,
-    },
-    error_diagnostic = {
-      ctermfg = c.none,
-      ctermbg = c.black,
-    },
-    error_diagnostic_visible = {
-      ctermfg = c.none,
-      ctermbg = c.black,
-    },
-    error_diagnostic_selected = {
-      ctermfg = c.none,
-      ctermbg = c.black,
-    },
-    modified = {
-      ctermfg = c.none,
-      ctermbg = c.black,
-    },
-    modified_visible = {
-      ctermfg = c.yellow,
-      ctermbg = c.black,
-    },
-    modified_selected = {
-      ctermfg = c.yellow,
-      ctermbg = c.black,
-    },
-    duplicate_selected = {
-      ctermfg = c.none,
-      ctermbg = c.black,
-    },
-    duplicate_visible = {
-      ctermfg = c.none,
-      ctermbg = c.black,
-    },
-    duplicate = {
-      ctermfg = c.none,
-      ctermbg = c.black,
-    },
-    separator_selected = {
-      ctermfg = c.none,
-      ctermbg = c.black,
-    },
-    separator_visible = {
-      ctermfg = c.none,
-      ctermbg = c.black,
-    },
-    separator = {
-      ctermfg = c.none,
-      ctermbg = c.black,
-    },
-    indicator_selected = {
-      ctermfg = c.none,
-      ctermbg = c.black,
-    },
-    indicator_visible = {
-      ctermfg = c.none,
-      ctermbg = c.black,
-    },
-    pick_selected = {
-      ctermfg = c.none,
-      ctermbg = c.black,
-    },
-    pick_visible = {
-      ctermfg = c.none,
-      ctermbg = c.black,
-    },
-    pick = {
-      ctermfg = c.none,
-      ctermbg = c.black,
-    },
-    offset_separator = {
-      ctermfg = c.darkgrey,
-      ctermbg = c.black,
-    },
+    fill = { ctermfg = c.none, ctermbg = c.black },
+    background = { ctermfg = c.darkgrey, ctermbg = c.black },
+    buffer_selected = { ctermfg = c.none, ctermbg = c.black },
+    buffer_visible = { ctermfg = c.darkgrey, ctermbg = c.black },
+    tab = { ctermfg = c.darkgrey, ctermbg = c.black },
+    tab_selected = { ctermfg = c.none, ctermbg = c.black },
+    separator = { ctermfg = c.darkgrey, ctermbg = c.black },
+    separator_selected = { ctermfg = c.none, ctermbg = c.black },
+    indicator_selected = { ctermfg = c.blue, ctermbg = c.black },
+    modified = { ctermfg = c.none, ctermbg = c.black },
+    modified_visible = { ctermfg = c.yellow, ctermbg = c.black },
+    modified_selected = { ctermfg = c.yellow, ctermbg = c.black },
   },
 })
 ```
-
 </p>
 </details>
