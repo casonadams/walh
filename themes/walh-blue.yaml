@@ -36,7 +36,6 @@ Define:         { <<: *None, ctermfg: *green }
 Macro:          { <<: *None, ctermfg: *green }
 PreCondit:      { <<: *None, ctermfg: *green }
 
-SpecialKey:     { <<: *None, ctermfg: *cyan }
 Special:        { <<: *None, ctermfg: *magenta }
 SpecialChar:    { <<: *None, ctermfg: *magenta }
 Tag:            { <<: *None, ctermfg: *magenta }

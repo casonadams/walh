@@ -191,7 +191,6 @@ hi PreProc ctermbg=NONE ctermfg=2 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Define ctermbg=NONE ctermfg=2 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Macro ctermbg=NONE ctermfg=2 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi PreCondit ctermbg=NONE ctermfg=2 cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi SpecialKey ctermbg=NONE ctermfg=6 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Special ctermbg=NONE ctermfg=5 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi SpecialChar ctermbg=NONE ctermfg=5 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Tag ctermbg=NONE ctermfg=5 cterm=NONE guifg=NONE guibg=NONE gui=NONE

@@ -22,6 +22,8 @@ def read_config(config):
 
 
 def read_links(config):
+    if not os.path.exists(config):
+        return []
     with open(config, "r") as f:
         data = yaml.safe_load(f)
         if not data or not isinstance(data, dict):
